@@ -48,3 +48,23 @@ function updateSlidebar() {
         }
     });
 }
+
+const images = document.querySelectorAll('img')
+const totalImages = images.length;
+
+const prevBtn = document.querySelector('.prev-btn')
+const nextBtn = document.querySelector('.next-btn')
+
+const selectedImgBtns = document.querySelectorAll('.img-nav-item')
+
+let currentImgId = 0;
+
+const hideAllImages = () => {
+    images.forEach(img => {
+        // hide all images
+        if (img.classList[0] === 'visible') {
+            img.classList.remove('visible')
+            img.classList.add('hidden')
+        }
+    })
+}

@@ -1,5 +1,12 @@
 ﻿@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700;900&family=Open+Sans&display=swap');
 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -7,9 +14,41 @@ body {
     color: #fff;
 }
 
+/* Barra de desplazamiento */
+::-webkit-scrollbar {
+    width: 5px; /* Ancho de la barra */
+    background-color: #333; /* Color de fondo */
+}
+
+/* Track (pista) de la barra de desplazamiento */
+::-webkit-scrollbar-track {
+    background-color: #333; /* Color de fondo */
+}
+
+/* Handle (agarre) de la barra de desplazamiento */
+::-webkit-scrollbar-thumb {
+    background-color: #fff; /* Color del agarre */
+    border-radius: 20px; /* Radio de borde del agarre */
+}
+
+    /* Al pasar el cursor sobre el handle */
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: #00c4ff; /* Color del agarre al hacer hover */
+    }
+
 .container {
     display: flex;
 }
+
+.section {
+    margin-bottom: 0;
+    padding: 0;
+    page-break-before: always;
+}
+
+
+
+/*MENU*/
 
 .sidebar {
     width: 80px;
@@ -19,6 +58,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 9999;
 }
 
     .sidebar ul {
@@ -69,10 +109,13 @@ body {
                 transform: scaleX(1);
             }
 
-.content {
-    margin-left: 100px;
-    padding: 20px;
-    
+/*NOSOTROS*/
+
+#quines-somos {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .titulo1 {
@@ -95,6 +138,7 @@ p {
 .content > div {
     margin-bottom: 500px;
     padding-bottom: 500px;
+
 }
 
 .slidebar {
@@ -136,7 +180,7 @@ p {
         color: #fff;
     }
 
-.encabezado p {
+.section p {
     position: absolute;
     bottom: 20px;
     left: 50%;
@@ -144,6 +188,36 @@ p {
     text-align: center;
     width: 80%;
 }
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+@media screen and (max-width: 768px) {
+    .encabezado {
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .background-video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+    }
+}
+
 .whatsapp-icon {
     position: fixed;
     bottom: 50px;
@@ -168,16 +242,7 @@ p {
             white-space: nowrap;
             font-family: 'Lato', sans-serif;
         }
-.background-video {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-    opacity: 0.2;
-}
+
 
 .social-icons {
     position: absolute;
@@ -200,24 +265,4 @@ p {
             color: #00c4ff;
         }
 
-/* Barra de desplazamiento */
-::-webkit-scrollbar {
-    width: 5px; /* Ancho de la barra */
-    background-color: #333; /* Color de fondo */
-}
 
-/* Track (pista) de la barra de desplazamiento */
-::-webkit-scrollbar-track {
-    background-color: #333; /* Color de fondo */
-}
-
-/* Handle (agarre) de la barra de desplazamiento */
-::-webkit-scrollbar-thumb {
-    background-color: #fff; /* Color del agarre */
-    border-radius: 20px; /* Radio de borde del agarre */
-}
-
-    /* Al pasar el cursor sobre el handle */
-    ::-webkit-scrollbar-thumb:hover {
-        background-color: #00c4ff; /* Color del agarre al hacer hover */
-    }
