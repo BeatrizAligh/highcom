@@ -1,0 +1,30 @@
+﻿{
+  "nav": {
+    "home": "Inicio",
+    "history": "Historia",
+    "products": "Productos",
+    "services": "Servicios",
+    "contact": "Contáctenos"
+  },
+  "home": {
+    "specialties": "Nuestras especialidades",
+    "specialty1": "Comunicaciones",
+    "specialty2": "Soluciones  Integrales",
+    "specialty3": "Seguridad  Electrónica",
+    "specialty4": "Infraestructura",
+    "description": "HIGHCOM ® inicia operaciones en la ciudad de Bogotá en el mes de Septiembre del 2009 con el objeto de brindar soluciones de comunicaciones para clientes del sector gubernamental y para algunas multinacionales que operan en el sector industrial Colombiano."
+  },
+  "about": {
+    "knowMore": "Conoce más de nosotros",
+    "history": "Historia",
+    "experience": "Años de experiencia",
+    "proyects": "Proyectos completados",
+    "goodStory": "Una buena historia",
+    "loremIpsum": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nulla neque, laoreet eget tortor quis, placerat congue justo. Aliquam erat volutpat. Pellentesque nec tincidunt nisi. Integer laoreet enim eu felis rhoncus, id varius nunc cursus. Duis nec mollis lectus, eget euismod orci. Suspendisse fringilla ex eget elit commodo, eleifend tincidunt lacus gravida.",
+    "ReadMore": "Leer más"
+  },
+  "contact": {
+    "downloadInfo": "Descargar Info",
+    "contactUs": "Contáctenos"
+  }
+}

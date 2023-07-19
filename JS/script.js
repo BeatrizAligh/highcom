@@ -1,70 +1,151 @@
-const sidebarLinks = document.querySelectorAll('.sidebar a');
-const slidebar = document.querySelector('.slidebar');
-const sections = document.querySelectorAll('.content > div');
-const contactButton = document.querySelector('.contact-button');
-const contactSection = document.querySelector('#contactenos');
+const languages = document.getElementById("language");
+const textsToChange = document.querySelectorAll("[data-section]");
 
-contactButton.addEventListener('click', function (event) {
-    event.preventDefault();
-    contactSection.scrollIntoView({ behavior: 'smooth' });
+const changeLanguage = async language => {
+    const requestJson = await fetch(`./languages/${language}.json`);
+    const texts = await requestJson.json();
+
+    for (const textToChange of textsToChange) {
+        const section = textToChange.dataset.section;
+        const value = textToChange.dataset.value;
+
+        textToChange.textContent = texts[section][value];
+    }
+
+    // Reiniciar la animación de cambio de textos después de actualizar el texto
+    setTimeout(restartTextChangeAnimation, 0);
+};
+
+languages.addEventListener("click", (e) => {
+    changeLanguage(e.target.parentElement.dataset.language);
 });
 
-sidebarLinks.forEach(link => {
-    link.addEventListener('click', function (event) {
-        event.preventDefault();
-        const target = this.getAttribute('href');
-        const targetElement = document.querySelector(target);
-        if (targetElement) {
-            window.scrollTo({
-                top: targetElement.offsetTop,
-                behavior: 'smooth'
-            });
-        }
-        sidebarLinks.forEach(link => link.classList.remove('active'));
-        this.classList.add('active');
-        updateSlidebar();
+let words = document.querySelectorAll(".word");
+words.forEach((word) => {
+    let letters = word.textContent.split(" . ");
+    word.textContent = "  ";
+    letters.forEach((letter, index) => {
+        let span = document.createElement("span");
+        span.textContent = letter;
+        span.className = "letter";
+        word.append(span);
     });
 });
 
-window.addEventListener('scroll', function () {
-    updateSlidebar();
+let currentWordIndex = 0;
+let maxWordIndex = words.length - 1;
+words[currentWordIndex].style.opacity = "1";
+
+let textChangeInterval = setInterval(changeText, 3000);
+
+// Reiniciar la animación de cambio de textos
+function restartTextChangeAnimation() {
+    clearInterval(textChangeInterval);
+    currentWordIndex = 0;
+    words.forEach((word) => {
+        let letters = word.textContent.split(" . ");
+        word.textContent = "  ";/* elimnar espacion en caso de querer que funcion letra por letra*/
+        letters.forEach((letter, index) => {
+            let span = document.createElement("span");
+            span.textContent = letter;
+            span.className = "letter";
+            word.append(span);
+
+        });
+    });
+    words.forEach((word, index) => {
+        word.style.opacity = index === 0 ? "1" : "0";
+        Array.from(word.children).forEach((letter) => {
+            letter.className = "letter";
+        });
+    });
+    textChangeInterval = setInterval(changeText, 3000);
+}
+
+function changeText() {
+    let currentWord = words[currentWordIndex];
+    let nextWord = currentWordIndex === maxWordIndex ? words[0] : words[currentWordIndex + 1];
+
+    Array.from(currentWord.children).forEach((letter, i) => {
+        setTimeout(() => {
+            letter.className = "letter out";
+        }, i * 80);
+    });
+    nextWord.style.opacity = "1";
+    Array.from(nextWord.children).forEach((letter, i) => {
+        letter.className = "letter behind";
+        setTimeout(() => {
+            letter.className = "letter in";
+        }, 340 + i * 80);
+    });
+    currentWordIndex = currentWordIndex === maxWordIndex ? 0 : currentWordIndex + 1;
+}
+
+//filtros de catalogo
+
+var mixer = mixitup('.productos-gallery');
+
+// active menu
+
+let menuli = document.querySelectorAll('header ul li a');
+let section = document.querySelectorAll('section');
+
+
+function activeMenu() {
+    let len = section.length;
+    while (--len && window.scrollY + 97 < section[len].offsetTop) { }
+    menuli.forEach(sec => sec.classList.remove("active"));
+    menuli[len].classList.add("active");
+}
+
+activeMenu();
+window.addEventListener("scroll", activeMenu);
+
+//sticky navbar--------
+
+const header = document.querySelector("header");
+window.addEventListener("scroll", function () {
+    header.classList.toggle("sticky", this.window.scrollY > 50)
+})
+
+//toggle icon  navbar--------
+
+let menuIcon = document.querySelector("#menu-icon");
+let navlist = document.querySelector(".navlist");
+
+menuIcon.addEventListener("click", () => {
+    menuIcon.classList.toggle("fa-x");
+    navlist.classList.toggle("open");
 });
 
-function updateSlidebar() {
-    const currentPos = window.scrollY;
+window.addEventListener("scroll", () => {
+    menuIcon.classList.remove("fa-x");
+    navlist.classList.remove("open");
+});
 
-    sections.forEach(section => {
-        const target = section.getAttribute('id');
-        const targetElement = document.querySelector(`#${target}`);
-        if (
-            targetElement.offsetTop <= currentPos &&
-            targetElement.offsetTop + targetElement.offsetHeight > currentPos
-        ) {
-            sidebarLinks.forEach(link => link.classList.remove('active'));
-            const correspondingLink = document.querySelector(`.sidebar a[href="#${target}"]`);
-            correspondingLink.classList.add('active');
-            slidebar.style.height = '100%';
-            slidebar.style.transform = `translateY(${correspondingLink.offsetTop}px)`;
-        }
+//Parallax--------
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+        entry.target.classList.add("show-items");
+
+    } else {
+        entry.target.classList.remove("show-items");
+    }
     });
-}
+});
 
-const images = document.querySelectorAll('img')
-const totalImages = images.length;
+const scrollScale = document.querySelectorAll(".scroll-scale");
+scrollScale.forEach((el) => observer.observe(el));
 
-const prevBtn = document.querySelector('.prev-btn')
-const nextBtn = document.querySelector('.next-btn')
+const scrollBottom = document.querySelectorAll(".scroll-bottom");
+scrollBottom.forEach((el) => observer.observe(el));
 
-const selectedImgBtns = document.querySelectorAll('.img-nav-item')
+const scrolltop = document.querySelectorAll(".scroll-top");
+scrolltop.forEach((el) => observer.observe(el));
 
-let currentImgId = 0;
 
-const hideAllImages = () => {
-    images.forEach(img => {
-        // hide all images
-        if (img.classList[0] === 'visible') {
-            img.classList.remove('visible')
-            img.classList.add('hidden')
-        }
-    })
-}
+
+
+

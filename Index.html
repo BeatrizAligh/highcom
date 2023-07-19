@@ -27,42 +27,484 @@
     <!-- ESTILOS -->
 
     <link href="CSS/Style.css" rel="stylesheet" type="text/css" />
-    <link rel="shortcut icon" href="Imagenes/ico.png">
+    <link rel="shortcut icon" href="img/LOGO_HIGHCOM.png">
 </head>
 <body>
-    <!-- menu -->
-    <div class="container">
-        <nav class="sidebar">
-            <div class="slidebar"></div>
-            <ul>
-                <li><a href="#quienes-somos"><span>Nosotros</span></a></li>
-                <li><a href="#historia"><span>Historia</span></a></li>
-                <li><a href="#productos"><span>Productos</span></a></li>
-                <li><a href="#servicio"><span>Servicio</span></a></li>
-                <li><a href="#contactenos"><span>Contáctenos</span></a></li>
 
-            </ul>
-        </nav>
-    </div>
-    <!-- nosotros -->
-    <div class="section" id="quienes-somos">
-        <h1 class="titulo1">Highcom cala sas</h1>
-        <a class="contact-button" href="#contactenos">Contáctenos</a>
-        <p>
-            HIGHCOM CALA S.A.S es una compañía dedicada a la implementación de sistemas de telecomunicaciones y seguridad electrónica.
-        </p>
-        <div class="social-icons">
-            <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+    <header>
+        <div class="logo">
+            <img src="img/LOGO_HIGHCOM.png" alt="" />
         </div>
-        <a class="whatsapp-icon" href="https://web.whatsapp.com/send?phone=573007677421" target="_blank">
-            <i class="fab fa-whatsapp fa-bounce"></i>
-        </a>
-        <video class="background-video" src="vid/videoinicio.mov" autoplay loop muted></video>
-    </div>
+        <ul class="navlist">
+            <li> <a href="#home" style="--i:1;" data-section="nav" data-value="home">Inicio</a></li>
+            <li> <a href="#about" style="--i:2;" data-section="nav" data-value="history">Historia</a></li>
+            <li> <a href="#services" style="--i:3;"data-section="nav" data-value="services">Servicios</a></li>
+            <li> <a href="#productos" style="--i:4;"data-section="nav" data-value="products">Productos</a></li>
+            <li> <a href="#contact" style="--i:5;"data-section="nav" data-value="contact">Contáctenos</a></li>
+        </ul>
+        <div id="language" class="language">
+            <div id="language-item" class="language-item" data-language="es">
+                <img src="img/bandera_es.png" alt="" />
+            </div>
+            <div id="language-item" class="language-item" data-language="en">
+                <img src="img/bandera_en.png" alt="" />
+            </div>
+        </div>
+        <div id="menu-icon" class="fa-solid fa-bars"></div>
+    </header>
 
+    <!--home section------------------------------>
+    <section id="home" class="home">
+        <div class="home-contect scroll-scale">
+            <h1>HIGHCOM CALA SAS</h1>
+            <div class="change-text">
+                <h3 data-section="home" data-value="specialties">Nuestras especialidades</h3>
+                <h3>
+                    <span class="word" data-section="home" data-value="specialty1">Comunicaciones</span>
+                    <span class="word" data-section="home" data-value="specialty2">Soluciones&nbsp;Integrales</span>
+                    <span class="word" data-section="home" data-value="specialty3">Seguridad&nbsp;Electrónica</span>
+                    <span class="word" data-section="home" data-value="specialty4">Infraestructura</span>
+                </h3>
+            </div>
+
+            <p data-section="home" data-value="description">
+                HIGHCOM ® inicia operaciones en la ciudad de Bogotá en el mes de Septiembre del 2009
+                con el objeto de brindar soluciones de comunicaciones para clientes del sector gubernamental
+                y para algunas multinacionales que operan en el sector industrial Colombiano
+            </p>
+
+            <div class="info-box">
+                <div class="email-info">
+                    <h5>Email:</h5>
+                    <span>info@highcom.co</span>
+                </div>
+                <div class="skype-info">
+                    <h5>skype:</h5>
+                    <span>andres.clavijo.mendoza</span>
+                </div>
+            </div>
+
+            <div class="btn-box">
+                <a href="#" class="btn" data-section="contact" data-value="downloadInfo">Descargar info</a>
+                <a href="#" class="btn" data-section="contact" data-value="contactUs">Contáctenos</a>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=100069083646912"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/highcom1/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/i/flow/login?redirect_after_login=%2F%3Flang%3Des"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/company/highcom-cala-s-a-s/about/"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+
+        </div>
+        <a class="whatsapp-icon" href="https://web.whatsapp.com/send?phone=573174817920" target="_blank">
+            <i class="fab fa-whatsapp fa-bounce"></i>
+            <span class="contact-text" data-section="contact" data-value="contactUs">Contáctanos</span>
+        </a>
+
+        <div class="home-vid">
+            <div class="vid-box">
+                <video class="background-video" src="vid/videoinicio.mov" autoplay loop muted></video>
+            </div>
+        </div>
+    </section>
+
+    <!--About Section--------------------------------------------------------------------->
+
+    <section id="about" class="about">
+        <div class="img-about scroll-scale">
+            <img src="img/fibra.jpg" alt="" />
+            <div class="info-about1">
+                <span> 12+</span>
+                <p data-section="about" data-value="experience">Años de experiencia</p>
+            </div>
+            <div class="info-about2">
+                <span> 150+</span>
+                <p data-section="about" data-value="proyects">Proyectos completados</p>
+            </div>
+        </div>
+
+        <div class="about-content scroll-scale">
+            <span data-section="about" data-value="knowMore">conoce más de nosotros</span>
+            <h2 data-section="about" data-value="history">Historia</h2>
+            <h3 data-section="about" data-value="goodStory">una buena historia</h3>
+            <p data-section="about" data-value="loremIpsum">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nulla neque, laoreet eget tortor quis, placerat congue justo. Aliquam erat volutpat.
+                Pellentesque nec tincidunt nisi. Integer laoreet enim eu felis rhoncus, id varius nunc cursus.
+                Duis nec mollis lectus, eget euismod orci. Suspendisse fringilla ex eget elit commodo, eleifend tincidunt lacus gravida.
+            </p>
+
+            <div class="btn-box">
+                <a href="#" class="btn" data-section="about" data-value="ReadMore">Leer más</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!--Service section --------------------------------->
+    <section id="services" class="services">
+        <div class="main-text scroll-scale">
+            <span> Lo hacemos por tí</span>
+            <h2>Nuestros servicios</h2>
+        </div>
+        <div class="section-services scroll-bottom">
+            <div class="services-box">
+                <i class="fa-solid fa-phone service-icon"></i>
+                <h3> Comunicaciones</h3>
+                <p>
+                    Ofrecemos a nivel nacional y del área andina la comercialización,
+                    montaje, instalación, configuración, pruebas y puesta en servicio
+                    de equipos de transmisión y acceso para redes de telecomunicaciones
+                    fijas y móviles.
+                </p>
+
+                <div class="btn-box services-btn">
+                    <a href="#" class="btn" data-section="about" data-value="ReadMore">Leer más</a>
+                </div>
+
+            </div>
+
+            <div class="services-box">
+                <i class="fa-solid fa-lock service-icon"></i>
+                <h3> Seguridad Eletrónica</h3>
+                <p>
+                    Ofrecemos a nivel nacional y del área andina la comercialización,
+                    montaje, instalación, configuración, pruebas y puesta en servicio
+                    de equipos de transmisión y acceso para redes de telecomunicaciones
+                    fijas y móviles.
+
+                </p>
+
+                <div class="btn-box services-btn">
+                    <a href="#" class="btn" data-section="about" data-value="ReadMore">Leer más</a>
+                </div>
+
+            </div>
+            <div class="services-box">
+                <i class="fa-solid fa-check service-icon"></i>
+                <h3> Soluciones Integrales</h3>
+                <p>
+                    Ofrecemos a nivel nacional y del área andina la comercialización,
+                    montaje, instalación, configuración, pruebas y puesta en servicio
+                    de equipos de transmisión y acceso para redes de telecomunicaciones
+                    fijas y móviles.
+                </p>
+
+                <div class="btn-box services-btn">
+                    <a href="#" class="btn" data-section="about" data-value="ReadMore">Leer más</a>
+                </div>
+
+            </div>
+            <div class="services-box">
+                <i class="fa-solid fa-tower-cell service-icon"></i>
+                <h3> Infraestructura</h3>
+                <p>
+                    Ofrecemos a nivel nacional y del área andina la comercialización,
+                    montaje, instalación, configuración, pruebas y puesta en servicio
+                    de equipos de transmisión y acceso para redes de telecomunicaciones
+                    fijas y móviles.
+                </p>
+
+                <div class="btn-box services-btn">
+                    <a href="#" class="btn" data-section="about" data-value="ReadMore">Leer más</a>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!--section productos------------------------------------------->
+    <section id="productos" class="productos">
+        <div class="main-text scroll-scale">
+            <span> Lo que te ofrecemos</span>
+            <h2>Productos</h2>
+        </div>
+        <div class="container">
+            <div class="fillter-buttons scroll-scale">
+                <button class="button" data-filter="all"> Todo</button>
+                <button class="button" data-filter=".producto1"> Producto1</button>
+                <button class="button" data-filter=".producto2"> Producto2</button>
+                <button class="button" data-filter=".producto3"> Producto3</button>
+            </div>
+
+            <div class="productos-gallery scroll-bottom">
+                <div class="port-box mix producto1">
+                    <div class="port-image">
+                        <img src="img/vision.jpg" alt="" />
+                    </div>
+                    <div class="port-content">
+                        <h3> Producto 1</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nulla neque, laoreet eget tortor quis, placerat congue justo. Aliquam erat volutpat.
+                            Pellentesque nec tincidunt nisi. Integer laoreet enim eu felis rhoncus,
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+
+                <div class="port-box mix producto1">
+                    <div class="port-image">
+                        <img src="img/vision.jpg" alt="" />
+                    </div>
+
+                    <div class="port-content">
+                        <h3> producto 1</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nulla neque, laoreet eget tortor quis, placerat congue justo. Aliquam erat volutpat.
+                            Pellentesque nec tincidunt nisi. Integer laoreet enim eu felis rhoncus,
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+
+                <div class="port-box mix producto1">
+                    <div class="port-image">
+                        <img src="img/vision.jpg" alt="" />
+                    </div>
+
+                    <div class="port-content">
+                        <h3> producto 1</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nulla neque, laoreet eget tortor quis, placerat congue justo. Aliquam erat volutpat.
+                            Pellentesque nec tincidunt nisi. Integer laoreet enim eu felis rhoncus,
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+
+
+                <div class="port-box mix producto1">
+                    <div class="port-image">
+                        <img src="img/vision.jpg" alt="" />
+                    </div>
+
+                    <div class="port-content">
+                        <h3> producto 1</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nulla neque, laoreet eget tortor quis, placerat congue justo. Aliquam erat volutpat.
+                            Pellentesque nec tincidunt nisi. Integer laoreet enim eu felis rhoncus,
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+
+
+                <div class="port-box mix producto1">
+                    <div class="port-image">
+                        <img src="img/vision.jpg" alt="" />
+                    </div>
+
+                    <div class="port-content">
+                        <h3> producto 1</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nulla neque, laoreet eget tortor quis, placerat congue justo. Aliquam erat volutpat.
+                            Pellentesque nec tincidunt nisi. Integer laoreet enim eu felis rhoncus,
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+
+                <div class="port-box mix producto2">
+                    <div class="port-image">
+                        <img src="img/vision.jpg" alt="" />
+                    </div>
+
+                    <div class="port-content">
+                        <h3> producto 1</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nulla neque, laoreet eget tortor quis, placerat congue justo. Aliquam erat volutpat.
+                            Pellentesque nec tincidunt nisi. Integer laoreet enim eu felis rhoncus,
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+
+
+                <div class="port-box mix producto2">
+                    <div class="port-image">
+                        <img src="img/vision.jpg" alt="" />
+                    </div>
+
+                    <div class="port-content">
+                        <h3> producto 1</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nulla neque, laoreet eget tortor quis, placerat congue justo. Aliquam erat volutpat.
+                            Pellentesque nec tincidunt nisi. Integer laoreet enim eu felis rhoncus,
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+
+
+                <div class="port-box mix producto2">
+                    <div class="port-image">
+                        <img src="img/vision.jpg" alt="" />
+                    </div>
+
+                    <div class="port-content">
+                        <h3> producto 1</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nulla neque, laoreet eget tortor quis, placerat congue justo. Aliquam erat volutpat.
+                            Pellentesque nec tincidunt nisi. Integer laoreet enim eu felis rhoncus,
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+
+
+                <div class="port-box mix producto2">
+                    <div class="port-image">
+                        <img src="img/vision.jpg" alt="" />
+                    </div>
+
+                    <div class="port-content">
+                        <h3> producto 1</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nulla neque, laoreet eget tortor quis, placerat congue justo. Aliquam erat volutpat.
+                            Pellentesque nec tincidunt nisi. Integer laoreet enim eu felis rhoncus,
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+
+                <div class="port-box mix producto2">
+                    <div class="port-image">
+                        <img src="img/vision.jpg" alt="" />
+                    </div>
+
+                    <div class="port-content">
+                        <h3> producto 1</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nulla neque, laoreet eget tortor quis, placerat congue justo. Aliquam erat volutpat.
+                            Pellentesque nec tincidunt nisi. Integer laoreet enim eu felis rhoncus,
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+
+
+                <div class="port-box mix producto3">
+                    <div class="port-image">
+                        <img src="img/vision.jpg" alt="" />
+                    </div>
+
+                    <div class="port-content">
+                        <h3> producto 1</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nulla neque, laoreet eget tortor quis, placerat congue justo. Aliquam erat volutpat.
+                            Pellentesque nec tincidunt nisi. Integer laoreet enim eu felis rhoncus,
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+
+
+                <div class="port-box mix producto3">
+                    <div class="port-image">
+                        <img src="img/vision.jpg" alt="" />
+                    </div>
+
+                    <div class="port-content">
+                        <h3> producto 1</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nulla neque, laoreet eget tortor quis, placerat congue justo. Aliquam erat volutpat.
+                            Pellentesque nec tincidunt nisi. Integer laoreet enim eu felis rhoncus,
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+
+                <div class="port-box mix producto3">
+                    <div class="port-image">
+                        <img src="img/vision.jpg" alt="" />
+                    </div>
+
+                    <div class="port-content">
+                        <h3> producto 1</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nulla neque, laoreet eget tortor quis, placerat congue justo. Aliquam erat volutpat.
+                            Pellentesque nec tincidunt nisi. Integer laoreet enim eu felis rhoncus,
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+
+                <div class="port-box mix producto3">
+                    <div class="port-image">
+                        <img src="img/vision.jpg" alt="" />
+                    </div>
+
+                    <div class="port-content">
+                        <h3> producto 1</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nulla neque, laoreet eget tortor quis, placerat congue justo. Aliquam erat volutpat.
+                            Pellentesque nec tincidunt nisi. Integer laoreet enim eu felis rhoncus,
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+
+                <div class="port-box mix producto3">
+                    <div class="port-image">
+                        <img src="img/vision.jpg" alt="" />
+                    </div>
+
+                    <div class="port-content">
+                        <h3> producto 1</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nulla neque, laoreet eget tortor quis, placerat congue justo. Aliquam erat volutpat.
+                            Pellentesque nec tincidunt nisi. Integer laoreet enim eu felis rhoncus,
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Contact Us-------------------------------------------------------------------------->
+    <section id="contact" class="contact">
+        <div class="main-text scroll-scale">
+            <span> Haz una pregunta</span>
+            <h2>Contáctanos</h2>
+        </div>
+
+        <form action="#" class="scroll-bottom">
+            <input type="text" placeholder="Nombre" />
+            <input type="text" placeholder="Email" />
+            <input type="number" placeholder="Teléfono" />
+            <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+            <div class=" btn-box formBtn">
+                <button type="submit" class="btn">Enviar</button>
+            </div>
+        </form>
+
+    </section>
+
+    <!--Footer site------------------------------------------>
+    <footer>
+        <p class="scroll-scale">Copyright Highcom Cala SAS</p>
+        <a href="#home"><i class="fa-solid fa-arrow-up"></i></a>
+    </footer>
+
+
+    <script src="JS/mixitup.min.js"></script>
     <script src="JS/script.js"></script>
+
 </body>
+
 </html>
