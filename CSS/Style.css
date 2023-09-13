@@ -46,9 +46,6 @@ body {
     font-family: Lato, sans-serif;
     background-color: var(--bg-color);
     color: var(--text-color);
-    width: 100%;
-    max-width: 1200px; /* Puedes establecer un ancho máximo si lo deseas */
-    margin: 0 auto; /* Centrar el contenido horizontalmente */
 }
 header {
     position: fixed;
