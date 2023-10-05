@@ -30,6 +30,9 @@
     <link rel="shortcut icon" href="img/LOGO_HIGHCOM.png">
 </head>
 <body>
+    <div class="loader-section">
+        <span class="loader"></span>
+    </div>
 
     <header>
         <div class="logo">
@@ -37,11 +40,8 @@
         </div>
         <ul class="navlist">
             <li> <a href="#home" style="--i:1;" data-section="nav" data-value="home">Inicio</a></li>
-            <li> <a href="#about" style="--i:2;" data-section="nav" data-value="history">Telecomunicaciones</a></li>
-            <li> <a href="#services" style="--i:3;" data-section="nav" data-value="services">Infraestrucura y Metalmecánica</a></li>
-            <li> <a href="#productos" style="--i:4;" data-section="nav" data-value="products">Cableado y Fibra Óptica</a></li>
-            <li> <a href="#productos" style="--i:4;" data-section="nav" data-value="Frabric">Fabricación de Tableros</a></li>
-            <li> <a href="#contact" style="--i:5;" data-section="nav" data-value="contact">Contáctenos</a></li>
+            <li> <a href="#services" style="--i:2;" data-section="nav" data-value="history">Historia</a></li>
+            <li> <a href="#contact" style="--i:3;" data-section="nav" data-value="contact">Contáctenos</a></li>
         </ul>
         <div id="language" class="language">
             <div id="language-item" class="language-item" data-language="es">
@@ -53,6 +53,44 @@
         </div>
         <div id="menu-icon" class="fa-solid fa-bars"></div>
     </header>
+    <div class="list2">
+        <ul class="navlist2">
+            <li> <a href="#services" style="--i:2;" data-section="nav" data-value="history">Telecomunicaciones <i class="fa-solid fa-caret-down"></i></a>
+            <div class="dropdown_menu">
+                <ul>
+                    <li><a href="#">Multiplexores, Amplificadores, conversores y Switches industriales </a></li>
+                    <li><a href="#">Sistema de onda portadora OPLAT y teleprotecciones</a></li>
+                    <li><a href="#">Software de monitoreo, análisis y gestión de redes</a></li>
+                    <li><a href="#">Fibra Óptica y cableado estructurado </a></li>
+                    <li><a href="#">Sistemas de radio</a></li>
+                    <li><a href="#">Diseño de enlaces de comunicaciones y trámites ante entes gubernamentales</a></li>
+                </ul>
+            </div></li>
+            <li>
+                <a href="#services" style="--i:3;" data-section="nav" data-value="services">Infraestrucura y Metalmecánica <i class="fa-solid fa-caret-down"></i></a>
+                <div class="dropdown_menu">
+                    <ul>
+                        <li><a href="#">Torres de acero para telecomunicaciones y líneas de transmisión</a></li>
+                        <li><a href="#">Unidades móviles con torres telescópicas</a></li>
+                        <li><a href="#">Estructura en acero para subestaciones</a></li>
+                        <li><a href="#">Diseño, ingeniería, instalación y mantenimiento</a></li>
+                    </ul>
+                </div></li>
+            <li>
+                <a href="#services" style="--i:4;" data-section="nav" data-value="products">Cableado y Fibra Óptica <i class="fa-solid fa-caret-down"></i></a>
+                <div class="dropdown_menu">
+                    <ul>
+                        <li><a href="Secciones/CableadoYFO.html">Fibra Óptica </a></li>
+                        <li><a href="#">Redes de Cobre</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="#services" style="--i:5;" data-section="nav" data-value="Frabric">Fabricación de Tableros</i></a>
+            </li>
+        </ul>
+    </div>
+
 
     <!--home section------------------------------>
     <section id="home" class="home">
@@ -99,7 +137,7 @@
         </div>
         <a class="whatsapp-icon" href="https://web.whatsapp.com/send?phone=573174817920" target="_blank">
             <i class="fab fa-whatsapp fa-bounce"></i>
-            <span class="contact-text" data-section="contact" data-value="contactUs">Contáctanos</span>
+            <span class="contact-text" data-section="contact" data-value="contactUs">CONTÁCTENOS</span>
         </a>
 
         <div class="home-vid">
@@ -150,7 +188,7 @@
         <div class="section-services scroll-bottom">
             <div class="services-box">
                 <i class="fa-solid fa-phone service-icon"></i>
-                <h3> Comunicaciones</h3>
+                <h3> Telecomunicaciones</h3>
                 <p>
                     Ofrecemos a nivel nacional y del área andina la comercialización,
                     montaje, instalación, configuración, pruebas y puesta en servicio
@@ -166,7 +204,7 @@
 
             <div class="services-box">
                 <i class="fa-solid fa-lock service-icon"></i>
-                <h3> Seguridad Eletrónica</h3>
+                <h3> Infraestructura y Metalmecánica</h3>
                 <p>
                     Ofrecemos a nivel nacional y del área andina la comercialización,
                     montaje, instalación, configuración, pruebas y puesta en servicio
@@ -182,7 +220,7 @@
             </div>
             <div class="services-box">
                 <i class="fa-solid fa-check service-icon"></i>
-                <h3> Soluciones Integrales</h3>
+                <h3> Cableado y Fibra Óptica</h3>
                 <p>
                     Ofrecemos a nivel nacional y del área andina la comercialización,
                     montaje, instalación, configuración, pruebas y puesta en servicio
@@ -191,13 +229,13 @@
                 </p>
 
                 <div class="btn-box services-btn">
-                    <a href="#" class="btn" data-section="about" data-value="ReadMore">Leer más</a>
+                    <a href="Secciones/CableadoYFO.html" class="btn" data-section="about" data-value="ReadMore">Leer más</a>
                 </div>
 
             </div>
             <div class="services-box">
                 <i class="fa-solid fa-tower-cell service-icon"></i>
-                <h3> Infraestructura</h3>
+                <h3> Fabricación de Tableros</h3>
                 <p>
                     Ofrecemos a nivel nacional y del área andina la comercialización,
                     montaje, instalación, configuración, pruebas y puesta en servicio
@@ -223,9 +261,10 @@
         <div class="container">
             <div class="fillter-buttons scroll-scale">
                 <button class="button" data-filter="all"> Todo</button>
-                <button class="button" data-filter=".producto1"> Producto1</button>
-                <button class="button" data-filter=".producto2"> Producto2</button>
-                <button class="button" data-filter=".producto3"> Producto3</button>
+                <button class="button" data-filter=".producto1"> Telecomunicaciones</button>
+                <button class="button" data-filter=".producto2"> Infraestructura y Metalmecánica</button>
+                <button class="button" data-filter=".producto3"> Cableado y Fibra Óptica</button>
+                <button class="button" data-filter=".producto4"> Fabricación de Tableros</button>
             </div>
 
             <div class="productos-gallery scroll-bottom">
@@ -500,6 +539,12 @@
     <footer>
         <p class="scroll-scale">Copyright Highcom Cala SAS</p>
         <a href="#home"><i class="fa-solid fa-arrow-up"></i></a>
+        <!--<div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=100069083646912"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/highcom1/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://twitter.com/i/flow/login?redirect_after_login=%2F%3Flang%3Des"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/company/highcom-cala-s-a-s/about/"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>-->
     </footer>
 
 

@@ -12,11 +12,15 @@
 :root {
     --text-color: #F2F2F2;
     --hover-color: #12f7ff;
+    --hover-color-green: #09FF47;
+    --hover-color-red: #FF2415;
     --bg-color: #292e33;
     --secon-bg-color: #1f2327;
     --big-font: 3.5rem;
     --norma-font: 2.5rem;
     --neon-box-shadow: 0 0 .5rem #12f7ff;
+    --neon-box-shadow-green: 0 0 .5rem #09FF47;
+    --neon-box-shadow-red: 0 0 .5rem #FF2415;
     --h2-font: 3rem;
     --font-neon-text-shadow: 0 0 10px rgba(18, 247, 255, 0.3), 0 0 20px rgba(18, 247, 255, 0.3), 0 0 30px rgba(18, 247, 255, 0.3), 0 0 40px rgba(18, 247, 255, 0.3), 0 0 70px rgba(18, 247, 255, 0.3), 0 0 80px rgba(18, 247, 255, 0.3), 0 0 100px rgba(18, 247, 255, 0.3), 0 0 150px rgba(18, 247, 255, 0.3);
 }
@@ -46,9 +50,55 @@ body {
     font-family: Lato, sans-serif;
     background-color: var(--bg-color);
     color: var(--text-color);
+    width:100%;
+    height: 100%;
 }
+.loader-section{
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secon-bg-color);
+  z-index:999;
+  transition: all 1s 1s ease-out;
+  opacity:1;
+}
+.loaded{
+  opacity:0;
+  z-index:-1;
+}
+  
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid var(--hover-color-red);
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    }
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+
 header {
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     border-bottom: 1px solid transparent;
@@ -57,14 +107,14 @@ header {
     justify-content: space-between;
     width: 100%;
     padding: 15px 10%;
-    z-index:999999;
-    
+    z-index: 3;
+    background: var(--bg-color);
 }
 
 header.sticky{
     background: var(--bg-color);
-    border-bottom: 1px solid var(--secon-bg-color);
-    padding: 12px 10%;
+    border-bottom: 1px solid var(--bg-color);
+    padding: 15px 10%;
 }
 
 
@@ -81,13 +131,57 @@ span{
 
 .navlist{
     display: flex;
+    
 }
+
+/* Estilos para el div list2 */
+.list2 {
+    background-color: var(--secon-bg-color); /* Color de fondo gris */
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+    padding: 5px; /* Añade relleno según sea necesario */
+    color: #fdfdfd;
+    font-size: .4rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+/* Estilos para la navlist2 */
+.navlist2 {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Cambia de 'block' a 'flex' */
+    
+}
+
+    .navlist2 li {
+        margin-right: 20px; /* Espacio entre elementos de la lista */
+    }
+
+    .navlist2 a {
+        display: inline-block;
+        color: #fdfdfd;
+        font-size: .8rem;
+        font-weight: 300;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        padding: 10px 20px;
+    }
+
+    .list2 ul li{
+        position: relative;
+
+    }
 
 .navlist a {
     display: inline-block;
-    font-size: 1.2rem;
     color: var(--text-color);
-    font-weight: 700;
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
     padding: 10px 20px;
     animation: slideAnimation 1s ease forwards;
     animation-delay: calc(.3s * var(--i));
@@ -105,9 +199,18 @@ span{
         0 0 150px rgba(18, 247, 255, 0.6);
 }
 
-.navlist a.active{
-    color: var(--hover-color);
-}
+    .navlist2 a:hover {
+        color: var(--hover-color-green);
+        text-shadow: 0 0 10px rgba(9, 255, 71, 0.6), 
+            0 0 20px rgba(9, 255, 71, 0.6), 
+            0 0 30px rgba(9, 255, 71, 0.6), 
+            0 0 40px rgba(9, 255, 71, 0.6), 
+            0 0 70px rgba(9, 255, 71, 0.6),
+            0 0 80px rgba(9, 255, 71, 0.6), 
+            0 0 100px rgba(9, 255, 71, 0.6), 
+            0 0 150px rgba(9, 255, 71, 0.6);
+    }
+
 
 
 .language {
@@ -126,12 +229,46 @@ span{
         width: 25px; /* Ajusta el tamaño de los iconos según tus necesidades */
     }
 
+.dropdown_menu{
+    display:none;
+}
+
+
+.navlist2 li:hover .dropdown_menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: var(--secon-bg-color);
+    z-index: 2;
+    border-radius: 8px;
+    width: 250%;
+    box-shadow: var(--neon-box-shadow-green);
+    color: #fdfdfd;
+    font-size: .4rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+    .navlist2 li:hover .dropdown_menu ul {
+        display: block;
+        margin: 20px;
+    }
+
+    .navlist2 li:hover .dropdown_menu filter li {
+        width: 150px;
+        padding: 10px;
+    }
 
 
 
-#menu-icon{
+
+
+
+#menu-icon {
     font-size: 1.8rem;
-    z-index:10001;
+    z-index: 10001;
     cursor: pointer;
     margin-left: 25px;
     display: none;
@@ -141,7 +278,7 @@ section{
 }
 
 .home{
-    min-height: 100vh;
+    min-height: 80vh;
     height: 100%;
     width:100%;
     display: grid;
@@ -275,13 +412,15 @@ section{
     color: var(--hover-color);
 }
 
-.btn:nth-child(1):hover{
-    color: var(--bg-color);
-}
+    .btn:nth-child(1):hover {
+        color: var(--bg-color);
+        border: 2px solid var(--hover-color);
+        box-shadow: var(--neon-box-shadow);
+    }
 
-.btn:nth-child(1)::before{
-    background: var(--hover-color);
-}
+    .btn:nth-child(1)::before {
+        background: var(--hover-color);
+    }
 .social-icons {
     margin-top: 2rem;
     display: flex;
@@ -337,8 +476,8 @@ section{
 
 .whatsapp-icon {
     position: fixed;
-    bottom: 50px;
-    right: 50px;
+    bottom: 70px;
+    right: 70px;
     font-size: 50px;
     color: #fff;
     z-index: 9999;
@@ -355,16 +494,20 @@ section{
     top: -50px;
     left: 50%;
     transform: translateX(-50%);
-    color: #fff;
+    color: #1f2327;
     padding: 5px 10px;
     font-size: 15px;
     border-radius: 4px;
     white-space: nowrap;
     font-family: 'Lato', sans-serif;
-    font-weight: 400;
+    font-weight: 900;
 }
 
+
 .whatsapp-icon:hover .contact-text {
+    border: 2px solid #97ff00;
+    background: #97ff00;
+    box-shadow: var(--neon-box-shadow-green);
     display: block;
 }
 
@@ -519,7 +662,6 @@ section{
 .section-services {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
     grid-gap: 2rem;
 }
@@ -543,8 +685,10 @@ section{
     margin-top:20px;
 }
 
-.services-box:hover{
+.services-box:hover {
     transform: translateY(-.7rem);
+    box-shadow: var(--neon-box-shadow-green);
+    border: 1px solid var(--hover-color-green);
 }
 
 .service-icon {
@@ -559,6 +703,30 @@ section{
     box-shadow: var(--neon-box-shadow);
     outline:3px solid var(--bg-color);
 }
+
+.services-box:hover .service-icon {
+    border: 2px solid var(--hover-color-green);
+    background: var(--bg-color);
+    color: var(--hover-color-green);
+    box-shadow: var(--neon-box-shadow-green);
+    outline: 3px solid var(--bg-color);
+}
+
+.services-box:hover .services-btn .btn{
+    color: var(--hover-color-green);
+    border: 2px solid var(--hover-color-green);
+    box-shadow: var(--neon-box-shadow-green);
+}
+
+    .services-box:hover .services-btn .btn:nth-child(1):hover {
+        color: var(--bg-color);
+        border: 2px solid var(--hover-color-green);
+        box-shadow: var(--neon-box-shadow-green);
+    }
+
+    .services-box:hover .services-btn .btn:nth-child(1)::before {
+        background: var(--hover-color-green);
+    }
 
 .services-box h3{
     margin-top: 20px;
@@ -595,8 +763,17 @@ section{
         text-transform: uppercase;
     }
 
+
         .fillter-buttons .button:hover {
             color: var(--hover-color);
+            text-shadow: 0 0 10px rgba(18, 247, 255, 0.6), 
+                0 0 20px rgba(18, 247, 255, 0.6), 
+                0 0 30px rgba(18, 247, 255, 0.6), 
+                0 0 40px rgba(18, 247, 255, 0.6), 
+                0 0 70px rgba(18, 247, 255, 0.6), 
+                0 0 80px rgba(18, 247, 255, 0.6), 
+                0 0 100px rgba(18, 247, 255, 0.6), 
+                0 0 150px rgba(18, 247, 255, 0.6);
         }
 
 .productos-gallery {
@@ -697,6 +874,27 @@ section{
     width: 100%;
 }
 
+.contact h2{
+    color: var(--hover-color-green)
+}
+
+
+.contact .btn {
+    color: #bdbdbd;
+    border: 2px solid var(--hover-color-green);
+    box-shadow: var(--neon-box-shadow-green);
+}
+
+    .contact .btn:nth-child(1):hover {
+        color: var(--bg-color);
+        border: 2px solid var(--hover-color-green);
+        box-shadow: var(--neon-box-shadow-green);
+    }
+
+    .contact .btn:nth-child(1)::before {
+        background: var(--hover-color-green);
+    }
+
 .contact form{
     text-align: center;
     max-width: 50rem;
@@ -706,14 +904,14 @@ section{
 
     .contact form input, textarea {
         width: 100%;
-        color: var(--text-color);
-        background: var(--bg-color);
+        color: var(--text-color-);
+        background: var(--bg-color-);
         margin-bottom: .8rem;
         border: none;
-        border-radius: 5px;
+        border-radius: 4px;
         padding: .9rem;
-        box-shadow: var(--neon-box-shadow);
-        border: 2px solid var(--hover-color);
+        /*box-shadow: var(--neon-box-shadow-green);*/
+        border: 2px solid var(--hover-color-green);
         text-decoration-color: #fff;
     }
 
@@ -747,6 +945,11 @@ section{
     footer p{
         color:#bdbdbd;
     }
+
+        footer .social-icons a {
+            background: var(--hover-color);
+            opacity: 1;
+        }
 
     footer a{
         display: inline-flex;
@@ -865,7 +1068,7 @@ section{
     }
 }
 
-@media(max-width: 800px){
+@media(max-width: 1330px){
 
 
     #menu-icon{

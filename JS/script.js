@@ -85,21 +85,8 @@ function changeText() {
 
 var mixer = mixitup('.productos-gallery');
 
-// active menu
+let menuLinks = document.querySelectorAll('.navlist a');
 
-let menuli = document.querySelectorAll('header ul li a');
-let section = document.querySelectorAll('section');
-
-
-function activeMenu() {
-    let len = section.length;
-    while (--len && window.scrollY + 97 < section[len].offsetTop) { }
-    menuli.forEach(sec => sec.classList.remove("active"));
-    menuli[len].classList.add("active");
-}
-
-activeMenu();
-window.addEventListener("scroll", activeMenu);
 
 //sticky navbar--------
 
@@ -145,6 +132,15 @@ scrollBottom.forEach((el) => observer.observe(el));
 const scrolltop = document.querySelectorAll(".scroll-top");
 scrolltop.forEach((el) => observer.observe(el));
 
+
+//loader
+
+function pageLoaded() {
+    let loaderSection = document.querySelector('.loader-section');
+    loaderSection.classList.add('loaded');
+}
+
+document.onload = pageLoaded();
 
 
 
