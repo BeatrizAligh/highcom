@@ -135,7 +135,6 @@ span{
 
 /* Estilos para el div list2 */
 .list2 {
-    background-color: var(--secon-bg-color); /* Color de fondo gris */
     display: flex;
     justify-content: center; /* Centrado horizontal */
     align-items: center; /* Centrado vertical */
@@ -144,6 +143,7 @@ span{
     font-size: .4rem;
     font-weight: 300;
     letter-spacing: 2px;
+   
 }
 
 /* Estilos para la navlist2 */
@@ -151,19 +151,21 @@ span{
     list-style: none;
     margin: 0;
     padding: 0;
+    border-bottom: 2px solid var(--hover-color); /* Agrega una línea inferior */
     display: flex; /* Cambia de 'block' a 'flex' */
-    
 }
 
     .navlist2 li {
         margin-right: 20px; /* Espacio entre elementos de la lista */
+        opacity: 1;
+
     }
 
     .navlist2 a {
         display: inline-block;
         color: #fdfdfd;
         font-size: .8rem;
-        font-weight: 300;
+        font-weight: 500;
         letter-spacing: 2px;
         text-transform: uppercase;
         padding: 10px 20px;
@@ -177,9 +179,8 @@ span{
 .navlist a {
     display: inline-block;
     color: var(--text-color);
-    font-size: 1rem;
-    font-weight: 300;
-    letter-spacing: 2px;
+    font-size: 1.2rem;
+    font-weight: 700;
     text-transform: uppercase;
     padding: 10px 20px;
     animation: slideAnimation 1s ease forwards;
