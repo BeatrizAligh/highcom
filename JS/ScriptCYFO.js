@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // Opciones de Swiper.js, como la velocidad y el modo de bucle
         loop: true,
         autoplay: {
-            delay: 5000, // Cambia de slide cada 5 segundos
+            delay: 2000, // Cambia de slide cada 5 segundos
         },
         // Agrega más opciones según sea necesario
     });

@@ -341,25 +341,6 @@ section {
     opacity: 0.6;
 }
 
-/*.video-gallery {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-    position: absolute;
-    top: 0;
-    left: 600px;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.6;
-}
-
-.video-thumbnails img {
-    max-width: 100px;
-    cursor: pointer;
-    margin: 10px;
-}*/
-
 
 /*BOTONES----------------------*/
 
@@ -383,6 +364,7 @@ section {
         position: relative;
         overflow: hidden;
         z-index: 1;
+        margin-top: 25px;
     }
 
 .btn:hover {
@@ -472,6 +454,10 @@ section {
     line-height: 1.6;
     margin: 2rem 2rem;
 }
+.titulo .about-content p {
+}
+
+
 
 .about-content2 span {
     color: #fdfdfd;
@@ -531,13 +517,7 @@ section {
     margin: 2rem 3rem;
 }
 
-/*.num-con {
-    border: 5px solid var(--four-bg-color);
-    background: var(--four-bg-color);
-    border-radius: 5px;
-    align-items: center;
-    text-align: center;
-}*/
+
 .num-con span {
     color: #fdfdfd;
     font-size: 1.2rem;
@@ -569,15 +549,18 @@ section {
 /*servicios*/
 
 /* Estilo para el carrusel */
+
+
 .swiper-container {
-    width: 100%;
+    width: 100%; /* Establece el ancho del contenedor al 100% del ancho de la pantalla */
+    justify-content: center;
     max-width: 400px; /* Ajusta el ancho máximo según tus necesidades */
     margin: 5px auto;
 }
 
 .swiper-slide {
-    width: 300px; /* Ancho fijo */
-    height: 400px; /* Alto fijo */
+    max-width: 400px; /* Ancho fijo */
+    max-height: 1000px; /* Alto fijo */
     text-align: center;
     background-color: var(--secon-bg-color); /* Color de fondo del slide */
     border: 2px solid var(--hover-color);
@@ -590,8 +573,8 @@ section {
     padding: 50px;
 }
 .swiper-slide img {
-    max-width: 100%;
-    max-height: 100%;
+    width: 396px;
+    height: 264px;
     object-fit: cover; /* Para ajustar la imagen al tamaño del slide */
     border-radius: 20px;
 }
