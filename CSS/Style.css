@@ -110,11 +110,6 @@ header {
     z-index: 3;
 }
 
-header.sticky{
-    background: var(--bg-color);
-    border-bottom: 1px solid var(--bg-color);
-    padding: 15px 10%;
-}
 
 
 .logo img {

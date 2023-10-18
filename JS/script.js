@@ -88,13 +88,6 @@ var mixer = mixitup('.productos-gallery');
 let menuLinks = document.querySelectorAll('.navlist a');
 
 
-//sticky navbar--------
-
-const header = document.querySelector("header");
-window.addEventListener("scroll", function () {
-    header.classList.toggle("sticky", this.window.scrollY > 50)
-})
-
 //toggle icon  navbar--------
 
 let menuIcon = document.querySelector("#menu-icon");
