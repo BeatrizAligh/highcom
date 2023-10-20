@@ -141,6 +141,8 @@ span{
    
 }
 
+
+
 /* Estilos para la navlist2 */
 .navlist2 {
     list-style: none;
@@ -150,26 +152,53 @@ span{
     display: flex; /* Cambia de 'block' a 'flex' */
 }
 
-    .navlist2 li {
-        margin-right: 20px; /* Espacio entre elementos de la lista */
-        opacity: 1;
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    background: #fff; /* Fondo blanco */
+    border: 1px solid #ccc; /* Borde gris */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
+    top: 100%; /* Posición debajo del enlace */
+    left: 0;
+    z-index: 1; /* Coloca el menú sobre el contenido */
+    flex-direction: column;
+}
 
+.navlist2 li {
+    position: relative; /* Establece el contexto para el menú desplegable */
+    margin-right: 20px; /* Espacio entre elementos de la lista */
+    opacity: 1;
+}
+
+
+.navlist2 a {
+    color: #fdfdfd;
+    font-size: .8rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+}
+
+    .navlist2 li:hover .dropdown_menu {
+        display: block; /* Muestra el menú al pasar el mouse sobre el título */
     }
 
-    .navlist2 a {
-        display: inline-block;
-        color: #fdfdfd;
-        font-size: .8rem;
-        font-weight: 500;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        padding: 10px 20px;
-    }
+.dropdown_menu a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #f0f0f0;
+     /* Color de texto */
+}
 
-    .list2 ul li{
-        position: relative;
 
-    }
+.navlist2 li:hover .dropdown_menu {
+    display: flex; /* Muestra el menú como columna al pasar el mouse sobre el título */
+}
+
+/* Estilos para la navlist1 */
+
 
 .navlist a {
     display: inline-block;

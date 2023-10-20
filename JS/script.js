@@ -137,4 +137,27 @@ document.onload = pageLoaded();
 
 
 
+//dropmenu
+const menuItems = document.querySelectorAll('.submenu');
+
+menuItems.forEach(item => {
+    item.style.display = 'none';
+});
+
+const links = document.querySelectorAll('a');
+links.forEach(link => {
+    link.addEventListener('click', function (e) {
+        e.preventDefault();
+        menuItems.forEach(item => {
+            item.style.display = 'none';
+        });
+        const submenu = this.nextElementElement;
+        if (submenu) {
+            submenu.style.display = 'block';
+        }
+    });
+});
+
+
+
 
