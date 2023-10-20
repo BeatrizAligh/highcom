@@ -81,11 +81,6 @@ function changeText() {
     currentWordIndex = currentWordIndex === maxWordIndex ? 0 : currentWordIndex + 1;
 }
 
-//filtros de catalogo
-
-var mixer = mixitup('.productos-gallery');
-
-let menuLinks = document.querySelectorAll('.navlist a');
 
 
 //toggle icon  navbar--------
