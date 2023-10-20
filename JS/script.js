@@ -137,26 +137,28 @@ document.onload = pageLoaded();
 
 
 
-//dropmenu
-const menuItems = document.querySelectorAll('.submenu');
+//videoinicio
+document.addEventListener('DOMContentLoaded', function () {
+    const videos = document.querySelectorAll('.background-video');
+    let currentVideo = 0;
 
-menuItems.forEach(item => {
-    item.style.display = 'none';
-});
+    function playVideo() {
+        videos[currentVideo].style.opacity = 0; // Oculta el video actual
+        currentVideo = (currentVideo + 1) % videos.length; // Cambia al siguiente video
+        videos[currentVideo].style.opacity = 1; // Muestra el nuevo video
+        videos[currentVideo].play(); // Reproduce el nuevo video
+    }
 
-const links = document.querySelectorAll('a');
-links.forEach(link => {
-    link.addEventListener('click', function (e) {
-        e.preventDefault();
-        menuItems.forEach(item => {
-            item.style.display = 'none';
-        });
-        const submenu = this.nextElementElement;
-        if (submenu) {
-            submenu.style.display = 'block';
-        }
+    videos[currentVideo].style.opacity = 1; // Muestra el primer video
+    videos[currentVideo].play(); // Reproduce el primer video
+
+    videos.forEach((video, index) => {
+        video.addEventListener('ended', playVideo);
     });
 });
+
+
+
 
 
 

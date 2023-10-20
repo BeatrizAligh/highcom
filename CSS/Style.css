@@ -150,6 +150,7 @@ span{
     padding: 0;
     border-bottom: 2px solid var(--hover-color); /* Agrega una línea inferior */
     display: flex; /* Cambia de 'block' a 'flex' */
+    z-index:3;
 }
 
 .dropdown_menu {
@@ -188,16 +189,18 @@ span{
     display: block;
     padding: 10px 20px;
     text-decoration: none;
-    color: #f0f0f0;
-     /* Color de texto */
+    color: #333; /* Color de texto */
 }
 
+    .dropdown_menu a:hover {
+        background: #f0f0f0; /* Fondo gris al pasar el mouse sobre las opciones */
+    }
 
 .navlist2 li:hover .dropdown_menu {
     display: flex; /* Muestra el menú como columna al pasar el mouse sobre el título */
 }
 
-/* Estilos para la navlist1 */
+/*NAVBAR 2-------------------------*/
 
 
 .navlist a {
@@ -312,6 +315,7 @@ section{
 }
 .home-contect{
     max-width: 600px;
+    z-index: 2;
 }
 
     .home-contect h1 {
@@ -534,16 +538,20 @@ section{
     box-shadow: var(--neon-box-shadow-green);
     display: block;
 }
-
+.home-vid {
+    opacity: 0.6;
+    z-index: -1;
+}
 .background-video {
     position: absolute;
-    top: -30px;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
     z-index: -1;
-    opacity: 0.6;
+    opacity: 0;
+    transition: opacity 3s;
 }
 
 /*About Section css*/
