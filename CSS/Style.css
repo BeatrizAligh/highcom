@@ -1286,6 +1286,38 @@ section{
 }
 }
 
+    /*INTERES SECTION ---------------------------*/
+
+    .interesg{
+        background: var(--three-bg-color);
+    }
+
+.interes h1 {
+    font-size: var(--big-font);
+    font-weight: 900;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    display: flex; 
+    width: 60%;
+}
+
+.texto {
+    justify-content: center;
+    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    .texto span {
+        color: #fdfdfd;
+        font-size: .8rem;
+        font-weight: 300;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+
 
 /*contact ius css------------------------------------*/
 
