@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <script src="https://kit.fontawesome.com/ce768f010e.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 
     <!-- HTML Meta Tags -->
@@ -30,19 +31,23 @@
     <link rel="shortcut icon" href="img/LOGO_HIGHCOM.png">
 </head>
 <body>
+
+
     <div class="loader-section">
         <span class="loader"></span>
     </div>
+
+
 
     <header>
         <div class="logo">
             <img src="img/LOGO_HIGHCOM.png" alt="" />
         </div>
         <ul class="navlist">
-            <li> <a href="#home"  style="--i:1;" data-section="nav" data-value="home">Inicio</a></li>
+            <li> <a href="#home" style="--i:1;" data-section="nav" data-value="home">Inicio</a></li>
             <li> <a href="#services" c style="--i:2;" data-section="nav" data-value="history">Historia</a></li>
-            <li> <a href="#about"    style="--i:3;" data-section="nav" data-value="our">Nosotros</a></li>
-            <li> <a href="#contact"  style="--i:3;" data-section="nav" data-value="contact">Contáctenos</a></li>
+            <li> <a href="#about" style="--i:3;" data-section="nav" data-value="our">Nosotros</a></li>
+            <li> <a href="#contact" style="--i:3;" data-section="nav" data-value="contact">Contáctenos</a></li>
         </ul>
         <div id="language" class="language">
             <div id="language-item" class="language-item" data-language="es">
@@ -54,47 +59,527 @@
         </div>
         <div id="menu-icon" class="fa-solid fa-bars"></div>
     </header>
-    <div class="list2">
-        <ul class="navlist2">
-            <li>
-                <a href="#" style="--i:2;" data-section="nav" data-value="history">Telecomunicaciones <i class="fa-solid fa-caret-down"></i></a>
-                <div class="dropdown_menu">
-                    <a href="#">Soluciones</a>
-                    <ul>
-                        <li><a href="#">Solución 1</a></li>
-                        <li><a href="#">Solución 2</a></li>
-                        <li><a href="#">Solución 3</a></li>
-                    </ul>
-                    <a href="#">Productos</a>
-                    <ul>
-                        <li><a href="#">Solución 1</a></li>
-                        <li><a href="#">Solución 2</a></li>
-                        <li><a href="#">Solución 3</a></li>
-                    </ul>
-                    <a href="#">Servicios</a>
-                </div>
-            </li>
-            <li>
-                <a href="#" style="--i:3;" data-section="nav" data-value="services">Infraestructura y Metalmecánica <i class="fa-solid fa-caret-down"></i></a>
-                <div class="dropdown_menu">
-                    <a href="#">Soluciones</a>
-                    <a href="#">Productos</a>
-                    <a href="#">Servicios</a>
-                </div>
-            </li>
-            <li>
-                <a href="#" style="--i:4;" data-section="nav" data-value="products">Cableado y Fibra Óptica <i class="fa-solid fa-caret-down"></i></a>
-                <div class="dropdown_menu">
-                    <a href="#">Soluciones</a>
-                    <a href="#">Productos</a>
-                    <a href="#">Servicios</a>
-                </div>
-            </li>
-            <li>
-                <a href="#" style="--i:5;" data-section="nav" data-value="Frabric">Fabricación de Tableros</a>
-            </li>
-        </ul>
-    </div>
+
+    <nav>
+        <div class="container">
+            <ul class="nav-menu">
+                <li>
+                    <a href="#" style="--i:2;" data-section="nav" data-value="#">Telecomunicaciones <i class="fa-solid fa-caret-down"></i></a>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li>
+                                <a href="#" class="submenu-link" data-target="soluciones">Soluciones</a>
+                                <div class="dropdown-submenu" id="soluciones">
+                                    <div class="container">
+                                        <div class="left-section">
+                                            <span class="dropdown-close"><i class='bx bx-chevron-left'></i> Back</span>
+                                            <h1>HIGHCOM Soluciones</h1>
+                                            <img src="img/soluciones.png" alt="" />
+                                            <img src="img/soluciones2.png" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="submenu-link" data-target="servicios">Servicios</a>
+                                <div class="dropdown-submenu" id="servicios">
+                                    <div class="container">
+                                        <div class="right-section">
+                                            <h3>Services features</h3>
+                                            <ul class="dropdown-links">
+                                                <li>
+                                                    <a href="#">
+                                                        <i class='bx bxs-dashboard'></i>
+                                                        <div>
+                                                            <h5>Diseño, ingeniería, instalación y mantenimiento</h5>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class='bx bx-cut'></i>
+                                                        <div>
+                                                            <h5>Licenciamiento de radioenlaces</h5>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class='bx bx-webcam'></i>
+                                                        <div>
+                                                            <h5>Formación  (capacitación)</h5>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class='bx bx-refresh'></i>
+                                                        <div>
+                                                            <h5>Pruebas FAT, SAT – PES</h5>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="submenu-link" data-target="productos">Productos</a>
+                                <div class="dropdown-submenu" id="productos">
+                                    <div class="container">
+                                        <div class="right-section">
+                                            <h3>Products features</h3>
+                                            <ul class="dropdown-links">
+                                                <li>
+                                                    <a href="#">
+                                                        <i class='bx bxs-dashboard'></i>
+                                                        <div>
+                                                            <h5>Multiplexores (SDH, MPLS-TP)</h5>
+
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class='bx bx-cut'></i>
+                                                        <div>
+                                                            <h5>Amplificadores ópticos (C37.94, E1, RS232, STM-1, STM-4, Ethernet)</h5>
+
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class='bx bx-webcam'></i>
+                                                        <div>
+                                                            <h5>Switch Ethernet Industriales (VRRP, MPLS-TP) </h5>
+
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class='bx bx-refresh'></i>
+                                                        <div>
+                                                            <h5> Conversores de interfaz (Audio a FO, E1 a G.703 codireccional, E1 a Ethernet, E1 a Fibra óptica) </h5>
+
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class='bx bxs-component'></i>
+                                                        <div>
+                                                            <h5>Extensores ópticos (C37.94) </h5>
+                                                            <
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class='bx bx-cog'></i>
+                                                        <div>
+                                                            <h5> Radioenlaces (microondas, PTP, PMP)</h5>
+
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class='bx bx-cog'></i>
+                                                        <div>
+                                                            <h5>Teleprotecciones </h5>
+
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class='bx bx-cog'></i>
+                                                        <div>
+                                                            <h5> Router y Firewalls </h5>
+
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class='bx bx-cog'></i>
+                                                        <div>
+                                                            <h5>Sistemas de onda portadora OPLAT, PLP </h5>
+
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class='bx bx-cog'></i>
+                                                        <div>
+                                                            <h5>Software de gestión Software de Monitoreo, análisis y gestión de redes.</h5>
+
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class='bx bx-cog'></i>
+                                                        <div>
+                                                            <h5> Sistemas para transmisión, administración y grabación de voz</h5>
+
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                </li>
+                <li>
+                    <a href="#" style="--i:3;" data-section="nav" data-value="#">Infraestructura y Metalmecánica <i class="fa-solid fa-caret-down"></i></a>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li>
+                                <a href="#" class="submenu-link" data-target="soluciones1">Soluciones</a>
+                                <div class="dropdown-submenu" id="soluciones1">
+                                    <div class="container">
+                                        <div class="left-section">
+                                            <span class="dropdown-close"><i class='bx bx-chevron-left'></i> Back</span>
+                                            <h1>HIGHCOM Soluciones</h1>
+                                            <p>Lorem ipsum dolor, sit, amet consectetur adipisicing elit. Aspernatur omnis ex.</p>
+                                            <a href="#" class="btn-see-all">See all</a>
+                                        </div>
+                                        <div class="right-section">
+                                            <h3>Soluciones Process</h3>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="submenu-link" data-target="servicios1">Servicios</a>
+                                <div class="dropdown-submenu" id="servicios1">
+                                    <div class="container">
+                                        <div class="left-section">
+                                            <span class="dropdown-close"><i class='bx bx-chevron-left'></i> Back</span>
+                                            <h1>HIGHCOM Servicios</h1>
+                                            <p>Lorem ipsum dolor, sit, amet consectetur adipisicing elit. Aspernatur omnis ex, enim, ullam accusantium vitae culpa! Quia, velit? Minus, quas.</p>
+                                            <a href="#" class="btn-see-all">See all</a>
+                                        </div>
+                                        <div class="right-section">
+                                            <h3>Services features</h3>
+                                            <ul class="dropdown-links">
+                                                <li>
+                                                    <a href="#">
+                                                        <i class='bx bxs-dashboard'></i>
+                                                        <div>
+                                                            <h5>Diseño, ingeniería, instalación y mantenimiento</h5>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class='bx bx-cut'></i>
+                                                        <div>
+                                                            <h5>Licenciamiento de radioenlaces</h5>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class='bx bx-webcam'></i>
+                                                        <div>
+                                                            <h5>Formación  (capacitación)</h5>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class='bx bx-refresh'></i>
+                                                        <div>
+                                                            <h5>Pruebas FAT, SAT – PES</h5>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="submenu-link" data-target="productos1">Productos</a>
+                                <div class="dropdown-submenu" id="productos1">
+                                    <div class="container">
+                                        <div class="left-section">
+                                            <span class="dropdown-close"><i class='bx bx-chevron-left'></i> Back</span>
+                                            <h1>HIGHCOM Productos</h1>
+                                            <p>Lorem ipsum dolor, sit, amet consectetur adipisicing elit. Aspernatur omnis ex, enim, ullam accusantium vitae culpa! Quia, velit? Minus, quas.</p>
+                                            <a href="#" class="btn-see-all">See all</a>
+                                        </div>
+                                        <div class="right-section">
+                                            <h3>Products features</h3>
+                                            <ul class="dropdown-links">
+                                                <li>
+                                                    <a href="#">
+                                                        <i class='bx bxs-dashboard'></i>
+                                                        <div>
+                                                            <h5>Multiplexores (SDH, MPLS-TP)</h5>
+
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class='bx bx-cut'></i>
+                                                        <div>
+                                                            <h5>Amplificadores ópticos (C37.94, E1, RS232, STM-1, STM-4, Ethernet)</h5>
+
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class='bx bx-webcam'></i>
+                                                        <div>
+                                                            <h5>Switch Ethernet Industriales (VRRP, MPLS-TP) </h5>
+
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class='bx bx-refresh'></i>
+                                                        <div>
+                                                            <h5> Conversores de interfaz (Audio a FO, E1 a G.703 codireccional, E1 a Ethernet, E1 a Fibra óptica) </h5>
+
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class='bx bxs-component'></i>
+                                                        <div>
+                                                            <h5>Extensores ópticos (C37.94) </h5>
+                                                            <
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class='bx bx-cog'></i>
+                                                        <div>
+                                                            <h5> Radioenlaces (microondas, PTP, PMP)</h5>
+
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class='bx bx-cog'></i>
+                                                        <div>
+                                                            <h5>Teleprotecciones </h5>
+
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class='bx bx-cog'></i>
+                                                        <div>
+                                                            <h5> Router y Firewalls </h5>
+
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class='bx bx-cog'></i>
+                                                        <div>
+                                                            <h5>Sistemas de onda portadora OPLAT, PLP </h5>
+
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class='bx bx-cog'></i>
+                                                        <div>
+                                                            <h5>Software de gestión Software de Monitoreo, análisis y gestión de redes.</h5>
+
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class='bx bx-cog'></i>
+                                                        <div>
+                                                            <h5> Sistemas para transmisión, administración y grabación de voz</h5>
+
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" style="--i:4;" data-section="nav" data-value="#">Cableado y Fibra Óptica <i class="fa-solid fa-caret-down"></i></a>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li>
+                                <a href="#" class="submenu-link" data-target="soluciones2">Soluciones</a>
+                                <div class="dropdown-submenu" id="soluciones2">
+                                    <div class="container">
+                                        <div class="left-section">
+                                            <span class="dropdown-close"><i class='bx bx-chevron-left'></i> Back</span>
+                                            <h1>HIGHCOM Soluciones</h1>
+                                            <p>Lorem ipsum dolor, sit, amet consectetur adipisicing elit. Aspernatur omnis ex.</p>
+                                            <a href="#" class="btn-see-all">See all</a>
+                                        </div>
+                                        <div class="right-section">
+                                            <h3>Soluciones Process</h3>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="submenu-link" data-target="servicios2">Servicios</a>
+                                <div class="dropdown-submenu" id="servicios2">
+                                    <div class="container">
+                                        <div class="left-section">
+                                            <span class="dropdown-close"><i class='bx bx-chevron-left'></i> Back</span>
+                                            <h1>HIGHCOM Servicios</h1>
+                                            <p>Lorem ipsum dolor, sit, amet consectetur adipisicing elit. Aspernatur omnis ex, enim, ullam accusantium vitae culpa! Quia, velit? Minus, quas.</p>
+                                            <a href="#" class="btn-see-all">See all</a>
+                                        </div>
+                                        <div class="right-section">
+                                            <h3>Services features</h3>
+                                            <ul class="dropdown-links">
+                                                <li>
+                                                    <a href="#">
+                                                        <i class='bx bxs-dashboard'></i>
+                                                        <div>
+                                                            <h5>Diseño, ingeniería, instalación y mantenimiento</h5>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="submenu-link" data-target="productos2">Productos</a>
+                                <div class="dropdown-submenu" id="productos2">
+                                    <div class="container">
+                                        <div class="left-section">
+                                            <span class="dropdown-close"><i class='bx bx-chevron-left'></i> Back</span>
+                                            <h1>HIGHCOM Productos</h1>
+                                            <p>Lorem ipsum dolor, sit, amet consectetur adipisicing elit. Aspernatur omnis ex, enim, ullam accusantium vitae culpa! Quia, velit? Minus, quas.</p>
+                                            <a href="#" class="btn-see-all">See all</a>
+                                        </div>
+                                        <div class="right-section">
+                                            <h3>Products features</h3>
+                                            <ul class="dropdown-links">
+                                                <li>
+                                                    <a href="#">
+                                                        <i class='bx bxs-dashboard'></i>
+                                                        <div>
+                                                            <h5>Multiplexores (SDH, MPLS-TP)</h5>
+
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </li>
+                <li>
+                    <a href="#" style="--i:5;" data-section="nav" data-value="#">Fabricación de Tableros <i class="fa-solid fa-caret-down"></i></a>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li>
+                                <a href="#" class="submenu-link" data-target="soluciones3">Soluciones</a>
+                                <div class="dropdown-submenu" id="soluciones3">
+                                    <div class="container">
+                                        <div class="left-section">
+                                            <span class="dropdown-close"><i class='bx bx-chevron-left'></i> Back</span>
+                                            <h1>HIGHCOM Soluciones</h1>
+                                            <p>Lorem ipsum dolor, sit, amet consectetur adipisicing elit. Aspernatur omnis ex.</p>
+                                            <a href="#" class="btn-see-all">See all</a>
+                                        </div>
+                                        <div class="right-section">
+                                            <h3>Soluciones Process</h3>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="submenu-link" data-target="servicios3">Servicios</a>
+                                <div class="dropdown-submenu" id="servicios3">
+                                    <div class="container">
+                                        <div class="left-section">
+                                            <span class="dropdown-close"><i class='bx bx-chevron-left'></i> Back</span>
+                                            <h1>HIGHCOM Servicios</h1>
+                                            <p>Lorem ipsum dolor, sit, amet consectetur adipisicing elit. Aspernatur omnis ex, enim, ullam accusantium vitae culpa! Quia, velit? Minus, quas.</p>
+                                            <a href="#" class="btn-see-all">See all</a>
+                                        </div>
+                                        <div class="right-section">
+                                            <h3>Services features</h3>
+                                            <ul class="dropdown-links">
+                                                <li>
+                                                    <a href="#">
+                                                        <i class='bx bxs-dashboard'></i>
+                                                        <div>
+                                                            <h5>Diseño, ingeniería, instalación y mantenimiento</h5>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="submenu-link" data-target="productos3">Productos</a>
+                                <div class="dropdown-submenu" id="productos3">
+                                    <div class="container">
+                                        <div class="left-section">
+                                            <span class="dropdown-close"><i class='bx bx-chevron-left'></i> Back</span>
+                                            <h1>HIGHCOM Productos</h1>
+                                            <p>Lorem ipsum dolor, sit, amet consectetur adipisicing elit. Aspernatur omnis ex, enim, ullam accusantium vitae culpa! Quia, velit? Minus, quas.</p>
+                                            <a href="#" class="btn-see-all">See all</a>
+                                        </div>
+                                        <div class="right-section">
+                                            <h3>Products features</h3>
+                                            <ul class="dropdown-links">
+                                                <li>
+                                                    <a href="#">
+                                                        <i class='bx bxs-dashboard'></i>
+                                                        <div>
+                                                            <h5>Multiplexores (SDH, MPLS-TP)</h5>
+
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+
+    </nav>
+
 
 
     <!--home section------------------------------>
@@ -168,6 +653,11 @@
 
     <!--Service section --------------------------------->
     <section id="services" class="services">
+        <div class="main-text scroll-scale">
+            <span> ¿Qué ofrecemos?</span>
+            <h2>Soluciones | Servicios | Productos</h2>
+            <span> En:</span>
+        </div>
         <div class="section-services scroll-bottom">
             <div class="todo">
                 <div class="flip-container">
@@ -275,6 +765,216 @@
             </div>
         </div>
 
+    </section>
+
+    <!--client logos------------------------------->
+    <div id="client" class="client">
+        <div class="main-text scroll-scale">
+            <span> Quiénes han confiado en nosotros</span>
+            <h2>Aliados</h2>
+        </div>
+        <div id="timeline">
+
+            <div class="tl-item">
+
+                <div class="tl-bg">
+                    <img src="img/simens.jpg" alt="" class="img1" />
+                </div>
+
+                <div class="tl-content">
+                    <h1>Siemens AG</h1>
+                    <p>
+                        Suspendisse potenti. Sed sollicitudin eros lorem,
+                        get accumsan risus dictum id. Maecenas dignissim ipsum vel
+                        mi rutrum egestas. Donec mauris nibh, facilisis ut hendrerit vel,
+                        fringilla sed felis. Morbi sed nisl et arcu.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="tl-item">
+
+                <div class="tl-bg">
+                    <img src="img/energiabta.png" alt="" class="img1" />
+                </div>
+
+                <div class="tl-content">
+                    <h1 class="f3 text--accent ttu">Grupo Energía Bogotá</h1>
+                    <p>
+                        Suspendisse potenti. Sed sollicitudin eros lorem,
+                        get accumsan risus dictum id. Maecenas dignissim ipsum vel
+                        mi rutrum egestas. Donec mauris nibh, facilisis ut hendrerit vel,
+                        fringilla sed felis. Morbi sed nisl et arcu.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="tl-item">
+
+                <div class="tl-bg">
+                    <img src="img/tyaz.jpg" alt="" class="img1" />
+                </div>
+
+
+                <div class="tl-content">
+                    <h1 class="f3 text--accent ttu">Tyazhmash</h1>
+                    <p>
+                        Suspendisse potenti. Sed sollicitudin eros lorem,
+                        get accumsan risus dictum id. Maecenas dignissim ipsum vel
+                        mi rutrum egestas. Donec mauris nibh, facilisis ut hendrerit vel,
+                        fringilla sed felis. Morbi sed nisl et arcu.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="tl-item">
+
+                <div class="tl-bg">
+                    <img src="img/petroelectrica.png" alt="" class="img1" />
+                </div>
+
+                <div class="tl-content">
+                    <h1 class="f3 text--accent ttu">Petroeléctrica los llanos Ltd.</h1>
+                    <p>
+                        Suspendisse potenti. Sed sollicitudin eros lorem,
+                        get accumsan risus dictum id. Maecenas dignissim ipsum vel
+                        mi rutrum egestas. Donec mauris nibh, facilisis ut hendrerit vel,
+                        fringilla sed felis. Morbi sed nisl et arcu.
+                    </p>
+                </div>
+
+            </div>
+            <div class="tl-item">
+
+                <div class="tl-bg">
+                    <img src="img/enel.jpg" alt="" class="img1" />
+                </div>
+
+                <div class="tl-content">
+                    <h1 class="f3 text--accent ttu">Enel Codensa</h1>
+                    <p>
+                        Suspendisse potenti. Sed sollicitudin eros lorem,
+                        get accumsan risus dictum id. Maecenas dignissim ipsum vel
+                        mi rutrum egestas. Donec mauris nibh, facilisis ut hendrerit vel,
+                        fringilla sed felis. Morbi sed nisl et arcu.
+                    </p>
+                </div>
+
+            </div>
+            <div class="tl-item">
+
+                <div class="tl-bg">
+                    <img src="img/epsa.jpg" alt="" class="img1" />
+                </div>
+
+                <div class="tl-content">
+                    <h1 class="f3 text--accent ttu">EPSA</h1>
+                    <p>
+                        Suspendisse potenti. Sed sollicitudin eros lorem,
+                        get accumsan risus dictum id. Maecenas dignissim ipsum vel
+                        mi rutrum egestas. Donec mauris nibh, facilisis ut hendrerit vel,
+                        fringilla sed felis. Morbi sed nisl et arcu.
+                    </p>
+                </div>
+
+            </div>
+            <div class="tl-item">
+
+                <div class="tl-bg">
+
+                    <img src="img/celsia.png" alt="" class="img1" />
+
+                </div>
+
+
+                <div class="tl-content">
+                    <h1 class="f3 text--accent ttu">Celsia</h1>
+                    <p>
+                        Suspendisse potenti. Sed sollicitudin eros lorem,
+                        get accumsan risus dictum id. Maecenas dignissim ipsum vel
+                        mi rutrum egestas. Donec mauris nibh, facilisis ut hendrerit vel,
+                        fringilla sed felis. Morbi sed nisl et arcu.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!--experience seccion----------------------------------------->
+
+    <section class="experience">
+        <div class="main-text scroll-scale">
+            <span> Nuestro recorrido</span>
+            <h2>Experiencia</h2>
+
+        </div>
+
+        <div class="options">
+            <div class="option active" style="--optionBackground:url(https://66.media.tumblr.com/6fb397d822f4f9f4596dff2085b18f2e/tumblr_nzsvb4p6xS1qho82wo1_1280.jpg);">
+                <div class="shadow"></div>
+                <div class="label">
+                    <div class="icon">
+                        <i class="fas fa-walking"></i>
+                    </div>
+                    <div class="info">
+                        <div class="main">Proyecto 1</div>
+                        <div class="sub">Descripción</div>
+                    </div>
+                </div>
+            </div>
+            <div class="option" style="--optionBackground:url(https://66.media.tumblr.com/8b69cdde47aa952e4176b4200052abf4/tumblr_o51p7mFFF21qho82wo1_1280.jpg);">
+                <div class="shadow"></div>
+                <div class="label">
+                    <div class="icon">
+                        <i class="fas fa-snowflake"></i>
+                    </div>
+                    <div class="info">
+                        <div class="main">Proyecto 2</div>
+                        <div class="sub">Descripción</div>
+                    </div>
+                </div>
+            </div>
+            <div class="option" style="--optionBackground:url(https://66.media.tumblr.com/5af3f8303456e376ceda1517553ba786/tumblr_o4986gakjh1qho82wo1_1280.jpg);">
+                <div class="shadow"></div>
+                <div class="label">
+                    <div class="icon">
+                        <i class="fas fa-tree"></i>
+                    </div>
+                    <div class="info">
+                        <div class="main">Proyecto 3</div>
+                        <div class="sub">Descripción</div>
+                    </div>
+                </div>
+            </div>
+            <div class="option" style="--optionBackground:url(https://66.media.tumblr.com/5516a22e0cdacaa85311ec3f8fd1e9ef/tumblr_o45jwvdsL11qho82wo1_1280.jpg);">
+                <div class="shadow"></div>
+                <div class="label">
+                    <div class="icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <div class="info">
+                        <div class="main">Proyecto4</div>
+                        <div class="sub">Descripción</div>
+                    </div>
+                </div>
+            </div>
+            <div class="option" style="--optionBackground:url(https://66.media.tumblr.com/f19901f50b79604839ca761cd6d74748/tumblr_o65rohhkQL1qho82wo1_1280.jpg);">
+                <div class="shadow"></div>
+                <div class="label">
+                    <div class="icon">
+                        <i class="fas fa-sun"></i>
+                    </div>
+                    <div class="info">
+                        <div class="main">Proyecto 5</div>
+                        <div class="sub">Descripción</div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
 

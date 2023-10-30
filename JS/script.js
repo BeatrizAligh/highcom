@@ -153,6 +153,83 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+//dropmenu
+const dropdownMenu = document.querySelector('.dropdown-menu');
+const toggleNavbar = document.querySelector('.toggle-navbar');
+const dropdownClose = document.querySelector('.dropdown-close');
+const navMenu = document.querySelector('.nav-menu');
+
+dropdownMenu.previousElementSibling.addEventListener('click', function () {
+    if (window.innerWidth < 576) {
+        dropdownMenu.classList.add('show');
+        toggleNavbar.classList.add('hide');
+    }
+})
+
+dropdownClose.addEventListener('click', function () {
+    if (window.innerWidth < 576) {
+        dropdownMenu.classList.remove('show');
+        toggleNavbar.classList.remove('hide');
+    }
+})
+
+
+
+const submenuLinks = document.querySelectorAll('.submenu-link');
+const dropdownMenus = document.querySelectorAll('.dropdown-submenu');
+const defaultSubMenu = 'soluciones';
+
+submenuLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const target = link.getAttribute('data-target');
+        hideAllDropdowns();
+        showDropdown(target);
+    });
+});
+
+
+
+function hideAllDropdowns() {
+    dropdownMenus.forEach(menu => {
+        menu.style.display = 'none';
+    });
+}
+
+function showDropdown(target) {
+    const selectedDropdown = document.querySelector(`#${target}`);
+    if (selectedDropdown) {
+        selectedDropdown.style.display = 'block';
+    }
+}
+
+
+//toggleNavbar.addEventListener('click', function () {
+//    if (window.innerWidth < 576) {
+//        navMenu.classList.toggle('show');
+
+//        if (navMenu.classList.contains('show')) {
+//            this.classList.replace('bx-menu', 'bx-x');
+//        } else {
+//            this.classList.replace('bx-x', 'bx-menu');
+//        }
+//    }
+//})
+
+
+//carrusel experience
+$(".option").click(function () {
+    $(".option").removeClass("active");
+    $(this).addClass("active");
+
+});
+
+
+//mouse header
+
+
+
+
 
 
 
