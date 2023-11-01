@@ -351,6 +351,10 @@ span{
         transform: translateY(0%);
         opacity: 1;
         top: -1px;
+
+
+
+
         visibility: visible;
         border-width: 1px;
         border-bottom-left-radius: 10px;
@@ -374,7 +378,7 @@ span{
         width: 875px;
         border-radius: 10px;
         z-index: -1;
-        height: 516px;
+        /*height: 516px;*/ /*aparece dependiendo el contenido*/
         background-color: var(--secon-bg-color); /*COLOR SEGUNDO DROPDOWN*/
         -webkit-transition: all 0.3s ease-in-out;
         -moz-transition: all 0.3s ease-in-out;
@@ -382,6 +386,8 @@ span{
         -o-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out;
     }
+
+
 
         #mega-menu > ul.menu > li .drop-menu > .one-third {
             width: 33.3%;
@@ -484,7 +490,8 @@ span{
 
 nav {
     display: flex;
-    justify-content: center; /* Centrado horizontal */
+    justify-content: space-between; /* Centrado horizontal */
+    left: 100px;
     align-items: center; /* Centrado vertical */
     padding: 5px; /* Añade relleno según sea necesario */
     color: #fdfdfd;
