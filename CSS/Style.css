@@ -243,6 +243,241 @@ span{
     
 }
 
+
+
+
+/*-------------MEGA MENU*/
+
+
+
+#mega-menu {
+    position: relative;
+    top: 62px;
+    display: inline-table;
+    height: 55px;
+    width: 250px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    /*border-bottom: 2px solid var(--hover-color);*/
+}
+
+    #mega-menu > .btn-mega {
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 500;
+        padding: 9px 15px;
+        transition: all .3s ease;
+        width: max-content;
+        height: 65px;
+        line-height: 65px;
+        position: relative;
+        z-index: 98;
+        cursor: pointer;
+    }
+
+    #mega-menu:hover ul.menu {
+        top: -1px;
+        visibility: visible;
+        opacity: 1;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+
+
+
+    #mega-menu > ul.menu {
+        position: relative;
+        z-index: 90;
+        background-color: var(--bg-color); /*COLOR PRIMER DROPDOWN*/
+        border: 1px solid var(--secon-bg-color);
+        border-radius: 8px;
+        top: -40px;
+        opacity: 0;
+        visibility: hidden;
+        height: 5a;
+
+        
+
+
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+
+        #mega-menu > ul.menu > li > a {
+            height: 50px;
+            line-height: 51px;
+            padding: 0 24px;
+            border-bottom: 1px solid #000; /*LINEAS INFERIORES*/
+            display: block;
+            position: relative;
+        }
+
+        #mega-menu > ul.menu > li:last-child > a {
+            border-bottom: none;
+        }
+
+        #mega-menu > ul.menu > li:hover > a .menu-title {
+            color: var(--dark-blue); /*HOVER PALABRA DROPDOWN UNO*/
+        }
+
+        #mega-menu > ul.menu > li > a.dropdown:after {
+            content: '\f105';
+            position: absolute;
+            font-family: 'fontawesome';
+            right: 29px;
+            font-size: 14px;
+            color: var(--text-color);
+        }
+
+        #mega-menu > ul.menu > li > a .menu-img {
+            margin-right: 18px;
+            min-width: 30px;
+            display: inline-block;
+            text-align: center;
+        }
+
+        #mega-menu > ul.menu > li > a .menu-title {
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--text-color);
+        }
+
+    #mega-menu.style1 > ul.menu {
+        transform: translateY(0%);
+        opacity: 1;
+        top: -1px;
+        visibility: visible;
+        border-width: 1px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    #mega-menu > ul.menu > li:hover > .drop-menu {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0%);
+    }
+
+    #mega-menu > ul.menu > li .drop-menu {
+        transform: translateX(-10%);
+        opacity: 0;
+        visibility: hidden;
+        padding: 27px 7px 27px 0;
+        position: absolute;
+        top: -1px;
+        left: 270px;
+        width: 875px;
+        border-radius: 10px;
+        z-index: -1;
+        height: 516px;
+        background-color: var(--secon-bg-color); /*COLOR SEGUNDO DROPDOWN*/
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+
+        #mega-menu > ul.menu > li .drop-menu > .one-third {
+            width: 33.3%;
+            float: left;
+            padding-left: 42px;
+            padding-right: 15px;
+        }
+
+            #mega-menu > ul.menu > li .drop-menu > .one-third .cat-title {
+                color: #f28b00;
+                font-size: 16px;
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
+
+            #mega-menu > ul.menu > li .drop-menu > .one-third ul li {
+                margin-bottom: 5px;
+            }
+
+                #mega-menu > ul.menu > li .drop-menu > .one-third ul li a:not(:hover) {
+                    color: #484848;
+                }
+
+            #mega-menu > ul.menu > li .drop-menu > .one-third .show a {
+                color: #f28b00;
+                font-weight: bold;
+                position: relative;
+            }
+
+                #mega-menu > ul.menu > li .drop-menu > .one-third .show a:before {
+                    content: '';
+                    position: absolute;
+                    width: 0;
+                    height: 2px;
+                    bottom: -4px;
+                    right: 0;
+                    background: #f28b00;
+                    -webkit-transition: width .2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
+                    -o-transition: width .2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
+                    transition: width .2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
+                }
+
+                #mega-menu > ul.menu > li .drop-menu > .one-third .show a:hover:before {
+                    width: 100%;
+                    left: 0;
+                }
+
+            #mega-menu > ul.menu > li .drop-menu > .one-third ul.banner li {
+                border: 2px solid #e5e5e5;
+                border-radius: 5px;
+                background-color: #e5e5e5;
+                height: 110px;
+                padding: 30px 10px 30px 18px;
+                margin-bottom: 20px;
+                -webkit-transition: all 0.3s ease-in-out;
+                -moz-transition: all 0.3s ease-in-out;
+                -ms-transition: all 0.3s ease-in-out;
+                -o-transition: all 0.3s ease-in-out;
+                transition: all 0.3s ease-in-out;
+            }
+
+                #mega-menu > ul.menu > li .drop-menu > .one-third ul.banner li:hover {
+                    background-color: #fff;
+                    -webkit-transition: all 0.3s ease-in-out;
+                    -moz-transition: all 0.3s ease-in-out;
+                    -ms-transition: all 0.3s ease-in-out;
+                    -o-transition: all 0.3s ease-in-out;
+                    transition: all 0.3s ease-in-out;
+                }
+
+                #mega-menu > ul.menu > li .drop-menu > .one-third ul.banner li .banner-text {
+                    float: left;
+                }
+
+                    #mega-menu > ul.menu > li .drop-menu > .one-third ul.banner li .banner-text .banner-title {
+                        font-weight: bold;
+                        font-size: 15px;
+                        color: #f28b00;
+                    }
+
+                    #mega-menu > ul.menu > li .drop-menu > .one-third ul.banner li .banner-text .more-link a img {
+                        margin-left: 10px;
+                    }
+
+                #mega-menu > ul.menu > li .drop-menu > .one-third ul.banner li .banner-img {
+                    float: right;
+                }
+
+
+/*----------*/
+
+
 /*------------styles nav2 list hover*/
 
 .container {
@@ -270,13 +505,13 @@ nav {
         width: auto
     }
 
-    nav .nav-menu {
+    /*nav .header-bottom {
         display: flex;
         grid-gap: 36px;
         display: flex;
-        border-bottom: 2px solid var(--hover-color); /* Agrega una línea inferior */
-        z-index: 3;
-    }
+        border-bottom: 2px solid var(--hover-color);*/ /* Agrega una línea inferior */
+        /*z-index: 3;
+    }*/
 
         nav .nav-menu > li {
             height: 60px;
