@@ -301,10 +301,7 @@ span{
         opacity: 0;
         visibility: hidden;
         height: 5a;
-
-        
-
-
+        width: inherit;
         -webkit-transition: all 0.3s ease-in-out;
         -moz-transition: all 0.3s ease-in-out;
         -ms-transition: all 0.3s ease-in-out;
@@ -341,7 +338,6 @@ span{
         #mega-menu > ul.menu > li > a .menu-img {
             margin-right: 18px;
             min-width: 30px;
-            display: inline-block;
             text-align: center;
         }
 
