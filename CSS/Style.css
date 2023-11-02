@@ -397,24 +397,35 @@ span{
         }
 
             #mega-menu > ul.menu > li .drop-menu > .one-third .cat-title {
-                color: #f28b00;
+                color: var(--hover-color);
                 font-size: 16px;
                 font-weight: bold;
                 margin-bottom: 20px;
             }
 
             #mega-menu > ul.menu > li .drop-menu > .one-third ul li {
-                margin-bottom: 5px;
+                margin-bottom: 15px;
+                list-style: circle;
             }
 
-                #mega-menu > ul.menu > li .drop-menu > .one-third ul li a:not(:hover) {
-                    color: var(--bg-color);
+                #mega-menu > ul.menu > li .drop-menu > .one-third ul li a  {
+                    font-family: Lato;
+                    font-weight: 300;
+                    font-size: 1rem;
+                    letter-spacing: 1px;
+                    color: #fff;
                     
                 }
+                #mega-menu > ul.menu > li .drop-menu > .one-third ul li a:hover {
+                    color: var(--dark-blue);
+                }
+
 
             #mega-menu > ul.menu > li .drop-menu > .one-third .show a {
-                color: var(--secon-bg-color);
-                font-weight: bold;
+                font-family: Lato;
+                font-weight: 300;
+                font-size: .6rem;
+                color: #fff;
                 position: relative;
             }
 
