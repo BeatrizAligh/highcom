@@ -9,7 +9,7 @@
     "junta": "Workstatement",
     "reunion": "Meeting with our clients",
     "Acept": "Acceptance",
-    "Pruebas": "Testing with the client",
+    "pruebas": "Testing with the client",
     "soporte": "Technical support",
     "post": "After-sales, immediate support",
     "elaborar": "Elaboration",
@@ -25,10 +25,29 @@
     "patchcord": "Manufacture of patchcord and preconnectorized or multifiber optical fiber",
     "tendido": "Laying, fusion and certification of Fiber Optic",
     "Productos": "Products",
-    "fo": "Fiber Optic"
+    "fo": "Fiber Optic",
+    "patch": "Patch cords y pig tails",
+    "cables": "Optical fibre wires",
+    "admin": "Cable management",
+    "equipos": "Fiber Optic Test Equipment",
+    "multi": "Multiplexing and conversion with Fiber Optic",
+    "rdc": "Copper Networks",
+    "paco": "Patch Cord Cat 5E, 6 y 7",
+    "cab": "Wire U/UTP CAT 5E, CAT 6, CAT 6A y CAT 7",
+    "FTP": "F/FTP Cat 6A y Cat 7A",
+    "coa": "Connectors",
+    "conec": "Connectors",
+    "pacocat": "Patch Cord Cat 5E"
   },
 
-
+  "servicessec": {
+    "ofrecemos": "What we offer?",
+    "sosepro": "Solutions | Services | Products",
+    "in": "In:",
+    "tele": "Telecommunications",
+    "teleco": "Telecommunications",
+    "leyenda": "We offer national and Andean area marketing, assembly, installation, configuration, testing and commissioning of transmission and access equipment for telecommunications networks fixed and mobile."
+  },
 
 
 
