@@ -408,11 +408,12 @@ span{
             }
 
                 #mega-menu > ul.menu > li .drop-menu > .one-third ul li a:not(:hover) {
-                    color: #484848;
+                    color: var(--bg-color);
+                    
                 }
 
             #mega-menu > ul.menu > li .drop-menu > .one-third .show a {
-                color: #f28b00;
+                color: var(--secon-bg-color);
                 font-weight: bold;
                 position: relative;
             }
@@ -424,7 +425,7 @@ span{
                     height: 2px;
                     bottom: -4px;
                     right: 0;
-                    background: #f28b00;
+                    background: var(--secon-bg-color);
                     -webkit-transition: width .2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
                     -o-transition: width .2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
                     transition: width .2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
@@ -436,11 +437,10 @@ span{
                 }
 
             #mega-menu > ul.menu > li .drop-menu > .one-third ul.banner li {
-                border: 2px solid #e5e5e5;
                 border-radius: 5px;
-                background-color: #e5e5e5;
+                background-color: var(--bg-color);
                 height: 110px;
-                padding: 30px 10px 30px 18px;
+                padding: 20px 10px 15px 12px;
                 margin-bottom: 20px;
                 -webkit-transition: all 0.3s ease-in-out;
                 -moz-transition: all 0.3s ease-in-out;
@@ -450,7 +450,8 @@ span{
             }
 
                 #mega-menu > ul.menu > li .drop-menu > .one-third ul.banner li:hover {
-                    background-color: #fff;
+                    background-color: var(--secon-bg-color);
+                    border: 1px solid var(--dark-blue);
                     -webkit-transition: all 0.3s ease-in-out;
                     -moz-transition: all 0.3s ease-in-out;
                     -ms-transition: all 0.3s ease-in-out;
@@ -464,16 +465,24 @@ span{
 
                     #mega-menu > ul.menu > li .drop-menu > .one-third ul.banner li .banner-text .banner-title {
                         font-weight: bold;
-                        font-size: 15px;
-                        color: #f28b00;
+                        font-size: 11px;
+                        color: var(--hover-color);
                     }
 
-                    #mega-menu > ul.menu > li .drop-menu > .one-third ul.banner li .banner-text .more-link a img {
-                       
+                    #mega-menu > ul.menu > li .drop-menu > .one-third ul.banner li .banner-text .more-link a {
+                        margin-left: 10px;
+                        font-family: Lato;
+                        font-weight: 300;
+                        font-size: .6rem;
+                        color: #fff;
+                        display: table-cell;
+                        width: 115px;
+                        padding-top: 10px;
                     }
 
                 #mega-menu > ul.menu > li .drop-menu > .one-third ul.banner li .banner-img {
                     float: right;
+                    width: 90px;
                 }
 
 
@@ -515,6 +524,7 @@ nav {
         border-bottom: 2px solid var(--hover-color);*/ /* Agrega una línea inferior */
         /*z-index: 3;
     }*/
+
 
 
 
