@@ -4,7 +4,7 @@
     "history": "History",
     "our": "Our",
     "contact": "Contact",
-    "fibra": "Optical Fiber",
+    "fibra": "Wiring and Optical Fiber",
     "soluciones": "Solutions",
     "junta": "Workstatement",
     "reunion": "Meeting with our clients",
@@ -46,7 +46,10 @@
     "in": "In:",
     "tele": "Telecommunications",
     "teleco": "Telecommunications",
-    "leyenda": "We offer national and Andean area marketing, assembly, installation, configuration, testing and commissioning of transmission and access equipment for telecommunications networks fixed and mobile."
+    "leyenda": "We offer national and Andean area marketing, assembly, installation, configuration, testing and commissioning of transmission and access equipment for telecommunications networks fixed and mobile.",
+    "infra": "Infrastructure and Metalworking",
+    "tableros": "Board Manufacturing"
+
   },
 
 
@@ -60,13 +63,21 @@
     "description": "HIGHCOM ® starts operations in the city of Bogotá in September 2009 with the aim of providing communication solutions for clients in the government sector and some multinational companies operating in the Colombian industrial sector."
   },
   "about": {
-    "knowMore": "Know More",
-    "history": "History",
+    "knowMore": "Know more about us",
+    "history": "About us?",
     "experience": "Years of experience",
-    "proyects": "full proyects",
+    "proyects": "Full proyects",
     "goodStory": "A Good Story",
     "loremIpsum": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nulla neque, laoreet eget tortor quis, placerat congue justo. Aliquam erat volutpat. Pellentesque nec tincidunt nisi. Integer laoreet enim eu felis rhoncus, id varius nunc cursus. Duis nec mollis lectus, eget euismod orci. Suspendisse fringilla ex eget elit commodo, eleifend tincidunt lacus gravida.",
     "ReadMore": "Read more"
+  },
+
+  "client": {
+    "confiado": "Who has trusted us",
+    "aliados": "Allies",
+    "Siemens": "Siemens AG",
+    "": "",
+    "": ""
   },
   "contact": {
     "downloadInfo": "Download Info",
