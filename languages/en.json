@@ -26,7 +26,7 @@
     "tendido": "Laying, fusion and certification of Fiber Optic",
     "Productos": "Products",
     "fo": "Fiber Optic",
-    "patch": "Patch cords y pig tails",
+    "patch": "Patch cords and pig tails",
     "cables": "Optical fibre wires",
     "admin": "Cable management",
     "equipos": "Fiber Optic Test Equipment",
@@ -35,7 +35,7 @@
     "paco": "Patch Cord Cat 5E, 6 y 7",
     "cab": "Wire U/UTP CAT 5E, CAT 6, CAT 6A y CAT 7",
     "FTP": "F/FTP Cat 6A y Cat 7A",
-    "coa": "Connectors",
+    "coa": "RG58 coaxial cable",
     "conec": "Connectors",
     "pacocat": "Patch Cord Cat 5E"
   },
@@ -62,10 +62,6 @@
   "about": {
     "knowMore": "Know more about us",
     "history": "About us?",
-    "experience": "Years of experience",
-    "proyects": "Full proyects",
-    "goodStory": "A Good Story",
-    "loremIpsum": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nulla neque, laoreet eget tortor quis, placerat congue justo. Aliquam erat volutpat. Pellentesque nec tincidunt nisi. Integer laoreet enim eu felis rhoncus, id varius nunc cursus. Duis nec mollis lectus, eget euismod orci. Suspendisse fringilla ex eget elit commodo, eleifend tincidunt lacus gravida.",
     "ReadMore": "Read more"
   },
 
@@ -108,7 +104,6 @@
     "downloadInfo": "Download Info",
     "contactUs": "Contact Us",
     "question": "make a question",
-    "name": "Name",
     "send": "Send"
   }
   }

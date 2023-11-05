@@ -3,8 +3,56 @@
     "home": "Inicio",
     "history": "Historia",
     "our": "Nosotros",
-    "contact": "Contáctenos"
+    "contact": "Contáctenos",
+    "fibra": "Cableado y Fibra Óptica",
+    "soluciones": "Soluciones",
+    "junta": "Junta de trabajo ",
+    "reunion": "Reunión con nuestros clientes",
+    "Acept": "Aceptación",
+    "pruebas": "Pruebas con el cliente",
+    "soporte": "Soporte Técnico",
+    "post": "Posventa, soperte inmediato",
+    "elaborar": " Elaboración",
+    "desarrollo": "Desarrollo de Proyecto",
+    "instalacion": "Instalación",
+    "campo": "Instalación en campo",
+    "fabricacion": "Fabricación",
+    "montaje": "Montaje de equipos",
+    "comision": "Comisionamiento",
+    "config": "Configuración del sistema",
+    "services": "Servicios",
+    "fibracobre": "Fibra Óptica y Redes de Cobre",
+    "patchcord": "Fabricación de patchcord y fibra óptica preconectorizada o multifibras",
+    "tendido": "Tendido, fusión y certificación de Fibra Óptica",
+    "Productos": "Productos",
+    "fo": "Fibra Óptica",
+    "patch": "Patch cords y pig tails",
+    "cables": "Cables de Fibra Óptica",
+    "admin": "Administración de cableado",
+    "equipos": "Equipos de prueba de Fibra Óptica",
+    "multi": "Multiplexación y conversión con Fibra Óptic",
+    "rdc": "Redes de Cobre",
+    "paco": "Patch Cord Cat 5E, 6 y 7",
+    "cab": "Cables U/UTP CAT 5E, CAT 6, CAT 6A y CAT 7",
+    "FTP": "F/FTP Cat 6A y Cat 7A",
+    "coa": "Cableado coaxial RG58",
+    "conec": "Conectores",
+    "pacocat": "Patch Cord Cat 5E"
   },
+
+
+  "servicessec": {
+    "ofrecemos": "¿Qué ofrecemos?",
+    "sosepro": "Soluciones | Servicios | Productos",
+    "in": "En:",
+    "tele": "Telecomunicaciones",
+    "teleco": "Telecomunicaciones",
+    "leyenda": " Ofrecemos a nivel nacional y del área andina la comercialización, montaje, instalación, configuración, pruebas y puesta en serviciode equipos de transmisión y acceso para redes de telecomunicaciones fijas y móviles.",
+    "infra": " Infraestructura y Metalmecánica",
+    "tableros": "Fabricación de Tableros"
+
+  },
+
   "home": {
     "specialties": "Nuestras especialidades",
     "specialty1": "Comunicaciones",
@@ -15,15 +63,48 @@
   },
   "about": {
     "knowMore": "Conoce más de nosotros",
-    "history": "Historia",
-    "experience": "Años de experiencia",
-    "proyects": "Proyectos completados",
-    "goodStory": "Una buena historia",
-    "loremIpsum": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nulla neque, laoreet eget tortor quis, placerat congue justo. Aliquam erat volutpat. Pellentesque nec tincidunt nisi. Integer laoreet enim eu felis rhoncus, id varius nunc cursus. Duis nec mollis lectus, eget euismod orci. Suspendisse fringilla ex eget elit commodo, eleifend tincidunt lacus gravida.",
+    "history": "¿Quiénes Somos?",
     "ReadMore": "Leer más"
   },
+
+  "client": {
+    "confiado": "Quiénes han confiado en nosotros",
+    "aliados": "Aliados",
+    "Siemens": "Siemens AG",
+    "grupoe": "Grupo Energía Bogotá",
+    "Tyaz": "Tyazhmash",
+    "petroe": "Petroeléctrica los llanos Ltd.",
+    "enel": "Enel Codensa",
+    "epsa": "EPSA",
+    "celsia": "Celsia"
+  },
+
+  "experience": {
+    "recorrido": "Nuestro recorrido",
+    "experi": "Expriencia",
+    "pro1": "Proyecto 1",
+    "des1": "Descripción",
+    "pro2": "Proyecto 2",
+    "des2": "Descripción",
+    "pro3": "Proyecto 3",
+    "des3": "Descripción",
+    "pro4": "Proyecto 4",
+    "des4": "Descripción",
+    "pro5": "Proyecto 5",
+    "des5": "Descripción"
+
+  },
+
+  "interesg": {
+    "interes": "¿QUIÉRES CONOCER MÁS DE NUESTROS SERVICIOS?"
+
+  },
+
+
   "contact": {
     "downloadInfo": "Descargar Info",
-    "contactUs": "Contáctenos"
+    "contactUs": "Contáctenos",
+    "question": "Haz una pregunta",
+    "send": "Enviar"
   }
 }
