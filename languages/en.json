@@ -51,9 +51,6 @@
     "tableros": "Board Manufacturing"
 
   },
-
-
-
   "home": {
     "specialties": "Our Specialties",
     "specialty1": "Communications",
@@ -76,11 +73,41 @@
     "confiado": "Who has trusted us",
     "aliados": "Allies",
     "Siemens": "Siemens AG",
-    "": "",
-    "": ""
+    "grupoe": "Grupo Energía Bogotá",
+    "Tyaz": "Tyazhmash",
+    "petroe": "Petroeléctrica los llanos Ltd.",
+    "enel": "Enel Codensa",
+    "epsa": "EPSA",
+    "celsia": "Celsia"
   },
+
+  "experience": {
+    "recorrido": "Our tour",
+    "experi": "Experience",
+    "pro1": "Proyect 1",
+    "des1": "Description",
+    "pro2": "Proyect 2",
+    "des2": "Description",
+    "pro3": "Proyect 3",
+    "des3": "Description",
+    "pro4": "Proyect 4",
+    "des4": "Description",
+    "pro5": "Proyect 5",
+    "des5": "Description"
+
+  },
+
+  "interesg": {
+    "interes": "DO YOU WANT TO LEARN MORE ABOUT OUR SERVICES?"
+
+  },
+
+
+
   "contact": {
     "downloadInfo": "Download Info",
-    "contactUs": "Contact Us"
+    "contactUs": "Contact Us",
+    "question": "make a question",
+    "send": "Send"
   }
-}
+  }
