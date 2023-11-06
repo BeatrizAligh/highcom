@@ -87,15 +87,18 @@ function changeText() {
 
 let menuIcon = document.querySelector("#menu-icon");
 let navlist = document.querySelector(".navlist");
+let btnmega = document.querySelector(".btn-mega");
 
 menuIcon.addEventListener("click", () => {
     menuIcon.classList.toggle("fa-x");
     navlist.classList.toggle("open");
+    btnmega.classList.toggle("open");
 });
 
 window.addEventListener("scroll", () => {
     menuIcon.classList.remove("fa-x");
     navlist.classList.remove("open");
+    btnmega.classList.remove("open");
 });
 
 //Parallax--------
