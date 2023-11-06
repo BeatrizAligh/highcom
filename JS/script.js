@@ -87,18 +87,15 @@ function changeText() {
 
 let menuIcon = document.querySelector("#menu-icon");
 let navlist = document.querySelector(".navlist");
-let btnmega = document.querySelector(".btn-mega");
 
 menuIcon.addEventListener("click", () => {
     menuIcon.classList.toggle("fa-x");
     navlist.classList.toggle("open");
-    btnmega.classList.toggle("open");
 });
 
 window.addEventListener("scroll", () => {
     menuIcon.classList.remove("fa-x");
     navlist.classList.remove("open");
-    btnmega.classList.remove("open");
 });
 
 //Parallax--------
@@ -162,88 +159,6 @@ $(".option").click(function () {
     $(this).addClass("active");
 
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-////dropmenu
-//const dropdownMenu = document.querySelector('.dropdown-menu');
-//const toggleNavbar = document.querySelector('.toggle-navbar');
-//const dropdownClose = document.querySelector('.dropdown-close');
-//const navMenu = document.querySelector('.nav-menu');
-
-//dropdownMenu.previousElementSibling.addEventListener('click', function () {
-//    if (window.innerWidth < 576) {
-//        dropdownMenu.classList.add('show');
-//        toggleNavbar.classList.add('hide');
-//    }
-//})
-
-//dropdownClose.addEventListener('click', function () {
-//    if (window.innerWidth < 576) {
-//        dropdownMenu.classList.remove('show');
-//        toggleNavbar.classList.remove('hide');
-//    }
-//})
-
-
-
-//const submenuLinks = document.querySelectorAll('.submenu-link');
-//const dropdownMenus = document.querySelectorAll('.dropdown-submenu');
-//const defaultSubMenu = 'soluciones';
-
-//submenuLinks.forEach(link => {
-//    link.addEventListener('click', (e) => {
-//        e.preventDefault();
-//        const target = link.getAttribute('data-target');
-//        hideAllDropdowns();
-//        showDropdown(target);
-//    });
-//});
-
-
-
-//function hideAllDropdowns() {
-//    dropdownMenus.forEach(menu => {
-//        menu.style.display = 'none';
-//    });
-//}
-
-//function showDropdown(target) {
-//    const selectedDropdown = document.querySelector(`#${target}`);
-//    if (selectedDropdown) {
-//        selectedDropdown.style.display = 'block';
-//    }
-//}
-
-
-//toggleNavbar.addEventListener('click', function () {
-//    if (window.innerWidth < 576) {
-//        navMenu.classList.toggle('show');
-
-//        if (navMenu.classList.contains('show')) {
-//            this.classList.replace('bx-menu', 'bx-x');
-//        } else {
-//            this.classList.replace('bx-x', 'bx-menu');
-//        }
-//    }
-//})
-
 
 //carrusel experience
 $(".option").click(function () {

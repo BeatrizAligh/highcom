@@ -1922,6 +1922,9 @@ section{
 }
 @media(max-width: 1330px) {
 
+    nav {
+        display: none;
+    }
 
     #menu-icon {
         display: block;
@@ -2012,6 +2015,10 @@ section{
     .navlist a{
         padding: 8px 15px;
     }
+
+
+
+
     :root{
         --big-font:2.2rem;
         --norma-font:1.8rem;
