@@ -152,7 +152,13 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+//experience
 
+$(".option").click(function () {
+    $(".option").removeClass("active");
+    $(this).addClass("active");
+
+});
 
 
 
