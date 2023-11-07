@@ -636,7 +636,7 @@
                         </div>-->
 
                         <div id="mega-menu">
-                            <div class="btn-mega" data-section="nav" data-value="fibra"><span></span>Cableado y Fibra Óptica <i class="fa-solid fa-caret-down"></i></div>
+                            <div class="btn-mega" data-section="nav" data-value="fibra" style="--i:1;"><span></span>Cableado y Fibra Óptica <i class="fa-solid fa-caret-down"></i></div>
                             <ul class="menu">
                                 <li>
                                     <a href="#" title="" class="dropdown">
@@ -1169,27 +1169,107 @@
 
 
     <section id="home" class="home">
-        <div class="home-contect">
-            <h1>Fibra Óptica</h1>
+        <div class="container2">
+            <div class="slider">
 
-            <p data-section="home" data-value="description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tellus lorem, aliquam id elit non.
-            </p>
+                <div class="box1 box">
+                    <div class="bg"></div>
+                    <div class="details">
+                        <h1>I'm the first Box</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Integer lacinia dui lectus. Donec scelerisque ipsum
+                            diam, ac mattis orci pellentesque eget.
+                        </p>
+                        <button>Check Now</button>
+                    </div>
 
-        </div>
-        <!--<div class="home-vid">
-            <div class="vid-box">
-                <video class="background-video" src="../vid/videoinicio.mov" autoplay loop muted></video>
+                    <div class="illustration"><div class="inner"></div></div>
+                </div>
+
+
+                <div class="box2 box">
+                    <div class="bg"></div>
+                    <div class="details">
+                        <h1>I'm the second Box</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Integer lacinia dui lectus. Donec scelerisque ipsum
+                            diam, ac mattis orci pellentesque eget.
+                        </p>
+                        <button>Check Now</button>
+                    </div>
+
+                    <div class="illustration"><div class="inner"></div></div>
+                </div>
+
+                <div class="box3 box">
+                    <div class="bg"></div>
+                    <div class="details">
+                        <h1>I'm the third Box</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Integer lacinia dui lectus. Donec scelerisque ipsum
+                            diam, ac mattis orci pellentesque eget.
+                        </p>
+                        <button>Check Now</button>
+                    </div>
+
+                    <div class="illustration"><div class="inner"></div></div>
+                </div>
+
+                <div class="box4 box">
+                    <div class="bg"></div>
+                    <div class="details">
+                        <h1>I'm the fourth Box</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Integer lacinia dui lectus. Donec scelerisque ipsum
+                            diam, ac mattis orci pellentesque eget.
+                        </p>
+                        <button>Check Now</button>
+                    </div>
+
+                    <div class="illustration"><div class="inner"></div></div>
+                </div>
+
             </div>
-        </div>-->
+
+            <svg xmlns="http://www.w3.org/2000/svg" class="prev" width="56.898" height="91" viewBox="0 0 56.898 91"><path d="M45.5,0,91,56.9,48.452,24.068,0,56.9Z" transform="translate(0 91) rotate(-90)" fill="#fff" /></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="next" width="56.898" height="91" viewBox="0 0 56.898 91"><path d="M45.5,0,91,56.9,48.452,24.068,0,56.9Z" transform="translate(56.898) rotate(90)" fill="#fff" /></svg>
+            <div class="trail">
+                <div class="box1 active">1</div>
+                <div class="box2">2</div>
+                <div class="box3">3</div>
+                <div class="box4">4</div>
+            </div>
+        </div>
+        <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+        <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/CSSRulePlugin3.min.js"></script>
+        <!--<div class="home-contect">
+        <h1>Fibra Óptica</h1>
+
+        <p data-section="home" data-value="description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tellus lorem, aliquam id elit non.
+        </p>
+
+    </div>-->
+        <!--<div class="home-vid">
+        <div class="vid-box">
+            <video class="background-video" src="../vid/videoinicio.mov" autoplay loop muted></video>
+        </div>
+    </div>-->
         <a class="whatsapp-icon" href="https://web.whatsapp.com/send?phone=573174817920" target="_blank">
             <i class="fab fa-whatsapp fa-bounce"></i>
             <span class="contact-text" data-section="contact" data-value="contactUs">CONTÁCTENOS</span>
         </a>
 
     </section>
+
+
+
     <!--INTRODUCCION-->
-    <section class="titulo">
+    <section class="titulo" id="titulo">
         <div class="about-content">
 
             <span data-section="about" data-value="history">Fibra Óptica</span>
@@ -1202,7 +1282,7 @@
     </section>
 
     <!--SERVICIOS-->
-    <section class="servicios">
+    <section id="servicios" class="servicios">
         <h2>
             Patch cords y pig tails
         </h2>
