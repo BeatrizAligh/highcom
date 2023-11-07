@@ -432,43 +432,38 @@ nav {
 
 .navlist a {
     display: inline-block;
-    color: var(--text-color);
+    color: #fff;
     font-size: 1.2rem;
     font-weight: 700;
     text-transform: uppercase;
     padding: 10px 20px;
     animation: slideAnimation 1s ease forwards;
     animation-delay: calc(.3s * var(--i));
-    opacity: 0;
 
-      background-image: linear-gradient(
-        to right,
-        #54b3d6,
-        #54b3d6 50%,
-        var(--text-color) 50%
-      );
-      background-size: 200% 100%;
-      background-position: -100%;
-      display: inline-block;
-      position: relative;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      transition: all 0.3s ease-in-out;
+    background-image: linear-gradient(to right, #54b3d6, #54b3d6 50%, #fff 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
 }
     .navlist a:hover {
         background-position: 0;
     }
 
-    .navlist a:before{
-      content: '';
-      background: #54b3d6; /*barra azul*/
-      display: block;
-      position: absolute;
-      bottom: -3px;
-      left: 0;
-      width: 0;
-      height: 3px;
-      transition: all 0.3s ease-in-out;
+    .navlist a:before {
+        content: "";
+        background: #54b3d6;
+        display: block;
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 0;
+        height: 3px;
+        transition: all 0.3s ease-in-out;
     }
     .navlist a:hover::before {
         width: 100%;
