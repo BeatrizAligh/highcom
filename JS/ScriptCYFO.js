@@ -1,3 +1,27 @@
+const languages = document.getElementById("language");
+const textsToChange = document.querySelectorAll("[data-section]");
+
+const changeLanguage = async language => {
+    const requestJson = await fetch(`../languages/${language}.json`);
+    const texts = await requestJson.json();
+
+    for (const textToChange of textsToChange) {
+        const section = textToChange.dataset.section;
+        const value = textToChange.dataset.value;
+
+        textToChange.textContent = texts[section][value];
+    }
+
+};
+
+languages.addEventListener("click", (e) => {
+    changeLanguage(e.target.parentElement.dataset.language);
+});
+
+
+
+
+
 //loader
 
 function pageLoaded() {
@@ -44,23 +68,5 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-////video
 
-//const videoPlayer = document.getElementById("video-player");
-//const videoThumbnails = document.querySelectorAll(".video-thumbnails img");
-
-//// Agregar evento clic a las miniaturas
-//videoThumbnails.forEach(thumbnail => {
-//    thumbnail.addEventListener("click", () => {
-//        // Obtener la ruta del video desde el atributo data-video
-//        const videoSrc = thumbnail.getAttribute("data-video");
-
-//        // Cambiar la fuente del video principal
-//        videoPlayer.src = videoSrc;
-
-//        // Reproducir el nuevo video
-//        videoPlayer.load(); // Cargar el nuevo video
-//        videoPlayer.play(); // Reproducir automáticamente
-//    });
-//});
 
