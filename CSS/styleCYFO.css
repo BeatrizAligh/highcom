@@ -24,9 +24,11 @@
     --neon-box-shadow-green: 0 0 .5rem #09FF47;
     --neon-box-shadow-red: 0 0 .5rem #FF2415;
     --h2-font: 3rem;
-    
+    --blue: #0097FC;
+    --light-blue: #7AC1FE;
+    --dark-blue: #008CEA;
+    --grey: #828282;
     --font-neon-text-shadow: 0 0 10px rgba(18, 247, 255, 0.3), 0 0 20px rgba(18, 247, 255, 0.3), 0 0 30px rgba(18, 247, 255, 0.3), 0 0 40px rgba(18, 247, 255, 0.3), 0 0 70px rgba(18, 247, 255, 0.3), 0 0 80px rgba(18, 247, 255, 0.3), 0 0 100px rgba(18, 247, 255, 0.3), 0 0 150px rgba(18, 247, 255, 0.3);
-
 }
 
 
@@ -543,7 +545,7 @@ nav {
 
 .slider .box .bg {
     padding: 2rem;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.3);
     width: 55%;
     transform: skewX(7deg);
     position: absolute;
@@ -647,46 +649,56 @@ nav {
     }
 
 .slider .box1 {
+    background-image: url("../img/bannerbox1.JPG.");
     background-color: #008CEA;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    
 }
 
 
 
-    .slider .box1 button {
-        background-color: #FF0077;
-    }
-
 .slider .box2 {
+    background-image: url("../img/bannerbox2.JPG.");
     background-color: #0dc959;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: right;
 }
 
 
 
 .slider .box3 {
-    background-color: #FF5442;
+    background-image: url("../img/bannerbox3.JPG.");
+    background-color: #FF2415;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: right;
 }
 
-
-    .slider .box3 button {
-        background-color: #00FF44;
-    }
 
 .slider .box4 {
     background-color: #7AC1FE;
+    background-image: url("../img/bannerbox4.JPG.");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: right;
 }
 
-
-
-    .slider .box4 button {
-        background-color: #FF4E00;
-    }
 
 
 .slider .illustration {
     grid-column: 2/-1;
     grid-row: 1/-1;
     justify-self: center;
+    
 }
+
+    .slider .illustration .inner img {
+        width: 20px;
+        height: 20px;
+    }
 
 @media only screen and (max-width: 650px) {
     .slider .illustration {
@@ -909,9 +921,9 @@ nav {
         letter-spacing: 1px;
         font-weight: 900;
         transition: .6s;
-        box-shadow: var(--neon-box-shadow);
-        border: 2px solid var(--hover-color);
-        border-radius: 5px;
+        box-shadow: var(--bg-color);
+        border: 2px solid var(--bg-color);
+        border-radius: 15px;
         position: relative;
         overflow: hidden;
         z-index: 1;
@@ -940,195 +952,20 @@ nav {
 
 .btn:nth-child(1) {
     background: var(--bg-color);
-    color: var(--hover-color);
+    color: var(--text-color);
 }
 
     .btn:nth-child(1):hover {
         color: var(--bg-color);
-        border: 2px solid var(--hover-color);
-        box-shadow: var(--neon-box-shadow);
+        border: 2px solid var(--text-color);
+        box-shadow: var(--text-color);
     }
 
     .btn:nth-child(1)::before {
-        background: var(--hover-color);
+        background: var(--text-color);
     }
 
-    /*TITULO------------------*/
-.titulo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-gap: 2rem;
-    background: var(--secon-bg-color);
-}
-.about-content  {
-    max-width: 600px;
-    flex: 1 1 18rem;
-    height: auto;
-    padding: 2rem 1rem 2rem;
-    text-align: center;
-    width: 60%;
-    max-width: 600px;
-    border: 1px solid var(--hover-color);
-    border-radius: 20px;
-    background: var(--bg-color);
-    box-shadow: var(--neon-box-shadow-green);
-}
-.about-content2 {
-    flex: 1 1 18rem;
-    height: auto;
-    padding: 2rem 1rem 2rem;
-    text-align: center;
-    width: 60%;
-    max-width: 600px;
-    border: 1px solid var(--hover-color);
-    border-radius: 20px;
-    background: var(--bg-color);
-    box-shadow: var(--neon-box-shadow-green);
-}
 
-.about-content span {
-    color: #fdfdfd;
-    font-size: 1.2rem;
-    font-weight: 300;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
-
-.about-content p {
-    font-size: 1.1rem;
-    margin-top: 20px;
-    align-content: center;
-    text-align: justify;
-    font-weight: 300;
-    letter-spacing: 1px;
-    line-height: 1.6;
-    margin: 2rem 2rem;
-}
-.titulo .about-content p {
-}
-
-
-
-.about-content2 span {
-    color: #fdfdfd;
-    font-size: 1.2rem;
-    font-weight: 300;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
-
-.about-content2 p {
-    font-size: 1.1rem;
-    margin-top: 20px;
-    align-content: center;
-    text-align: justify;
-    font-weight: 300;
-    letter-spacing: 1px;
-    line-height: 1.6;
-    margin: 2rem 2rem;
-}
-/*ESTADITICAS SECTION-------------------------*/
-
-.estadisticas {
-    background: var(--bg-color);
-    text-align: center;
-    transition: all 0.7s linear;
-    color: var(--hover-color-green);
-    justify-content: center;
-    align-items: center;
-    grid-gap: 2rem;
-
-}
-
-
-.content {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 10%;
-    align-items: center;
-    height: 50vh;
-    border: 1px solid var(--hover-color);
-    border-radius: 20px;
-    background: var(--three-bg-color);
-    box-shadow: var(--neon-box-shadow-green);
-}
-
-    .estadisticas span {
-        color: var(--text-color);
-        font-weight: 900;
-        font-size: var(--big-font);
-    }
-
-.value {
-    font-size: 5rem;
-    display: block;
-    font-weight: bold;
-    color: #fff;
-    margin: 2rem 3rem;
-}
-
-
-.num-con span {
-    color: #fdfdfd;
-    font-size: 1.2rem;
-    font-weight: 300;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
-.num-con h2 {
-    padding: 2rem;
-    text-align: center;
-    border: 5px solid var(--hover-color);
-    border-radius: 50%;
-}
-
-.num-con .fa-solid {
-    align-items: center;
-    font-size: 5rem;
-    position: relative;
-    color: var(--hover-color);
-}
-
-/*ALIADOS-----------------------*/
-
-.servicios {
-
-    grid-gap: 2rem;
-    background: var(--secon-bg-color);
-}
-/*servicios*/
-
-/* Estilo para el carrusel */
-
-
-.swiper-container {
-    width: 100%; /* Establece el ancho del contenedor al 100% del ancho de la pantalla */
-    justify-content: center;
-    max-width: 400px; /* Ajusta el ancho máximo según tus necesidades */
-    margin: 5px auto;
-}
-
-.swiper-slide {
-    max-width: 400px; /* Ancho fijo */
-    max-height: 1000px; /* Alto fijo */
-    text-align: center;
-    background-color: var(--secon-bg-color); /* Color de fondo del slide */
-    border: 2px solid var(--hover-color);
-    border-radius: 20px;
-    margin: 35px;
-}
-
-
-.slide-content {
-    padding: 50px;
-}
-.swiper-slide img {
-    width: 396px;
-    height: 264px;
-    object-fit: cover; /* Para ajustar la imagen al tamaño del slide */
-    border-radius: 20px;
-}
 
 /* KEYFRAMES */
 
