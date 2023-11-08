@@ -173,6 +173,9 @@ const touchSlide = (() => {
     slider.addEventListener("touchend", mobile)
 })()
 
+//soluciones----------------
+
+
 
 
 

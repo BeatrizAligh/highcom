@@ -130,7 +130,11 @@ header {
 }
 
 span {
-    color: var(--hover-color);
+    color: #fdfdfd;
+    font-size: .8rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 .navlist {
@@ -820,6 +824,163 @@ nav {
 
     /*-------------------------TERMIAN PRUEBA*/
 
+    /*soluciones---------------*/
+
+
+
+
+
+
+strong {
+    font-weight: 600;
+}
+
+
+#timeline-content {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.contenedortime {
+    display: flex; /* Utiliza flexbox para alinear los elementos en línea */
+    justify-content: space-between;
+}
+/* Timeline */
+.timeline, .timeline-secondary {
+    border-left: 4px solid #004ffc;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    background: rgba(255, 255, 255, 0.03);
+    color: rgba(255, 255, 255, 0.8);
+    margin: 50px auto;
+    letter-spacing: 0.5px;
+    position: relative;
+    line-height: 1.4em;
+    font-size: 1.03em;
+    padding: 50px;
+    list-style: none;
+    text-align: left;
+    font-weight: 100;
+    max-width: 30%;
+}
+
+.timeline-content h2 {
+    font-size: 5rem;
+    font-weight: 900;
+    color: var(--hover-color-green);
+}
+    
+    .timeline h3 {
+        letter-spacing: 1.5px;
+        font-weight: 400;
+        font-size: 1.4em;
+    }
+
+    .timeline .event {
+        border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+        padding-bottom: 25px;
+        margin-bottom: 50px;
+        position: relative;
+    }
+
+        .timeline .event:last-of-type {
+            padding-bottom: 0;
+            margin-bottom: 0;
+            border: none;
+        }
+
+        .timeline .event:before,
+        .timeline .event:after {
+            position: absolute;
+            display: block;
+            top: 0;
+        }
+
+        .timeline .event:before {
+            left: -217.5px;
+            color: rgba(255, 255, 255, 0.4);
+            content: attr(data-date);
+            text-align: right;
+            font-weight: 100;
+            font-size: 0.9em;
+            min-width: 120px;
+        }
+
+        .timeline .event:after {
+            box-shadow: 0 0 0 4px #004ffc;
+            left: -57.85px;
+            background: #313534;
+            border-radius: 50%;
+            height: 11px;
+            width: 11px;
+            content: "";
+            top: 5px;
+        }
+
+        /*secondary*/
+
+
+    .timeline-secondary .event {
+        border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+        padding-bottom: 25px;
+        margin-bottom: 50px;
+        position: relative;
+    }
+
+        .timeline-secondary .event:last-of-type {
+            padding-bottom: 0;
+            margin-bottom: 0;
+            border: none;
+        }
+
+        .timeline-secondary .event:before,
+        .timeline-secondary .event:after {
+            position: absolute;
+            display: block;
+            top: 0;
+        }
+
+        .timeline-secondary .event:before {
+            left: -217.5px;
+            color: rgba(255, 255, 255, 0.4);
+            content: attr(data-date);
+            text-align: right;
+            font-weight: 100;
+            font-size: 0.9em;
+            min-width: 120px;
+        }
+
+        .timeline-secondary .event:after {
+            box-shadow: 0 0 0 4px #004ffc;
+            left: -57.85px;
+            background: #313534;
+            border-radius: 50%;
+            height: 11px;
+            width: 11px;
+            content: "";
+            top: 5px;
+        }
+
+@media only screen and (max-width: 1000px) {
+    .contenedortime {
+        display: contents; /* Utiliza flexbox para alinear los elementos en línea */
+        justify-content: space-between;
+        flex-direction:column;
+    }
+    .timeline, .timeline-secondary {
+        max-width: 50%;
+    }
+
+}
+
+
+
+
+
+
+
+
+    /*termina soluciones-------------------*/
 
 
 
@@ -843,8 +1004,7 @@ nav {
 
 
 
-
-#titulo, #servicios {
+#titulo, #servicios, #timeline {
     padding: 50px 10%;
 }
 .home-contect {
