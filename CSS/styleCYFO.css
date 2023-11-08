@@ -649,7 +649,7 @@ nav {
     }
 
 .slider .box1 {
-    background-image: url("../img/bannerbox1.JPG.");
+    background-image: url("../img/bannerbox1.JPG");
     background-color: #008CEA;
     background-size: contain;
     background-repeat: no-repeat;
@@ -660,7 +660,7 @@ nav {
 
 
 .slider .box2 {
-    background-image: url("../img/bannerbox2.JPG.");
+    background-image: url("../img/bannerbox2.JPG");
     background-color: #0dc959;
     background-size: contain;
     background-repeat: no-repeat;
@@ -670,7 +670,7 @@ nav {
 
 
 .slider .box3 {
-    background-image: url("../img/bannerbox3.JPG.");
+    background-image: url("../img/bannerbox3.JPG");
     background-color: #FF2415;
     background-size: contain;
     background-repeat: no-repeat;
@@ -680,7 +680,7 @@ nav {
 
 .slider .box4 {
     background-color: #7AC1FE;
-    background-image: url("../img/bannerbox4.JPG.");
+    background-image: url("../img/bannerbox4.JPG");
     background-size: contain;
     background-repeat: no-repeat;
     background-position-x: right;
