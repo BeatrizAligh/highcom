@@ -1037,20 +1037,19 @@ strong {
 .section-services {
     padding-top: 110px;
     padding-bottom: 120px;
-    background-color: var(--bg-color);
+    background-color: #24252a;
     color: #fff;
-    justify-content:center;
 }
 
     .section-services .header-section {
         margin-bottom: 35px;
-        text-align: center;
     }
 
         .section-services .header-section .title {
             position: relative;
             margin-bottom: 40px;
             padding-bottom: 25px;
+            text-transform: uppercase;
             font-weight: 700;
         }
 
@@ -1062,7 +1061,7 @@ strong {
                 transform: translateX(-50%);
                 width: 140px;
                 height: 1px;
-                background-color: #f70037;
+                background-color: var(--dark-blue);
             }
 
             .section-services .header-section .title:after {
@@ -1073,26 +1072,21 @@ strong {
                 transform: translateX(-50%);
                 width: 45px;
                 height: 3px;
-                background-color: #f70037;
+                background-color: var(--dark-blue);
+            }
+
+            .section-services .header-section .title span {
+                color: #f70037;
             }
 
         .section-services .header-section .description {
             color: #6f6f71;
         }
 
-    .section-services .row {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-
-
     .section-services .single-service {
         margin-top: 40px;
-        background-color: #24252a;
-        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-        justify-content: center;
-        align-items: center;
+        background-color: var(--bg-color);
+        box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
     }
 
         .section-services .single-service .part-1 {
@@ -1103,7 +1097,7 @@ strong {
             .section-services .single-service .part-1 i {
                 margin-bottom: 25px;
                 font-size: 50px;
-                color: #f70037;
+                color: var(--dark-blue);
             }
 
             .section-services .single-service .part-1 .title {
@@ -1122,8 +1116,6 @@ strong {
                 color: #6f6f71;
                 font-size: 14px;
                 line-height: 1.8em;
-                max-height: 90px; /* Ajusta la altura máxima de la descripción */
-                overflow: hidden;
             }
 
             .section-services .single-service .part-2 a {
@@ -1134,7 +1126,7 @@ strong {
 
                 .section-services .single-service .part-2 a i {
                     margin-right: 10px;
-                    color: #f70037;
+                    color: var(--dark-blue);
                 }
 
 
