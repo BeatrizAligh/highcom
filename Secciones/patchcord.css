@@ -1,0 +1,232 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Open+Sans:wght@300;400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+:root {
+    --text-color: #F2F2F2;
+    --hover-color: #0dc959;
+    --hover-color-green: #0dc959;
+    --hover-color-red: #FF2415;
+    --bg-color: #292e33;
+    --secon-bg-color: #1f2327;
+    --three-bg-color: #3f4449;
+    --big-font: 3.5rem;
+    --norma-font: 2.5rem;
+    --neon-box-shadow: 0 0 .5rem#0dc959;
+    --neon-box-shadow-green: 0 0 .5rem #0dc959;
+    --neon-box-shadow-red: 0 0 .5rem #FF2415;
+    --h2-font: 3rem;
+    --font-neon-text-shadow: 0 0 10px rgba(18, 247, 255, 0.3), 0 0 20px rgba(18, 247, 255, 0.3), 0 0 30px rgba(18, 247, 255, 0.3), 0 0 40px rgba(18, 247, 255, 0.3), 0 0 70px rgba(18, 247, 255, 0.3), 0 0 80px rgba(18, 247, 255, 0.3), 0 0 100px rgba(18, 247, 255, 0.3), 0 0 150px rgba(18, 247, 255, 0.3);
+    --blue: #0097FC;
+    --light-blue: #7AC1FE;
+    --dark-blue: #008CEA;
+    --grey: #828282;
+
+}
+
+
+/* Barra de desplazamiento */
+::-webkit-scrollbar {
+    height: 0;
+    width: .5rem; /* Ancho de la barra */
+    background-color: #333; /* Color de fondo */
+}
+
+/* Track (pista) de la barra de desplazamiento */
+::-webkit-scrollbar-track {
+    background: var(--secon-bg-color); /* Color de fondo */
+}
+
+/* Handle (agarre) de la barra de desplazamiento */
+::-webkit-scrollbar-thumb {
+    background: var(--hover-color); /* Color del agarre */
+    border-radius: 5rem; /* Radio de borde del agarre */
+}
+
+.loader-section {
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secon-bg-color);
+    z-index: 999;
+    transition: all 1s 1s ease-out;
+    opacity: 1;
+}
+
+.loaded {
+    opacity: 0;
+    z-index: -1;
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid var(--hover-color-red);
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+body {
+    font-family: Lato, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    height: 600px;
+    background: var(--dark-blue);
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(90deg, rgba(6,0,97,0.5) 0%, rgba(9,9,159,0.5) 50%, rgba(1,159,232,0.5) 100%), url(../img/patchcord.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(90deg, rgba(6,0,97,0.5) 0%, rgba(9,9,159,0.5) 50%, rgba(1,159,232,0.5) 100%), url(../img/patchcord.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+
+
+}
+
+.barra {
+    position: relative;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px 10%;
+    z-index: 3;
+}
+
+.navlist {
+    display: flex;
+    z-index:10000;
+}
+
+    .navlist a {
+        display: inline-block;
+        color: var(--text-color);
+        font-size: 1.2rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding: 10px 20px;
+        animation: slideAnimation 1s ease forwards;
+        animation-delay: calc(.3s * var(--i));
+        opacity: 0;
+        background-image: linear-gradient( to right, #54b3d6, #54b3d6 50%, var(--text-color) 50% );
+        background-size: 200% 100%;
+        background-position: -100%;
+        display: inline-block;
+        position: relative;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all 0.3s ease-in-out;
+    }
+@keyframes slideAnimation {
+
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+        .navlist a:hover {
+            background-position: 0;
+        }
+
+        .navlist a:before {
+            content: '';
+            background: #54b3d6; /*barra azul*/
+            display: block;
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 0;
+            height: 3px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .navlist a:hover::before {
+            width: 100%;
+        }
+.language {
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.language-item {
+    display: block;
+    cursor: pointer;
+}
+
+    .language-item img {
+        width: 25px; /* Ajusta el tamaño de los iconos según tus necesidades */
+    }
+
+.logo img {
+    width: 100px; /* Ajusta el ancho deseado */
+    height: auto;
+}
+
+header .textos-header {
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1 {
+    font-size: 50px;
+    color: #fff;
+}
+
+.textos-header h2 {
+    font-size: 30px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
