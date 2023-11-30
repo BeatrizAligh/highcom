@@ -1352,7 +1352,7 @@ strong {
     top: 270px;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 1500px;
+    width: 1600px;
     height: 500px;
     padding: 30px 20px;
     background: #24252a;
@@ -1361,7 +1361,7 @@ strong {
 
     .tabs .tab-header {
         float: left;
-        width: 180px;
+        width: 250px;
         height: 100%;
         border-right: 1px solid #ccc;
         padding: 50px 0px;
