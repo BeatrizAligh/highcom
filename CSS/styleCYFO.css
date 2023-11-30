@@ -1352,7 +1352,7 @@ strong {
     top: 270px;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 1200px;
+    width: 1500px;
     height: 500px;
     padding: 30px 20px;
     background: #24252a;
@@ -1388,20 +1388,31 @@ strong {
             margin-right: 5px;
         }
 
+
+    .tabs .tab-content h {
+        font-size: 15px;
+        color: #fff;
+    }
+
     .tabs .tab-content {
         position: relative;
         height: 100%;
         overflow: hidden;
     }
 
-    .tabs .tab-content active{
-
-    }
+aside {
+    position: relative;
+    display: grid;
+    width: 50%;
+    padding: 40px 20px;
+    justify-content: end;
+    left: 500px;
+}
 
 
     .tabs .tab-content img{
-        width:30px;
-        height:30px;
+        width:80px;
+        height:80px;
     }
 
         .tabs .tab-content > div > i {
