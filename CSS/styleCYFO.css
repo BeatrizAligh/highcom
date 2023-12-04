@@ -1046,6 +1046,7 @@ strong {
     padding-bottom: 60px;
     background-color: #24252a;
     color: #fff;
+    
 }
 
     .section-services .header-section {
@@ -1090,57 +1091,63 @@ strong {
             color: #6f6f71;
         }
 
+.service-section {
+    display: flex;
+    background: var(--dark);
+    border-radius: 20px;
+    text-align: center;
+    align-items: center;
+    width:auto;
+    height:300px;
+}
 
+.services {
+    flex: 1;
+    padding: 20px;
+}
 
+.service {
+    margin-bottom: 20px;
+}
 
+.gallery {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+}
 
-
-    .section-services .single-service {
-        margin-top: 25px;
-        height:430px;
-        background-color: var(--bg-color);
-        box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
+    .gallery img {
+        width: 10%;
+        height: auto;
+        display: none;
+        animation: fadeIn 1s ease-in-out;
     }
 
-        .section-services .single-service .part-1 {
-            padding: 40px 40px 25px;
-            border-bottom: 2px solid #1d1e23;
-        }
+.description-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    text-align: left;
+}
 
-            .section-services .single-service .part-1 i {
-                margin-bottom: 25px;
-                font-size: 50px;
-                color: var(--dark-blue);
-            }
+.image-description {
+    margin: 0;
+}
 
-            .section-services .single-service .part-1 .title {
-                font-size: 17px;
-                font-weight: 700;
-                letter-spacing: 0.02em;
-                line-height: 1.8em;
-            }
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
 
-        .section-services .single-service .part-2 {
-            padding: 30px 40px 40px;
-        }
+    to {
+        opacity: 1;
+    }
+}
 
-            .section-services .single-service .part-2 .description {
-                margin-bottom: 22px;
-                color: #6f6f71;
-                font-size: 14px;
-                line-height: 1.8em;
-            }
 
-            .section-services .single-service .part-2 a {
-                color: #fff;
-                font-size: 14px;
-                text-decoration: none;
-            }
-
-                .section-services .single-service .part-2 a i {
-                    margin-right: 10px;
-                    color: var(--dark-blue);
-                }
 
 
 

@@ -247,3 +247,34 @@ for (let i = 0; i < tabPanes.length; i++) {
     });
 }
 
+//servicios side*------------------------------
+
+$(document).ready(function () {
+    const imageContainers = $('.gallery .image-container');
+    const description = $('.gallery .image-description');
+
+    imageContainers.on('mouseenter', function () {
+        const image = $(this).find('img');
+        const descriptionText = image.data('description');
+        $(this).find('.image-description').text(descriptionText);
+    });
+
+    imageContainers.on('mouseleave', function () {
+        description.text('');
+    });
+
+    let currentIndex = 0;
+
+    function showNextImage() {
+        const currentImageContainer = imageContainers.eq(currentIndex);
+        currentImageContainer.find('img').fadeOut(500, function () {
+            currentIndex = (currentIndex + 1) % imageContainers.length;
+            const nextImageContainer = imageContainers.eq(currentIndex);
+            nextImageContainer.find('img').fadeIn(500);
+        });
+    }
+
+    setInterval(showNextImage, 5000);
+
+    imageContainers.eq(0).find('img').fadeIn(1000);
+});
