@@ -1137,6 +1137,28 @@ strong {
     margin: 0;
 }
 
+.indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 5px;
+}
+
+    .indicator.active {
+        background-color: #333;
+    }
+
+
 @keyframes fadeIn {
     from {
         opacity: 0;

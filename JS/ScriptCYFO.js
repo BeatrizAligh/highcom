@@ -250,31 +250,75 @@ for (let i = 0; i < tabPanes.length; i++) {
 //servicios side*------------------------------
 
 $(document).ready(function () {
-    const imageContainers = $('.gallery .image-container');
-    const description = $('.gallery .image-description');
-
-    imageContainers.on('mouseenter', function () {
-        const image = $(this).find('img');
-        const descriptionText = image.data('description');
-        $(this).find('.image-description').text(descriptionText);
-    });
-
-    imageContainers.on('mouseleave', function () {
-        description.text('');
-    });
-
+    const mediaContainers = $('.gallery .media-container');
+    const description = $('.gallery .media-description');
+    const indicatorsContainer = $('.indicators');
     let currentIndex = 0;
+    let isHovered = false;
 
-    function showNextImage() {
-        const currentImageContainer = imageContainers.eq(currentIndex);
-        currentImageContainer.find('img').fadeOut(500, function () {
-            currentIndex = (currentIndex + 1) % imageContainers.length;
-            const nextImageContainer = imageContainers.eq(currentIndex);
-            nextImageContainer.find('img').fadeIn(500);
+    // Crea los indicadores
+    for (let i = 0; i < mediaContainers.length; i++) {
+        indicatorsContainer.append('<div class="indicator"></div>');
+    }
+
+    // Función para actualizar los indicadores
+    function updateIndicators() {
+        $('.indicator').removeClass('active');
+        $('.indicator').eq(currentIndex).addClass('active');
+    }
+
+    mediaContainers.on('mouseenter', function () {
+        isHovered = true;
+        const mediaType = $(this).data('type');
+        const mediaDescription = $(this).find('.media-description');
+
+        if (mediaType === 'video') {
+            const videoSource = $(this).data('source');
+            const video = $('<video autoplay muted loop controls style="width: 100%;"><source src="' + videoSource + '" type="video/mp4">Tu navegador no soporta el elemento de video.</video>');
+            mediaDescription.append(video);
+
+            // Cuando el video termina, mostrar la siguiente media
+            video.on('ended', function () {
+                if (!isHovered) {
+                    showNextMedia();
+                }
+            });
+        } else if (mediaType === 'image') {
+            const imageSource = $(this).data('source');
+            const image = $('<img src="' + imageSource + '" alt="Imagen">');
+            mediaDescription.append(image);
+        }
+
+        const descriptionText = $(this).data('description');
+        mediaDescription.append('<p>' + descriptionText + '</p>');
+
+        updateIndicators();
+    });
+
+    mediaContainers.on('mouseleave', function () {
+        isHovered = false;
+        const mediaDescription = $(this).find('.media-description');
+        mediaDescription.empty();
+    });
+
+    
+
+    function showNextMedia() {
+        const currentMediaContainer = mediaContainers.eq(currentIndex);
+        currentMediaContainer.find('video, img').fadeOut(500, function () {
+            currentIndex = (currentIndex + 1) % mediaContainers.length;
+            const nextMediaContainer = mediaContainers.eq(currentIndex);
+            nextMediaContainer.find('video, img').fadeIn(500);
+            updateIndicators();
         });
     }
 
-    setInterval(showNextImage, 5000);
 
-    imageContainers.eq(0).find('img').fadeIn(1000);
+    setInterval(function () {
+        if (!isHovered) {
+            showNextMedia();
+        }
+    }, 5000);
+
+    mediaContainers.eq(0).find('video').fadeIn(500);
 });
