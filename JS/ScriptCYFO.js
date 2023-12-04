@@ -314,11 +314,20 @@ $(document).ready(function () {
     }
 
 
+
+
     setInterval(function () {
         if (!isHovered) {
+            const currentVideo = $('.media-container video:visible');
+            const currentIndex = mediaContainers.index(currentVideo.closest('.media-container'));
+
             showNextMedia();
         }
     }, 5000);
 
+
     mediaContainers.eq(0).find('video').fadeIn(500);
+
+    $('.media-container video').hide();
+    $('.media-container video:first').show();
 });
