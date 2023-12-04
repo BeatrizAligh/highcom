@@ -1116,12 +1116,13 @@ strong {
     position: relative;
 }
 
-    .gallery img {
-        width: 10%;
+   .service-section .gallery img {
+        width: 50%;
         height: auto;
         display: none;
         animation: fadeIn 1s ease-in-out;
     }
+
 
 .description-container {
     position: fixed;
@@ -1152,6 +1153,7 @@ strong {
     border-radius: 50%;
     background-color: #ccc;
     margin: 0 5px;
+
 }
 
     .indicator.active {
