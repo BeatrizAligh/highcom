@@ -1042,8 +1042,8 @@ strong {
     /*SERVICIOS----------------------------*/
 
 .section-services {
-    padding-top: 110px;
-    padding-bottom: 120px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: #24252a;
     color: #fff;
 }
@@ -1096,7 +1096,8 @@ strong {
 
 
     .section-services .single-service {
-        margin-top: 40px;
+        margin-top: 25px;
+        height:430px;
         background-color: var(--bg-color);
         box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
     }
@@ -1142,6 +1143,13 @@ strong {
                 }
 
 
+
+/*carousel servicios*/
+
+
+
+
+                /*------------*/
 
 /*PRODUCTOS------------------------------*/
 .section-products {
@@ -1450,3 +1458,87 @@ aside {
         top: 80px;
         transition: all 500ms ease-in-out;
     }
+
+
+/*-----SOluciones alterno*/
+
+.services-section {
+    background: var(--secon-bg-color);
+    background-size: cover;
+    padding: 60px 0;
+}
+
+.inner-width {
+    width: 100%;
+    max-width: 1600px;
+    margin: auto;
+    padding: 0 20px;
+    overflow: hidden;
+}
+
+.section-title {
+    text-align: center;
+    color: #ddd;
+    font-size: 20px;
+}
+
+.border {
+    width: 160px;
+    height: 2px;
+    background: #82ccdd;
+    margin: 40px auto;
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service-box {
+    max-width: 18%;
+    padding: 10px;
+    width:190px;
+    text-align: center;
+    color: #ddd;
+    cursor: pointer;
+}
+
+.service-icon img {
+    display: inline-block;
+    max-width: 200px;
+    height: 111px;
+    margin-bottom: 30px;
+    margin-top: 16px;
+    transition: 0.3 linear;
+}
+
+
+.service-title {
+    font-family: Lato;
+    color: #6f6f71;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.service-description {
+    font-size: 14px;
+}
+
+@media screen and (max-width:960px) {
+    .service-box {
+        max-width: 45%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .service-box {
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .service-box {
+        max-width: 100%;
+    }
+}
