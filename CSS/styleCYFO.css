@@ -1501,7 +1501,11 @@ aside {
     width:220px;
     text-align: center;
     color: #ddd;
-    cursor: pointer;
+    cursor:pointer;
+}
+.service-box:hover{
+    transform:translateY(-15px);
+    transition: 1s; 
 }
 
 .service-icon img {
