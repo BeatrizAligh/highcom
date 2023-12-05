@@ -1093,7 +1093,7 @@ strong {
         text-align:justify;
         color: var(--blue);
         font-family:Lato;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         font-weight:800;
         margin: 20px;
     }
@@ -1101,8 +1101,9 @@ strong {
     .card-content h {
         font-family: Lato;
         color: #6f6f71;
-        font-size: 16px;        
+        font-size: 16px;
         margin-bottom: 15px;
+        text-align: justify;
     }
 
 
