@@ -1321,12 +1321,13 @@ strong {
 
 
 .tabs {
+    margin-top: 10%;
     position: relative;
     top: 270px;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 1600px;
-    height: 500px;
+    height: 850px;
     padding: 30px 20px;
     background: var(--secon-bg-color);
     box-shadow: 0 15px 15px 8px rgba(0, 0, 0, 0.6);
