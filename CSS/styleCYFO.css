@@ -1042,140 +1042,73 @@ strong {
     /*SERVICIOS----------------------------*/
 
 .section-services {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     background-color: #24252a;
     color: #fff;
     
 }
 
-    .section-services .header-section {
-        margin-bottom: 35px;
-    }
-
-        .section-services .header-section .title {
-            position: relative;
-            margin-bottom: 40px;
-            padding-bottom: 25px;
-            text-transform: uppercase;
-            font-weight: 700;
-        }
-
-            .section-services .header-section .title:before {
-                content: "";
-                position: absolute;
-                bottom: 0;
-                left: 50%;
-                transform: translateX(-50%);
-                width: 140px;
-                height: 1px;
-                background-color: var(--dark-blue);
-            }
-
-            .section-services .header-section .title:after {
-                content: "";
-                position: absolute;
-                bottom: -1px;
-                left: 50%;
-                transform: translateX(-50%);
-                width: 45px;
-                height: 3px;
-                background-color: var(--dark-blue);
-            }
-
-            .section-services .header-section .title span {
-                color: #f70037;
-            }
-
-        .section-services .header-section .description {
-            color: #6f6f71;
-        }
-
-.service-section {
-    display: flex;
-    background: var(--dark);
-    border-radius: 20px;
-    text-align: center;
-    align-items: center;
-    width:auto;
-    height:300px;
-}
-
-.services {
-    flex: 1;
-    padding: 20px;
-}
-
-.service {
-    margin-bottom: 20px;
-}
-
-.gallery {
-    flex: 1;
-    overflow: hidden;
-    position: relative;
-}
-
-   .service-section .gallery img {
-        width: 50%;
-        height: auto;
-        display: none;
-        animation: fadeIn 1s ease-in-out;
-    }
-
-
-.description-container {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 10px;
+.services-section2 {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 40px 20px;
     text-align: left;
 }
 
-.image-description {
-    margin: 0;
+.section-header {
+    margin-bottom: 30px;
+    text-align:center;
 }
 
-.indicators {
+.container-services {
     display: flex;
-    justify-content: center;
-    margin-top: 10px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    padding-top:20px;
+    
 }
 
-.indicator {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #ccc;
-    margin: 0 5px;
+.service-card {
+    
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+    margin-right: 20px;
+    width:700px;
+}
+    .service-card:last-child {
+        margin-right: 0; /* Elimina el espacio a la derecha de la última tarjeta */
+    }
 
+    .service-card img {
+        width: 100%;
+        height: auto;
+    }
+
+.card-content {
+    padding: 20px;
 }
 
-    .indicator.active {
-        background-color: #333;
+    .card-content h3 {
+        text-align:justify;
+        color: var(--blue);
+        font-family:Lato;
+        font-size: 1.2rem;
+        font-weight:800;
+        margin: 20px;
+    }
+
+    .card-content h {
+        font-family: Lato;
+        color: #6f6f71;
+        font-size: 16px;        
+        margin-bottom: 15px;
     }
 
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
 
 
 
-
-
-/*carousel servicios*/
 
 
 
