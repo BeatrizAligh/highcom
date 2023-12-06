@@ -1359,6 +1359,8 @@ strong {
                 color: var(--blue);
             }
 
+
+
 .icon-svg {
     display: inline-block;
     margin-left: 10px;
@@ -1371,11 +1373,16 @@ strong {
         color: #fff;
     }
 
-    .tabs .tab-content {
-        position: relative;
-        height: 100%;
-        overflow: hidden;
-    }
+.tabs .tab-content {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    float: left;
+    width: 1200px;
+    height: 100%;
+    border-top: 1px solid #ccc;
+    top: 73px;
+}
 
 aside {
     position: relative;
