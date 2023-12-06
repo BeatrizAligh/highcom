@@ -1519,7 +1519,7 @@ aside {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 413px;
+    margin-top: auto;
     width: 469px;
     margin-left: 88px;
 }
