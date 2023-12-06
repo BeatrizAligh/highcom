@@ -1611,7 +1611,7 @@ footer {
 }
 
 .logo {
-    width: 80%; 
+    width: 70%; 
 }
 
 .social-icons {
@@ -1721,6 +1721,42 @@ footer {
         transition: ease 2s;
 
     }
+
+
+
+    /*footer 2*/
+
+
+.copy {
+    padding: 0.8rem 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--secon-bg-color);
+}
+
+    .copy h {
+        color: #bdbdbd;
+    }
+
+
+
+    .copy a {
+        display: inline-flex;
+        justify-content: center;
+        color: var(--text-color);
+        background: var(--hover-color);
+        padding: .6rem;
+        border-radius: 5px;
+    }
+
+        .copy a i {
+            font-size: 1rem;
+            color: var(--secon-bg-color);
+        }
+
+
+
 
 
 /*.section {
