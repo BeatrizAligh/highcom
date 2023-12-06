@@ -1368,10 +1368,18 @@ strong {
 }
 
 
-    .tabs .tab-content h {
-        font-size: 15px;
-        color: #fff;
-    }
+.tabs .tab-content h {
+    color: #FFF;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 1.1px;
+    float: right;
+    text-align: justify;
+    font-size: 16px;
+    color: #fff;
+}
 
 .tabs .tab-content {
     position: relative;
@@ -1382,6 +1390,16 @@ strong {
     height: 100%;
     border-top: 1px solid #ccc;
     top: 50px;
+}
+
+.tab-content .tab-textos {
+    display: flex;
+    width: 560px;
+    height: 429px;
+    flex-direction: column;
+    justify-content: space-between;
+    float: inline-end;
+    padding-top: 55px;
 }
 .sobre-div {
     top:16px;
@@ -1431,7 +1449,7 @@ aside {
         .tabs .tab-content > div {
             position: absolute;
             text-align: center;
-            width:50%;
+            width:55%;
             padding: 40px 20px;
             top: -200%;
             transition: all 500ms ease-in-out;
