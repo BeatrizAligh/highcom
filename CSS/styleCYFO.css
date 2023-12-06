@@ -1119,7 +1119,7 @@ strong {
 /*PRODUCTOS------------------------------*/
 .section-products {
     padding-top: 40px;
-    
+    height:1100px;
     background-color: var(--secon-bg-color);
     color: #fff;
 }
@@ -1513,3 +1513,210 @@ aside {
         max-width: 100%;
     }
 }
+
+/*interes--------------------------*/
+
+.container-interes {
+    display:flex;
+    flex-direction:column;
+    margin: 60px;
+    padding: 25px;
+    text-align:center;
+    justify-content:center;
+}
+
+
+.Ititle {
+    
+    text-align: center;
+    text-transform: uppercase;
+    font-size:50px;
+    font-family: Lato;
+    font-weight: 900;
+   
+}
+.subname {
+    margin-top:20px;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+/*footer*/
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.container-footer {
+    margin: 5px;
+    padding: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: justify;
+    align-items: center;
+}
+
+.footer-row {
+    width:430px;
+    height:300px;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+.container-logo{
+    width:auto;
+    height:auto;
+    align-items:center;
+}
+
+.logo {
+    width: 80%; 
+}
+
+.social-icons {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    width: 220px;
+    height: 40px;
+}
+
+    .social-icons a {
+        display: inline-flex;
+        width: 50px;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        background: var(--bg-color);
+        color: var(--blue);
+        border: 2px solid var(--blue);
+        transition: .6s;
+        box-shadow: 0 0 0.3rem #12f7ff;
+        border-radius: 5px;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        opacity: 0.5;
+    }
+
+        .social-icons a i {
+            font-size: 1.5rem;
+            opacity: 1;
+        }
+
+        .social-icons a:hover {
+            color: var(--bg-color);
+            opacity: 2;
+        }
+
+        .social-icons a::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 0;
+            height: 100%;
+            background: var(--blue);
+            transition: .6s;
+            z-index: -1;
+        }
+
+        .social-icons a:hover::before {
+            width: 100%;
+        }
+
+    .social-icons img {
+        width: 20px; /* Ajusta el tamaño de los iconos sociales según sea necesario */
+    }
+
+.Stitle {
+    font-size:30px;
+    padding-bottom: 25px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.services-item{
+    width:280px;
+    height:280px;
+}
+
+    .services-item ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .services-item li {
+        text-align: left;
+        position: relative;
+        padding-left: 30px; /* Incrementé el espacio a la izquierda para dejar espacio para el círculo */
+        margin-bottom: 10px;
+    }
+
+        .services-item li:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 12px; /* Tamaño del círculo */
+            height: 12px; /* Tamaño del círculo */
+            border: 2px solid #fff; /* Borde del círculo */
+            border-radius: 50%; /* Hace que el borde sea redondo */
+            box-sizing: border-box; /* Asegura que el tamaño total sea el especificado (incluyendo el grosor del borde) */
+        }
+
+    .services-item ul li a {
+        font-family: Lato;
+        color: #6f6f71;
+        font-size: 16px;
+        margin-bottom: 10px
+    }
+
+    .services-item ul li a:hover {
+        color: var(--blue);
+        text-decoration:none;
+        transition: ease 2s;
+
+    }
+
+
+/*.section {
+    margin-bottom: 20px;
+}
+
+.section-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.services, .products, .contact {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.service, .product {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+}
+
+    .contact-info img {
+        width: 30px;*/*/ /* Ajusta el tamaño del icono de ubicación según sea necesario */
+        /*margin-right: 10px;
+    }*/
