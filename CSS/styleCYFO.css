@@ -1395,12 +1395,45 @@ strong {
 .tab-content .tab-textos {
     display: flex;
     width: 560px;
-    height: 429px;
+    height: 384px;
     flex-direction: column;
     justify-content: space-between;
     float: inline-end;
-    padding-top: 55px;
+    padding-top: 10px;
 }
+
+.subtitle-tab {
+    color: #FFF;
+    text-align: left;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.textos ul li {
+    padding: 5px;
+    padding-left: 40px;
+    color: #FFF;
+    text-align: justify;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.1px;
+}
+
+    .textos ul li::before {
+        content: '\2022'; /* Código Unicode para el carácter de viñeta redonda */
+        position: absolute;
+        left: 100px;
+        color: var(--blue);
+    }
+
+
+
 .sobre-div {
     top:16px;
     left: 27%;
@@ -1478,6 +1511,81 @@ aside {
     font-weight: 800;
     font-size: 35px;
 }
+
+
+
+/*botones del tab*/
+
+
+.btn-box-tab {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 413px;
+    width: 469px;
+    margin-left: 88px;
+}
+    .btn-tab {
+        padding: 10px 20px;
+        width: 220px;
+        height: 60px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        background: var(--bg-color);
+        color: #fff;
+        font-size: 1rem;
+        letter-spacing: 1px;
+        font-weight: 900;
+        transition: .6s;
+        box-shadow: 0px 2px 15px 5px #000;
+        border-radius: 15px;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        margin-top: 25px;
+    }
+
+
+
+
+
+
+/*.btn:hover {
+    color: var(--blue);
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--bg-color);
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    transition: .4s;
+}
+
+.btn:hover::before {
+    width: 100%;
+}
+
+.btn:nth-child(1) {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+    .btn:nth-child(1):hover {
+        color: var(--bg-color);
+        border: 2px solid var(--text-color);
+        box-shadow: var(--text-color);
+    }
+
+    .btn:nth-child(1)::before {
+        background: var(--text-color);
+    }*/
+
 
 
 /*-----SOluciones alterno*/
