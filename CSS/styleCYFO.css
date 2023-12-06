@@ -1381,8 +1381,25 @@ strong {
     width: 1200px;
     height: 100%;
     border-top: 1px solid #ccc;
-    top: 73px;
+    top: 50px;
 }
+.sobre-div {
+    top:16px;
+    left: 466px;
+    float: left;
+    position: relative;
+}
+
+    .sobre-div h {
+        color: #FFF;
+        text-align: center;
+        font-family: Lato;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        letter-spacing: 10px;
+        text-transform: uppercase;
+    }
 
 aside {
     position: relative;
