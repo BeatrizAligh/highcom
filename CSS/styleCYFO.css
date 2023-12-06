@@ -1385,7 +1385,7 @@ strong {
 }
 .sobre-div {
     top:16px;
-    left: 466px;
+    left: 27%;
     float: left;
     position: relative;
 }
@@ -1449,6 +1449,16 @@ aside {
     left: 347px;
     top: 80px;
     transition: all 500ms ease-in-out;
+}
+
+.title-tab {
+    left: 50%;
+    position: relative;
+    margin-bottom: 40px;
+    padding-bottom: 25px;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 35px;
 }
 
 
