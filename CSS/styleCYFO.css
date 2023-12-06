@@ -1392,14 +1392,12 @@ strong {
     top: 50px;
 }
 
-.tab-content .tab-textos {
+.tab-content h {
     display: flex;
-    width: 560px;
-    height: 384px;
+    width: 570px;
     flex-direction: column;
-    justify-content: space-between;
     float: inline-end;
-    padding-top: 10px;
+    padding-top: 30px;
 }
 
 .subtitle-tab {
