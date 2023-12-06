@@ -213,7 +213,7 @@ span {
         color: #fff;
         font-size: 1rem;
         font-weight: 500;
-        padding: 9px 15px;
+        padding: 18px 15px;
         transition: all .3s ease;
         width: max-content;
         height: 65px;
@@ -1746,7 +1746,7 @@ footer {
         display: inline-flex;
         justify-content: center;
         color: var(--text-color);
-        background: var(--hover-color);
+        background: var(--blue);
         padding: .6rem;
         border-radius: 5px;
     }
