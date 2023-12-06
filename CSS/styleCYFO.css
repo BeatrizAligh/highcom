@@ -1139,13 +1139,14 @@ strong {
         margin-bottom: 35px;
     }
 
-         .title {
-            position: relative;
-            margin-bottom: 40px;
-            padding-bottom: 25px;
-            text-transform: uppercase;
-            font-weight: 700;
-        }
+.title {
+    position: relative;
+    margin-bottom: 40px;
+    padding-bottom: 25px;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 35px;
+}
 
              .title:before {
                 content: "";
@@ -1610,7 +1611,7 @@ footer {
     align-items:center;
 }
 
-.logo {
+.logo2 {
     width: 70%; 
 }
 
