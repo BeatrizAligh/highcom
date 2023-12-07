@@ -1578,17 +1578,26 @@
                         <a href="pdf/portafoliohighcom.pdf" download="DataSheet FO" class="btn-tab" data-section="contact" data-value="contactUs">Datasheet</a>
                     </main>
                     <main class="imagen-tap">
-                        <img class="imagen1" src="../img/junta.svg" alt="" />
-                        <img class="imagen2" src="../img/fibratipos.jpg" alt="" />
+                        <img class="imagen1" src="../img/patchcords/1.jpg" alt="" onclick="openModal('imagen1')" />
+                        <img class="imagen2" src="../img/patchcords/4.png" alt="" onclick="openModal('imagen2')" />
                     </main>
                     <main class="imagen-tap2">
-                        <img class="imagen3" src="../img/cables.jpg" alt="" />
-                        <img class="imagen4" src="../img/cables.jpg" alt="" />
+                        <img class="imagen3" src="../img/patchcords/9.png" alt=""  onclick="openModal('imagen3')" />
+                        <img class="imagen4" src="../img/patchcords/6.png" alt=""  onclick="openModal('imagen4')" />
                     </main>
                     <main class="imagen-tap3">
-                        <img class="imagen5" src="../img/fibratipos.jpg" alt="" />
-                        <img class="imagen6" src="../img/junta.svg" alt="" />
+                        <img class="imagen5" src="../img/patchcords/8.png" alt="" onclick="openModal('imagen5')" />
+                        <img class="imagen6" src="../img/patchcords/10.png" alt="" onclick="openModal('imagen6')" />
+                        <img class="imagen7" src="../img/patchcords/5.png" alt="" onclick="openModal('imagen7')" />
 
+                    </main>
+                    <main id="myModal" class="modal">
+                        <span class="close" onclick="closeModal()">&times;</span>
+                        <img class="modal-content" id="modalImage">
+
+                        <!-- Botones de navegación -->
+                        <a class="prev" onclick="showPrevImage()">&#10094;</a>
+                        <a class="next" onclick="showNextImage()">&#10095;</a>
                     </main>
                 </div>
                

@@ -247,5 +247,39 @@ for (let i = 0; i < tabPanes.length; i++) {
     });
 }
 
-//servicios side*------------------------------
+//modal imagen*------------------------------
 
+const images = ["imagen1", "imagen2", "imagen3", "imagen4", "imagen5", "imagen6"];
+let currentIndex = 0;
+
+function openModal(imageId) {
+    const modal = document.getElementById('myModal');
+    const modalImage = document.getElementById('modalImage');
+    modal.style.display = 'block';
+
+    // Encuentra el índice de la imagen actual
+    currentIndex = images.indexOf(imageId);
+
+    // Actualiza la fuente de la imagen en el modal
+    modalImage.src = document.querySelector(`.${imageId}`).src;
+}
+
+function closeModal() {
+    document.getElementById('myModal').style.display = 'none';
+}
+
+function showNextImage() {
+    currentIndex = (currentIndex + 1) % images.length;
+    updateModalImage();
+}
+
+function showPrevImage() {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    updateModalImage();
+}
+
+function updateModalImage() {
+    const modalImage = document.getElementById('modalImage');
+    const currentImageId = images[currentIndex];
+    modalImage.src = document.querySelector(`.${currentImageId}`).src;
+}
