@@ -1426,7 +1426,7 @@ strong {
     .textos ul li::before {
         content: '\2022'; /* Código Unicode para el carácter de viñeta redonda */
         position: absolute;
-        left: 100px;
+        left: 90px;
         color: var(--blue);
     }
 
@@ -1460,10 +1460,7 @@ aside {
 }
 
 
-    .tabs .tab-content img{
-        width:80px;
-        height:80px;
-    }
+
 
         .icon-svg {
             display: inline-block;
@@ -1545,44 +1542,83 @@ aside {
     }
 
 
-
-
-
-
 /*.btn:hover {
     color: var(--blue);
-}
+}*/
 
-.btn::before {
-    content: "";
+/*galeria*/
+
+.imagen-tap {
+    align-items: flex-start;
     position: absolute;
-    top: 0;
-    left: 0;
-    background: var(--bg-color);
-    width: 0;
-    height: 100%;
-    z-index: -1;
-    transition: .4s;
+    top: 180px;
+    left: 680px;
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
 }
 
-.btn:hover::before {
-    width: 100%;
+.imagen1 {
+    width: 150px;
+    height: 150px;
 }
 
-.btn:nth-child(1) {
-    background: var(--bg-color);
-    color: var(--text-color);
+.imagen1:hover{
+    opacity: 0.2;
+    transition: ease 1s;
 }
 
-    .btn:nth-child(1):hover {
-        color: var(--bg-color);
-        border: 2px solid var(--text-color);
-        box-shadow: var(--text-color);
-    }
 
-    .btn:nth-child(1)::before {
-        background: var(--text-color);
-    }*/
+.imagen2 {
+    width: 330px;
+    height: 155px;
+}
+.imagen-tap2 {
+    align-items: flex-start;
+    position: absolute;
+    top: 340px;
+    left: 680px;
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+}
+
+.imagen3 {
+    top: 50px;
+    width: 240px;
+    height: 150px;
+}
+
+.imagen4 {
+    top: 50px;
+    width: 255px;
+    height: 150px;
+}
+
+.imagen-tap3 {
+    align-items: flex-start;
+    position: absolute;
+    top: 500px;
+    left: 680px;
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+}
+
+.imagen6 {
+    top:50px;
+    width: 150px;
+    height: 150px;
+}
+
+.imagen5 {
+    top: 50px;
+    width: 330px;
+    height: 155px;
+}
+
+
+
 
 
 
