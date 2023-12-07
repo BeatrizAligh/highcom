@@ -1392,12 +1392,23 @@ strong {
     top: 50px;
 }
 
-.tab-content h {
+.tab-content .textos {
     display: flex;
     width: 570px;
     flex-direction: column;
     float: inline-end;
     padding-top: 30px;
+}
+
+.tab-content .textos2 {
+    align-items: flex-start;
+    position: absolute;
+    top: 180px;
+    left: 680px;
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    flex-direction: column;
 }
 
 .subtitle-tab {
@@ -1423,12 +1434,32 @@ strong {
     letter-spacing: 1.1px;
 }
 
+.textos2 ul li {
+    padding: 5px;
+    padding-left: 40px;
+    color: #FFF;
+    text-align: justify;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.1px;
+}
+
     .textos ul li::before {
         content: '\2022'; /* Código Unicode para el carácter de viñeta redonda */
         position: absolute;
         left: 90px;
         color: var(--blue);
     }
+
+.textos2 ul li::before {
+    content: '\2022'; /* Código Unicode para el carácter de viñeta redonda */
+    position: absolute;
+    left: 17px;
+    color: var(--blue);
+}
 
 
 
@@ -1559,8 +1590,9 @@ aside {
 }
 
 .imagen1 {
-    width: 150px;
-    height: 150px;
+    background: #fff;
+    width: 165px;
+    height: 155px;
     cursor: pointer
 }
 
@@ -1632,6 +1664,7 @@ aside {
 
 
 .imagen2 {
+    background: #fff;
     width: 330px;
     height: 155px;
     cursor: pointer
@@ -1646,7 +1679,18 @@ aside {
     width: 500px;
 }
 
+.imagen-tap2-2 {
+    align-items: flex-start;
+    position: absolute;
+    top: 390px;
+    left: 680px;
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+}
+
 .imagen3 {
+    background: #fff;
     top: 50px;
     width: 240px;
     height: 150px;
@@ -1654,6 +1698,7 @@ aside {
 }
 
 .imagen4 {
+    background: #fff;
     top: 50px;
     width: 255px;
     height: 150px;
@@ -1663,27 +1708,39 @@ aside {
 .imagen-tap3 {
     align-items: flex-start;
     position: absolute;
-    top: 500px;
-    left: 640px;
+    top: 495px;
+    left: 680px;
     display: flex;
     justify-content: space-between;
-    width: 550px;
+    width: 500px;
+}
+.imagen-tap3-2 {
+    align-items: flex-start;
+    position: absolute;
+    top: 545px;
+    left: 680px;
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
 }
 
 .imagen6 {
+    background: #fff;
     top: 50px;
-    width: 150px;
-    height: 150px;
+    width: 165px;
+    height: 155px;
     cursor: pointer
 }
 
 .imagen5 {
+    background: #fff;
     top: 50px;
-    width: 200px;
+    width: 330px;
     height: 155px;
     cursor: pointer
 }
 .imagen7 {
+    background: #fff;
     top: 50px;
     width: 150px;
     height: 150px;
