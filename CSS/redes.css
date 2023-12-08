@@ -1458,6 +1458,20 @@ strong {
     padding-top: 30px;
 }
 
+.tab-content .textos4 {
+    display: flex;
+    width: 570px;
+    flex-direction: column;
+    float: inline-end;
+    padding-top: 170px;
+}
+.tab-content .textos5 {
+    display: flex;
+    width: 570px;
+    flex-direction: column;
+    float: inline-end;
+    padding-top: 165px;
+}
 
 .tab-content .textos2 {
     align-items: flex-start;
@@ -1661,6 +1675,14 @@ aside {
     width: 470px;
     margin-left: 90px;
 }
+.btn-box-tab3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 500px;
+    width: 470px;
+    margin-left: 688px;
+}
 
 
 /*.btn:hover {
@@ -1813,6 +1835,45 @@ aside {
     width: 565px;
 }
 
+.imagen-tap-4-6 {
+    align-items: flex-start;
+    position: absolute;
+    top: 291px;
+    display: flex;
+    justify-content: space-between;
+    width: 565px;
+}
+
+
+.imagen-tap1-6 {
+    align-items: flex-start;
+    position: absolute;
+    top: 184px;
+    left: 70px;
+    display: flex;
+    justify-content: space-between;
+    width: 565px;
+}
+
+.imagen-tap1-7 {
+    align-items: flex-start;
+    position: absolute;
+    top: 383px;
+    left: 70px;
+    display: flex;
+    justify-content: space-between;
+    width: 565px;
+}
+
+.imagen-tap1-8 {
+    align-items: flex-start;
+    position: absolute;
+    top: 578px;
+    left: 70px;
+    display: flex;
+    justify-content: space-between;
+    width: 565px;
+}
 
 
 /*-----------*/
