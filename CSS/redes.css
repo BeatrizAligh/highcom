@@ -1450,6 +1450,15 @@ strong {
     float: inline-end;
 }
 
+.tab-content .textos3 {
+    display: flex;
+    width: 570px;
+    flex-direction: column;
+    float: inline-end;
+    padding-top: 30px;
+}
+
+
 .tab-content .textos2 {
     align-items: flex-start;
     position: absolute;
@@ -1497,6 +1506,20 @@ strong {
     letter-spacing: 1.1px;
 }
 
+.textos3 ul li {
+    padding: 4px;
+    padding-left: 40px;
+    color: #FFF;
+    text-align: justify;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.1px;
+}
+
+
     .textos ul li::before {
         content: '\2022'; /* Código Unicode para el carácter de viñeta redonda */
         position: absolute;
@@ -1508,6 +1531,13 @@ strong {
     content: '\2022'; /* Código Unicode para el carácter de viñeta redonda */
     position: absolute;
     left: 17px;
+    color: var(--blue);
+}
+
+.textos3 ul li::before {
+    content: '\2022'; /* Código Unicode para el carácter de viñeta redonda */
+    position: absolute;
+    left: 85px;
     color: var(--blue);
 }
 
@@ -1623,6 +1653,16 @@ aside {
     }
 
 
+.btn-box-tab-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 520px;
+    width: 470px;
+    margin-left: 90px;
+}
+
+
 /*.btn:hover {
     color: var(--blue);
 }*/
@@ -1718,6 +1758,15 @@ aside {
     align-items: flex-start;
     position: absolute;
     top: 245px;
+    display: flex;
+    justify-content: space-between;
+    width: 565px;
+}
+
+.imagen-tap-5-2 {
+    align-items: flex-start;
+    position: absolute;
+    top: 355px;
     display: flex;
     justify-content: space-between;
     width: 565px;
