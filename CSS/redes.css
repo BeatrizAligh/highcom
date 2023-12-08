@@ -1379,7 +1379,7 @@ strong {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 1600px;
-    height: 910px;
+    height: 900px;
     padding: 30px 20px;
     background: var(--secon-bg-color);
     box-shadow: 0 15px 15px 8px rgba(0, 0, 0, 0.6);
@@ -1448,13 +1448,12 @@ strong {
     width: 570px;
     flex-direction: column;
     float: inline-end;
-    padding-top: 30px;
 }
 
 .tab-content .textos2 {
     align-items: flex-start;
     position: absolute;
-    top: 180px;
+    top: 148px;
     left: 680px;
     display: flex;
     justify-content: space-between;
@@ -1598,9 +1597,9 @@ aside {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: auto;
-    width: 469px;
-    margin-left: 88px;
+    margin-top: 550px;
+    width: 470px;
+    margin-left: 690px;
 }
     .btn-tab {
         padding: 10px 20px;
@@ -1630,6 +1629,101 @@ aside {
 
 /*galeria*/
 
+
+/*imagen patchcord1*/
+
+.imagen-tap1 {
+    align-items: flex-start;
+    position: absolute;
+    top: 270px;
+    left: 70px;
+    display: flex;
+    justify-content: space-between;
+    width: 565px;
+}
+.imagen1-1 {
+    background: #fff;
+    width: 230px;
+    height: 155px;
+    cursor: pointer
+}
+
+.imagen2-1 {
+    background: #fff;
+    width: 330px;
+    height: 155px;
+    cursor: pointer
+}
+
+.tab-content .textos-1 {
+    align-items: flex-start;
+    position: absolute;
+    top: 440px;
+    left: 70px;
+    display: flex;
+    justify-content: space-between;
+    width: 565px;
+    flex-direction: column;
+}
+.imagen-tap1-1 {
+    align-items: flex-start;
+    position: absolute;
+    top: 177px;
+    display: flex;
+    justify-content: space-between;
+    width: 565px;
+}
+
+.imagen-tap1-2 {
+    align-items: flex-start;
+    position: absolute;
+    top: 325px;
+    left: 680px;
+    display: flex;
+    justify-content: space-between;
+    width: 565px;
+}
+
+.imagen-tap1-3 {
+    align-items: flex-start;
+    position: absolute;
+    top: 486px;
+    left: 680px;
+    display: flex;
+    justify-content: space-between;
+    width: 565px;
+}
+
+/*---------*/
+/*-----------CAT*/
+
+.imagen-tap-2-2 {
+    align-items: flex-start;
+    position: absolute;
+    top: 382px;
+    display: flex;
+    justify-content: space-between;
+    width: 565px;
+}
+.imagen-tap-2-3 {
+    align-items: flex-start;
+    position: absolute;
+    top: 542px;
+    display: flex;
+    justify-content: space-between;
+    width: 565px;
+}
+
+.imagen-tap-3-2 {
+    align-items: flex-start;
+    position: absolute;
+    top: 235px;
+    display: flex;
+    justify-content: space-between;
+    width: 565px;
+}
+
+/*--------*/
 .imagen-tap {
     align-items: flex-start;
     position: absolute;
