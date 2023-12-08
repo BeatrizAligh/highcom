@@ -2083,35 +2083,3 @@ footer {
 
 
 
-
-/*.section {
-    margin-bottom: 20px;
-}
-
-.section-title {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.services, .products, .contact {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 20px;
-}
-
-.service, .product {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: center;
-}
-
-.contact-info {
-    display: flex;
-    align-items: center;
-}
-
-    .contact-info img {
-        width: 30px;*/*/ /* Ajusta el tamaño del icono de ubicación según sea necesario */
-        /*margin-right: 10px;
-    }*/
