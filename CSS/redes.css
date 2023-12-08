@@ -1700,7 +1700,7 @@ aside {
 .imagen-tap-2-2 {
     align-items: flex-start;
     position: absolute;
-    top: 382px;
+    top: 395px;
     display: flex;
     justify-content: space-between;
     width: 565px;
@@ -1708,7 +1708,7 @@ aside {
 .imagen-tap-2-3 {
     align-items: flex-start;
     position: absolute;
-    top: 542px;
+    top: 555px;
     display: flex;
     justify-content: space-between;
     width: 565px;
@@ -1717,13 +1717,56 @@ aside {
 .imagen-tap-3-2 {
     align-items: flex-start;
     position: absolute;
-    top: 235px;
+    top: 245px;
     display: flex;
     justify-content: space-between;
     width: 565px;
 }
 
 /*--------*/
+
+
+/*---cat2*/
+
+.imagen-tap-4-2 {
+    align-items: flex-start;
+    position: absolute;
+    top: 336px;
+    display: flex;
+    justify-content: space-between;
+    width: 565px;
+}
+
+.imagen-tap-4-3 {
+    align-items: flex-start;
+    position: absolute;
+    top: 495px;
+    display: flex;
+    justify-content: space-between;
+    width: 565px;
+}
+
+.imagen-tap-4-4 {
+    align-items: flex-start;
+    position: absolute;
+    top: 185px;
+    display: flex;
+    justify-content: space-between;
+    width: 565px;
+}
+
+.imagen-tap-4-5 {
+    align-items: flex-start;
+    position: absolute;
+    top: 345px;
+    display: flex;
+    justify-content: space-between;
+    width: 565px;
+}
+
+
+
+/*-----------*/
 .imagen-tap {
     align-items: flex-start;
     position: absolute;
