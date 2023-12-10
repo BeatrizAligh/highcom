@@ -1473,6 +1473,18 @@ strong {
     padding-top: 165px;
 }
 
+.tab-content .textos6 {
+    align-items: flex-start;
+    position: absolute;
+    top: 380px;
+    left: 680px;
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    flex-direction: column;
+}
+
+
 .tab-content .textos2 {
     align-items: flex-start;
     position: absolute;
@@ -1873,6 +1885,14 @@ aside {
     display: flex;
     justify-content: space-between;
     width: 565px;
+}
+.imagen-tap1-9 {
+    align-items: flex-start;
+    position: absolute;
+    top: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
 }
 
 
