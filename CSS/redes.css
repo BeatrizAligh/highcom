@@ -1371,7 +1371,7 @@ strong {
 
 /*preuba prodcutos*/
 
-
+/*COPIAR TODO LO QUE ES TEXTOS 3 PARA ADELANTE */
 .tabs {
     margin-top: 10%;
     position: relative;
@@ -1482,6 +1482,22 @@ strong {
     justify-content: space-between;
     width: 500px;
     flex-direction: column;
+}
+
+.tab-content .textos7 {
+    display: flex;
+    width: 570px;
+    flex-direction: column;
+    float: inline-end;
+    padding-top: 50px;
+}
+
+.tab-content .textos8 {
+    display: flex;
+    width: 570px;
+    flex-direction: column;
+    float: inline-end;
+    padding-top: 170px;
 }
 
 
@@ -1643,7 +1659,7 @@ aside {
     font-weight: 800;
     font-size: 35px;
 }
-
+/*FIN COPIAR*/
 
 
 /*botones del tab*/
@@ -1704,17 +1720,38 @@ aside {
 /*galeria*/
 
 
+/*SI COPIAR*/
+
 /*imagen patchcord1*/
 
-.imagen-tap1 {
-    align-items: flex-start;
-    position: absolute;
-    top: 270px;
-    left: 70px;
-    display: flex;
-    justify-content: space-between;
-    width: 565px;
+
+.mover{
+    padding-left:1200px;
 }
+.mover .textos7{
+    position:relative;
+    top: -60px;
+    padding-top:0px;
+}
+
+    .mover .imagen-tap1-10 {
+        align-items: flex-start;
+        position: absolute;
+        top: 60px;
+        display: flex;
+        justify-content: space-between;
+        width: 565px;
+    }
+
+    .imagen-tap1 {
+        align-items: flex-start;
+        position: absolute;
+        top: 270px;
+        left: 70px;
+        display: flex;
+        justify-content: space-between;
+        width: 565px;
+    }
 .imagen1-1 {
     background: #fff;
     width: 230px;
@@ -1895,8 +1932,26 @@ aside {
     width: 500px;
 }
 
+.imagen-tap1-10 {
+    align-items: flex-start;
+    position: absolute;
+    top: 253px;
+    display: flex;
+    justify-content: space-between;
+    width: 565px;
+}
 
-/*-----------*/
+.imagen-tap1-11 {
+    align-items: flex-start;
+    position: absolute;
+    top:500px;
+    display: flex;
+    justify-content: space-between;
+    width: 565px;
+}
+/*FIN SI COPIAR*/
+
+/*--------NO COPIAR---*/
 .imagen-tap {
     align-items: flex-start;
     position: absolute;
@@ -1946,6 +2001,7 @@ aside {
     cursor: pointer;
 }
 
+
 /*botoenes de siguiente*/
 .prev, .next {
     cursor: pointer;
@@ -1979,7 +2035,7 @@ aside {
 
     /*fin botones siguiente---------*/
 
-
+    
 
 .imagen2 {
     background: #fff;
@@ -2066,7 +2122,7 @@ aside {
 }
 
 
-
+/* FIN NO COPIAR---------------------*/
 
 
 
