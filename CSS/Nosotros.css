@@ -585,7 +585,7 @@ nav {
 .whatsapp-icon:hover .contact-text {
     border: 2px solid #97ff00;
     background: #97ff00;
-    box-shadow: var(--neon-box-shadow-green);
+    box-shadow: var(--success);
     display: block;
 }
 
@@ -595,26 +595,26 @@ nav {
 
 
 
-    .btn-box .btn {
-        width: 220px;
-        height: 45px;
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        background: var(--blue);
-        color: var(--bg-color);
-        font-size: 1rem;
-        letter-spacing: 1px;
-        font-weight: 900;
-        transition: .6s;
-        box-shadow: var(--bg-color);
-        border: 2px solid var(--bg-color);
-        border-radius: 15px;
-        position: relative;
-        overflow: hidden;
-        z-index: 1;
-        margin-top: 25px;
-    }
+.btn-box .btn {
+    width: 220px;
+    height: 45px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--success);
+    color: var(--bg-color);
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 900;
+    transition: .6s;
+    box-shadow: var(--bg-color);
+    border: 2px solid var(--bg-color);
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    margin-top: 25px;
+}
 
 .btn:hover {
     color: var(--blue);
@@ -638,17 +638,17 @@ nav {
 
 .btn:nth-child(1) {
     background: var(--bg-color);
-    color: var(--text-color);
+    color: var(--success);
 }
 
     .btn:nth-child(1):hover {
         color: var(--bg-color);
-        border: 2px solid var(--text-color);
-        box-shadow: var(--text-color);
+        border: 2px solid var(--success);
+        box-shadow: var(--success);
     }
 
     .btn:nth-child(1)::before {
-        background: var(--text-color);
+        background: var(--success);
     }
 
     /*home*/
@@ -801,12 +801,11 @@ h2 {
 
     .punto:hover {
         cursor: pointer;
-        background-color: var(--hover-color-green);
-        
+        background-color: var(--success);
     }
 
 .contenedor a:hover {
-    color: var(--hover-color-green);
+    color: var(--success);
 }
 
 .actual {
@@ -816,7 +815,7 @@ h2 {
 }
 
 .activo {
-    background-color: var(--hover-color-green);
+    background-color: var(--success);
 }
 
 
@@ -859,7 +858,7 @@ h2 {
         transform: translateX(-50%);
         width: 140px;
         height: 1px;
-        background-color: var(--hover-color-green);
+        background-color: var(--success);
     }
 
     .title:after {
@@ -870,7 +869,7 @@ h2 {
         transform: translateX(-50%);
         width: 45px;
         height: 3px;
-        background-color: var(--hover-color-green);
+        background-color: var(--success);
     }
 
     .title span {
@@ -907,8 +906,8 @@ h2 {
 
 
     .part1 i {
-        color: var(--hover-color-green);
-        padding-bottom:20px;
+        color: var(--success);
+        padding-bottom: 20px;
         font-size: 35px;
         position: relative;
         display: flex;
@@ -969,7 +968,7 @@ h2 {
 
     .card-content h3 {
         text-align: justify;
-        color: var(--blue);
+        color: var(--success);
         font-family: Lato;
         font-size: 1.3rem;
         font-weight: 800;
@@ -1040,7 +1039,7 @@ h2 {
         font-size: 50px;
         font-family: Lato;
         font-weight: 900;
-        color: var(--blue);
+        color: var(--success);
     }
 
 .container-interes img {
@@ -1101,8 +1100,8 @@ footer {
         justify-content: center;
         align-items: center;
         background: var(--bg-color);
-        color: var(--blue);
-        border: 2px solid var(--blue);
+        color: var(--success);
+        border: 2px solid var(--success);
         transition: .6s;
         box-shadow: 0 0 0.3rem #12f7ff;
         border-radius: 5px;
@@ -1129,7 +1128,7 @@ footer {
             top: 0;
             width: 0;
             height: 100%;
-            background: var(--blue);
+            background: var(--success);
             transition: .6s;
             z-index: -1;
         }
@@ -1148,7 +1147,7 @@ footer {
     padding-bottom: 25px;
     text-transform: uppercase;
     font-weight: 900;
-    color: var(--blue);
+    color: var(--success);
 }
 
 .services-item{
@@ -1176,7 +1175,7 @@ footer {
             transform: translateY(-50%);
             width: 12px; /* Tamaño del círculo */
             height: 12px; /* Tamaño del círculo */
-            border: 2px solid var(--blue); /* Borde del círculo */
+            border: 2px solid var(--success); /* Borde del círculo */
             border-radius: 50%; /* Hace que el borde sea redondo */
             box-sizing: border-box; /* Asegura que el tamaño total sea el especificado (incluyendo el grosor del borde) */
         }
@@ -1218,7 +1217,7 @@ footer {
         display: inline-flex;
         justify-content: center;
         color: var(--text-color);
-        background: var(--blue);
+        background: var(--success);
         padding: .6rem;
         border-radius: 5px;
     }
