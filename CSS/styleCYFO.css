@@ -1258,7 +1258,7 @@ strong {
         transition: .6s;
         box-shadow: var(--bg-color);
         border: 2px solid var(--bg-color);
-        border-radius: 15px;
+        border-radius: 5px;
         position: relative;
         overflow: hidden;
         z-index: 1;
@@ -1369,16 +1369,15 @@ strong {
 
 
 .tabs .tab-content h {
-    color: #FFF;
     font-family: Lato;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 400;
     line-height: normal;
     letter-spacing: 1.1px;
     float: right;
     text-align: justify;
     font-size: 16px;
-    color: #fff;
+    color: #9d9d9d;
 }
 
 .tabs .tab-content {
@@ -1412,7 +1411,7 @@ strong {
 }
 
 .subtitle-tab {
-    color: #FFF;
+    color: var(--blue);
     text-align: left;
     font-family: Lato;
     font-size: 20px;
@@ -1424,7 +1423,7 @@ strong {
 .textos ul li {
     padding: 5px;
     padding-left: 40px;
-    color: #FFF;
+    color: #9d9d9d;
     text-align: justify;
     font-family: Lato;
     font-size: 16px;
@@ -1437,13 +1436,13 @@ strong {
 .textos2 ul li {
     padding: 5px;
     padding-left: 40px;
-    color: #FFF;
     text-align: justify;
     font-family: Lato;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    color: #9d9d9d;
     letter-spacing: 1.1px;
 }
 
@@ -1554,7 +1553,7 @@ aside {
     .btn-tab {
         padding: 10px 20px;
         width: 220px;
-        height: 60px;
+        height: 100%;
         display: inline-flex;
         justify-content: center;
         align-items: center;
@@ -1565,7 +1564,7 @@ aside {
         font-weight: 900;
         transition: .6s;
         box-shadow: 0px 2px 15px 5px #000;
-        border-radius: 15px;
+        border-radius: 5px;
         position: relative;
         overflow: hidden;
         z-index: 1;
@@ -1573,9 +1572,10 @@ aside {
     }
 
 
-/*.btn:hover {
+.btn:hover {
+    text-decoration:none;
     color: var(--blue);
-}*/
+}
 
 /*galeria*/
 

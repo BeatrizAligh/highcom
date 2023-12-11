@@ -1044,8 +1044,7 @@ h2 {
     }
 
 .container-interes img {
-    width: 30%;
-    top: 28px;
+    width: 25%;
     left: 200px;
     border-radius: 20px;
     display: flex;
@@ -1144,7 +1143,8 @@ footer {
     }
 
 .Stitle {
-    font-size:30px;
+    text-align: left;
+    font-size: 30px;
     padding-bottom: 25px;
     text-transform: uppercase;
     font-weight: 900;
