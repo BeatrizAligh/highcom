@@ -819,6 +819,240 @@ h2 {
     background-color: var(--hover-color-green);
 }
 
+
+/*nuestra compañia*/
+
+.section-compañia {
+    height: auto;
+}
+
+.titulo_compañia {
+    text-align: center !important;
+    justify-content: center !important;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.header-compañia {
+    margin-top:35px;
+    margin-bottom: 35px;
+}
+
+.title {
+    position: relative;
+    margin-bottom: 40px;
+    padding-bottom: 25px;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 35px;
+}
+
+    .title:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 140px;
+        height: 1px;
+        background-color: var(--hover-color-green);
+    }
+
+    .title:after {
+        content: "";
+        position: absolute;
+        bottom: -1px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 45px;
+        height: 3px;
+        background-color: var(--hover-color-green);
+    }
+
+    .title span {
+        color: #f70037;
+    }
+
+.sobre {
+    display: grid;
+    justify-items: center;
+    padding-bottom: 50px;
+}
+
+
+.fondo-compañia {
+    align-content: center;
+    align-items: center;
+    width: 1200px;
+    height: 388px;
+    background: var(--secon-bg-color);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.partes {
+    text-align: left;
+    display: flex;
+    position: relative;
+    padding: 20px;
+}
+.part1 {
+    margin: 20px;
+    text-align: justify;
+}
+
+
+    .part1 i {
+        color: var(--hover-color-green);
+        padding-bottom:20px;
+        font-size: 35px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+
+
+
+    /*Mision y Vision*/
+
+.section-services {
+    background: var(--bg-color);
+}
+
+.services-section2 {
+   
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: left;
+}
+
+.section-header {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.container-services {
+    flex-wrap: nowrap;
+    justify-content: center;
+    display: flex;
+    padding-top: 20px;
+}
+
+.service-card {
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+    margin-right: 100px;
+    width: 530px;
+}
+
+    .service-card:last-child {
+        margin-right: 0; /* Elimina el espacio a la derecha de la última tarjeta */
+    }
+
+    .service-card img {
+        width: 100%;
+        height: auto;
+    }
+
+.card-content {
+    padding: 20px;
+}
+
+    .card-content h3 {
+        text-align: justify;
+        color: var(--blue);
+        font-family: Lato;
+        font-size: 1.3rem;
+        font-weight: 800;
+        margin: 20px;
+    }
+
+    .card-content h {
+        font-family: Lato;
+        color: #6f6f71;
+        font-size: 16px;
+        margin-bottom: 15px;
+        text-align: justify;
+    }
+
+    /*politica de calidad*/
+
+.interes {
+    position: relative;
+    background-image: url("../img/interes.jpg");
+    background-size: cover; /* Ajusta según sea necesario */
+    background-position: center center; /* Ajusta según sea necesario */
+    height: 300px; /* Ajusta según sea necesario */
+    /* Estilo del cuadro negro con opacidad */
+}
+
+.container-interes {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1; /* Asegura que el contenido de texto esté por encima del cuadro negro */
+}
+
+
+.interes::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.6; /* Opacidad del cuadro negro */
+    z-index: 0; /* Coloca el cuadro negro detrás del contenido de texto */
+}
+
+.todopolitica {
+    left: 900px;
+    width: 570px;
+    position: relative;
+}
+
+
+
+.Ititle {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-family: Lato;
+    font-weight: 900;
+}
+
+    .Ititle span {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 50px;
+        font-family: Lato;
+        font-weight: 900;
+        color: var(--blue);
+    }
+
+.container-interes img {
+    width: 30%;
+    top: 28px;
+    left: 200px;
+    border-radius: 20px;
+    display: flex;
+    position: absolute;
+}
+
+
 /*footer*/
 footer {
     background-color: #333;
