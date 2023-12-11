@@ -1141,11 +1141,11 @@ strong {
 }
 
     .card-content h3 {
-        text-align:justify;
-        color: var(--blue);
-        font-family:Lato;
+        text-align: justify;
+        color: var(--success);
+        font-family: Lato;
         font-size: 1.3rem;
-        font-weight:800;
+        font-weight: 800;
         margin: 20px;
     }
 
@@ -1199,31 +1199,31 @@ strong {
     font-size: 35px;
 }
 
-             .title:before {
-                content: "";
-                position: absolute;
-                bottom: 0;
-                left: 50%;
-                transform: translateX(-50%);
-                width: 140px;
-                height: 1px;
-                background-color: var(--dark-blue);
-            }
+    .title:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 140px;
+        height: 1px;
+        background-color: var(--success);
+    }
 
-           .title:after {
-                content: "";
-                position: absolute;
-                bottom: -1px;
-                left: 50%;
-                transform: translateX(-50%);
-                width: 45px;
-                height: 3px;
-                background-color: var(--dark-blue);
-            }
+    .title:after {
+        content: "";
+        position: absolute;
+        bottom: -1px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 45px;
+        height: 3px;
+        background-color: var(--success);
+    }
 
-             .title span {
-                color: #f70037;
-            }
+    .title span {
+        color: var(--success);
+    }
 
 
 
@@ -1309,7 +1309,7 @@ strong {
         transition: .6s;
         box-shadow: var(--bg-color);
         border: 2px solid var(--bg-color);
-        border-radius: 15px;
+        border-radius: 5px;
         position: relative;
         overflow: hidden;
         z-index: 1;
@@ -1338,17 +1338,17 @@ strong {
 
 .btn:nth-child(1) {
     background: var(--bg-color);
-    color: var(--text-color);
+    color: var(--success);
 }
 
     .btn:nth-child(1):hover {
         color: var(--bg-color);
-        border: 2px solid var(--text-color);
-        box-shadow: var(--text-color);
+        border: 2px solid var(--success);
+        box-shadow: var(--success);
     }
 
     .btn:nth-child(1)::before {
-        background: var(--text-color);
+        background: var(--success);
     }
 
 
@@ -1407,7 +1407,7 @@ strong {
 
             .tabs .tab-header > div:hover,
             .tabs .tab-header > div.active {
-                color: var(--blue);
+                color: var(--success);
             }
 
 
@@ -1420,16 +1420,15 @@ strong {
 
 
 .tabs .tab-content h {
-    color: #FFF;
     font-family: Lato;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 400;
     line-height: normal;
     letter-spacing: 1.1px;
     float: right;
     text-align: justify;
     font-size: 16px;
-    color: #fff;
+    color: #9d9d9d;
 }
 
 .tabs .tab-content {
@@ -1513,7 +1512,7 @@ strong {
 }
 
 .subtitle-tab {
-    color: #FFF;
+    color: var(--success);
     text-align: left;
     font-family: Lato;
     font-size: 20px;
@@ -1525,7 +1524,7 @@ strong {
 .textos ul li {
     padding: 5px;
     padding-left: 40px;
-    color: #FFF;
+    color: #9d9d9d;
     text-align: justify;
     font-family: Lato;
     font-size: 16px;
@@ -1538,7 +1537,7 @@ strong {
 .textos2 ul li {
     padding: 5px;
     padding-left: 40px;
-    color: #FFF;
+    color: #9d9d9d;
     text-align: justify;
     font-family: Lato;
     font-size: 16px;
@@ -1551,7 +1550,7 @@ strong {
 .textos3 ul li {
     padding: 4px;
     padding-left: 40px;
-    color: #FFF;
+    color: #9d9d9d;
     text-align: justify;
     font-family: Lato;
     font-size: 16px;
@@ -1566,21 +1565,21 @@ strong {
         content: '\2022'; /* Código Unicode para el carácter de viñeta redonda */
         position: absolute;
         left: 90px;
-        color: var(--blue);
+        color: var(--hover-color-green);
     }
 
 .textos2 ul li::before {
     content: '\2022'; /* Código Unicode para el carácter de viñeta redonda */
     position: absolute;
     left: 17px;
-    color: var(--blue);
+    color: var(--hover-color-green);
 }
 
 .textos3 ul li::before {
     content: '\2022'; /* Código Unicode para el carácter de viñeta redonda */
     position: absolute;
     left: 85px;
-    color: var(--blue);
+    color: var(--success);
 }
 
 
@@ -1644,7 +1643,7 @@ aside {
     position: absolute;
     width: 4px;
     height: 50px;
-    background: var(--blue);
+    background: var(--success);
     left: 347px;
     top: 80px;
     transition: all 500ms ease-in-out;
@@ -1676,7 +1675,7 @@ aside {
     .btn-tab {
         padding: 10px 20px;
         width: 220px;
-        height: 60px;
+        height: 100%;
         display: inline-flex;
         justify-content: center;
         align-items: center;
@@ -1687,12 +1686,48 @@ aside {
         font-weight: 900;
         transition: .6s;
         box-shadow: 0px 2px 15px 5px #000;
-        border-radius: 15px;
+        border-radius: 5px;
         position: relative;
         overflow: hidden;
         z-index: 1;
         margin-top: 25px;
     }
+
+        .btn-tab:hover {
+            color: var(--text-color);
+        }
+
+        .btn-tab::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: var(--success);
+            width: 0;
+            height: 100%;
+            z-index: -1;
+            transition: .4s;
+        }
+
+.btn-tab:hover::before {
+    width: 100%;
+}
+
+        .btn-tab:nth-child(1) {
+            background: var(--bg-color);
+            color: var(--success);
+        }
+
+            .btn-tab:nth-child(1):hover {
+                color: var(--bg-color);
+                border: 2px solid var(--success);
+                box-shadow: var(--success);
+            }
+
+            .btn-tab:nth-child(1)::before {
+                background: var(--success);
+            }
+
 
 
 .btn-box-tab-2 {
@@ -1713,9 +1748,6 @@ aside {
 }
 
 
-/*.btn:hover {
-    color: var(--blue);
-}*/
 
 /*galeria*/
 
@@ -2265,7 +2297,7 @@ aside {
         font-size: 50px;
         font-family: Lato;
         font-weight: 900;
-        color:var(--blue);
+        color: var(--success);
     }
 .subname {
     margin-top:20px;
@@ -2328,10 +2360,10 @@ footer {
         justify-content: center;
         align-items: center;
         background: var(--bg-color);
-        color: var(--blue);
-        border: 2px solid var(--blue);
+        color: var(--success);
+        border: 2px solid var(--success);
         transition: .6s;
-        box-shadow: 0 0 0.3rem #12f7ff;
+        box-shadow: 0 0 0.3rem var(--bg-color);
         border-radius: 5px;
         position: relative;
         z-index: 1;
@@ -2356,7 +2388,7 @@ footer {
             top: 0;
             width: 0;
             height: 100%;
-            background: var(--blue);
+            background: var(--success);
             transition: .6s;
             z-index: -1;
         }
@@ -2370,11 +2402,11 @@ footer {
     }
 
 .Stitle {
-    font-size:30px;
+    font-size: 30px;
     padding-bottom: 25px;
     text-transform: uppercase;
     font-weight: 900;
-    color: var(--blue);
+    color: var(--success);
 }
 
 .services-item{
@@ -2402,7 +2434,7 @@ footer {
             transform: translateY(-50%);
             width: 12px; /* Tamaño del círculo */
             height: 12px; /* Tamaño del círculo */
-            border: 2px solid var(--blue); /* Borde del círculo */
+            border: 2px solid var(--success); /* Borde del círculo */
             border-radius: 50%; /* Hace que el borde sea redondo */
             box-sizing: border-box; /* Asegura que el tamaño total sea el especificado (incluyendo el grosor del borde) */
         }
@@ -2444,7 +2476,7 @@ footer {
         display: inline-flex;
         justify-content: center;
         color: var(--text-color);
-        background: var(--blue);
+        background: var(--success);
         padding: .6rem;
         border-radius: 5px;
     }
