@@ -168,7 +168,50 @@ $(".option").click(function () {
 });
 
 
-//mouse header
+//click menu
+
+// Selecciona todos los elementos del mega menú
+var megaMenus = document.querySelectorAll('.mega-menu');
+
+document.addEventListener('click', function (event) {
+    // Verifica si el clic ocurrió dentro de algún menú
+    var isClickInsideMenu = false;
+
+    megaMenus.forEach(function (menu) {
+        if (menu.contains(event.target)) {
+            isClickInsideMenu = true;
+        }
+    });
+
+    // Cierra todos los menús si el clic no fue dentro de un menú
+    if (!isClickInsideMenu) {
+        megaMenus.forEach(function (menu) {
+            var subMenu = menu.querySelector('ul.menu');
+            subMenu.style.top = '-50px'; // ajusta según sea necesario
+            subMenu.style.visibility = 'hidden';
+            subMenu.style.opacity = 0;
+        });
+    }
+});
+
+// Agrega un evento de clic a cada elemento del mega menú
+megaMenus.forEach(function (menu) {
+    menu.addEventListener('click', function (event) {
+        event.stopPropagation(); // Evita que el clic se propague al documento
+
+        var subMenu = menu.querySelector('ul.menu');
+
+        if (subMenu.style.visibility === 'visible') {
+            subMenu.style.top = '-50px'; // ajusta según sea necesario
+            subMenu.style.visibility = 'hidden';
+            subMenu.style.opacity = 0;
+        } else {
+            subMenu.style.top = '-1px'; // ajusta según sea necesario
+            subMenu.style.visibility = 'visible';
+            subMenu.style.opacity = 1;
+        }
+    });
+});
 
 
 

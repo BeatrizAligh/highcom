@@ -284,7 +284,7 @@ span{
         cursor: pointer;
     }
 
-    #mega-menu:hover ul.menu {
+/*    #mega-menu:hover ul.menu {
         top: -1px;
         visibility: visible;
         opacity: 1;
@@ -293,7 +293,7 @@ span{
         -ms-transition: all 0.3s ease-in-out;
         -o-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out;
-    }
+    }*/
 
 
 
@@ -315,14 +315,14 @@ span{
         transition: all 0.3s ease-in-out;
     }
 
-        #mega-menu > ul.menu > li > a {
-            height: 50px;
-            line-height: 51px;
-            padding: 0 24px;
-            border-bottom: 1px solid #000; /*LINEAS INFERIORES*/
-            display: block;
-            position: relative;
-        }
+    #mega-menu > ul.menu > li > a {
+        height: 50px;
+        line-height: 51px;
+        padding: 0 24px;
+        border-bottom: 1px solid #000; /*LINEAS INFERIORES*/
+        display: block;
+        position: relative;
+    }
 
         #mega-menu > ul.menu > li:last-child > a {
             border-bottom: none;
@@ -516,7 +516,6 @@ span{
 nav {
     display: flex;
     justify-content: space-between; /* Centrado horizontal */
-    left: 100px;
     align-items: center; /* Centrado vertical */
     padding: 5px; /* Añade relleno según sea necesario */
     color: #fdfdfd;
@@ -525,6 +524,9 @@ nav {
     letter-spacing: 2px;
     height: 60px;
     position: relative;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
 }
 
     nav > .container {
