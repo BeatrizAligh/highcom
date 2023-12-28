@@ -169,7 +169,6 @@ $(".option").click(function () {
 
 
 //click menu
-
 // Selecciona todos los elementos del mega menú
 var megaMenus = document.querySelectorAll('.mega-menu');
 
@@ -200,6 +199,16 @@ megaMenus.forEach(function (menu) {
         event.stopPropagation(); // Evita que el clic se propague al documento
 
         var subMenu = menu.querySelector('ul.menu');
+
+        // Cierra todos los menús antes de abrir el menú clickeado
+        megaMenus.forEach(function (otherMenu) {
+            if (otherMenu !== menu) {
+                var otherSubMenu = otherMenu.querySelector('ul.menu');
+                otherSubMenu.style.top = '-50px';
+                otherSubMenu.style.visibility = 'hidden';
+                otherSubMenu.style.opacity = 0;
+            }
+        });
 
         if (subMenu.style.visibility === 'visible') {
             subMenu.style.top = '-50px'; // ajusta según sea necesario
