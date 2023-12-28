@@ -942,7 +942,7 @@ section{
 
 .todo {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-gap: 1px; /* Espacio vertical */
     grid-column-gap: 1px;
     justify-content: center; /* Ajusta según tus necesidades */  
@@ -958,8 +958,8 @@ section{
 }
 
 .card {
-    height: 365px;
-    width: 365px;
+    height: 335px;
+    width: 335px;
     text-align: center;
     margin: 15px;
     position: relative;
@@ -969,8 +969,8 @@ section{
 
 .flip-container:hover .card {
     transform: rotateY(180deg);
-    height: 365px;
-    width: 365px;
+    height: 335px;
+    width: 335px;
 }
 
 .front, .back {
@@ -987,8 +987,8 @@ section{
 
 .card .front img {
     border-radius: 10px; /* Ajusta el valor según tus necesidades */
-    height: 365px;
-    width: 365px;
+    height: 335px;
+    width: 335px;
     /*opacity: 0.8;*/
 }
 
