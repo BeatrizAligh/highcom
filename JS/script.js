@@ -169,6 +169,7 @@ $(".option").click(function () {
 
 
 //click menu
+
 // Selecciona todos los elementos del mega menú
 var megaMenus = document.querySelectorAll('.mega-menu');
 
@@ -182,13 +183,14 @@ document.addEventListener('click', function (event) {
         }
     });
 
-    // Cierra todos los menús si el clic no fue dentro de un menú
+    // Cierra todos los menús y elimina la clase activa si el clic no fue dentro de un menú
     if (!isClickInsideMenu) {
         megaMenus.forEach(function (menu) {
             var subMenu = menu.querySelector('ul.menu');
             subMenu.style.top = '-50px'; // ajusta según sea necesario
             subMenu.style.visibility = 'hidden';
             subMenu.style.opacity = 0;
+            menu.classList.remove('active-menu'); // Elimina la clase activa
         });
     }
 });
@@ -200,13 +202,14 @@ megaMenus.forEach(function (menu) {
 
         var subMenu = menu.querySelector('ul.menu');
 
-        // Cierra todos los menús antes de abrir el menú clickeado
+        // Cierra todos los menús y elimina la clase activa antes de abrir el menú clickeado
         megaMenus.forEach(function (otherMenu) {
             if (otherMenu !== menu) {
                 var otherSubMenu = otherMenu.querySelector('ul.menu');
                 otherSubMenu.style.top = '-50px';
                 otherSubMenu.style.visibility = 'hidden';
                 otherSubMenu.style.opacity = 0;
+                otherMenu.classList.remove('active-menu'); // Elimina la clase activa
             }
         });
 
@@ -214,10 +217,12 @@ megaMenus.forEach(function (menu) {
             subMenu.style.top = '-50px'; // ajusta según sea necesario
             subMenu.style.visibility = 'hidden';
             subMenu.style.opacity = 0;
+            menu.classList.remove('active-menu'); // Elimina la clase activa
         } else {
             subMenu.style.top = '-1px'; // ajusta según sea necesario
             subMenu.style.visibility = 'visible';
             subMenu.style.opacity = 1;
+            menu.classList.add('active-menu'); // Agrega la clase activa
         }
     });
 });
