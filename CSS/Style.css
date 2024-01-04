@@ -372,7 +372,7 @@ span{
     justify-content: space-between;
             opacity: 0;
         visibility: hidden;
-    padding: 38px 29px 58px 28px;
+    padding: 38px 29px 58px 29px;
     position: absolute;
     top: -1px;
     left: 270px;
@@ -389,7 +389,7 @@ span{
 
 .one-third {
     position: relative;
-    top: 45px;
+    top: 65px;
     width: 48%;
 }
 
@@ -399,7 +399,7 @@ span{
     left: 0;
     width: 100%;
     overflow: hidden;
-    height: 60px; /* Ajusta la altura según sea necesario */
+    height: 100px; /* Ajusta la altura según sea necesario */
 }
 
     .img-up img {
@@ -418,22 +418,14 @@ span{
     }
 
 
-    #mega-menu > ul.menu > li .drop-menu > .one-third ul li a {
-        margin-bottom: 15px;
-        background: #000;
-        height: 71px;
-        border-radius: 5px;
-        display: flex;
-        justify-content: center;
-        align-items: center
-    }
+
 
     .solucion {
         width: 140px;
         display: grid;
         height: 168px;
         justify-items: center;
-        cursor: pointer;
+        
         position:relative;
     }
             .banner {
@@ -445,11 +437,9 @@ span{
 
                 #mega-menu > ul.menu > li .drop-menu > .one-third ul li a  {
                     font-family: Lato;
-                    font-weight: 300;
+                    text-align: left;
                     font-size: 1rem;
                     letter-spacing: 1px;
-                    color: #fff;
-                    padding: 40px;
                     border-radius: 5px;
                     
                 }
@@ -483,17 +473,18 @@ span{
 
 #mega-menu > ul.menu > li .drop-menu > .one-third ul.banner li {
     width: 100%; /* O ajusta según sea necesario */
+    justify-content: center;
     text-align: center;
-    margin-bottom: 20px; /* Espacio entre cada estructura */
+    margin-top: 45px;
+    margin-bottom: 45px; /* Espacio entre cada estructura */
     border-radius: 5px;
-    height: 110px;
+    height: auto;
     padding: 4px 1px 10px 8px;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-
 }
 
 
@@ -543,6 +534,80 @@ span{
     font-weight: bold;
     margin-bottom: 20px;
 }
+
+
+
+/*tipos*/
+
+.tipos {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+
+.icon-container {
+    margin-right: 10px;
+}
+
+    .icon-container i {
+        font-size: 45px; /* Ajusta el tamaño del icono según sea necesario */
+        color: #9f9f9f;
+    }
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 15px;
+    height: 100px;
+    width: 420px;
+    justify-content: center;
+}
+
+    .tipos:hover {
+        background: var(--bg-color);
+    }
+
+        .tipos:hover .title-mega {
+            color: var(--blue) /* Cambia el color del título al hacer hover */
+        }
+
+        .tipos:hover .description-mega {
+            color: #fff /* Cambia el color de la descripción al hacer hover */
+        }
+        .tipos:hover .icon-container i{
+            color:var(--blue);
+        }
+
+.title-mega {
+    font-weight: 900;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.description-mega {
+    font-weight: 500;
+    color: #9f9f9f;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*----------*/
 /*------------styles nav2 list hover*/
 .container {
