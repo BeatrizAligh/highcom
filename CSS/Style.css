@@ -370,13 +370,15 @@ span{
     transform: translateX(-10%);
     display: flex;
     justify-content: space-between;
-            opacity: 0;
-        visibility: hidden;
+    opacity: 0;
+    visibility: hidden;
     padding: 38px 29px 58px 29px;
     position: absolute;
     top: -1px;
     left: 270px;
     width: 1100px;
+    max-height: 490px;
+    overflow-y: auto;
     border-radius: 10px;
     z-index: -1;
     background-color: var(--secon-bg-color); /*COLOR SEGUNDO DROPDOWN*/
