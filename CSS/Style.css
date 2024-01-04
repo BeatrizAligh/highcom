@@ -366,45 +366,82 @@ span{
         transform: translateX(0%);
     }
 
-    #mega-menu > ul.menu > li .drop-menu {
-        transform: translateX(-10%);
-        opacity: 0;
+#mega-menu > ul.menu > li .drop-menu {
+    transform: translateX(-10%);
+    display: flex;
+    justify-content: space-between;
+            opacity: 0;
         visibility: hidden;
-        padding: 27px 7px 27px 0;
-        position: absolute;
-        top: -1px;
-        left: 270px;
-        width: 875px;
+    padding: 38px 29px 58px 28px;
+    position: absolute;
+    top: -1px;
+    left: 270px;
+    width: 1100px;
+    border-radius: 10px;
+    z-index: -1;
+    background-color: var(--secon-bg-color); /*COLOR SEGUNDO DROPDOWN*/
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.one-third {
+    position: relative;
+    top: 45px;
+    width: 48%;
+}
+
+    .img-up {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    height: 60px; /* Ajusta la altura según sea necesario */
+}
+
+    .img-up img {
+        width: 100%;
+        height: auto;
+        display: block;
         border-radius: 10px;
-        z-index: -1;
-        /*height: 516px;*/ /*aparece dependiendo el contenido*/
-        background-color: var(--secon-bg-color); /*COLOR SEGUNDO DROPDOWN*/
-        -webkit-transition: all 0.3s ease-in-out;
-        -moz-transition: all 0.3s ease-in-out;
-        -ms-transition: all 0.3s ease-in-out;
-        -o-transition: all 0.3s ease-in-out;
-        transition: all 0.3s ease-in-out;
+    }
+
+    .img-up h2.title {
+        position: absolute;
+        top: 70%; /* Coloca el título en el centro vertical */
+        left: 50%; /* Coloca el título en el centro horizontal */
+        transform: translate(-50%, -50%); /* Centra el título exactamente en el centro */
+        color: #fff; /* Cambia el color del título según sea necesario */
     }
 
 
+    #mega-menu > ul.menu > li .drop-menu > .one-third ul li a {
+        margin-bottom: 15px;
+        background: #000;
+        height: 71px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center
+    }
 
-        #mega-menu > ul.menu > li .drop-menu > .one-third {
-            float: left;
-            padding-left: 42px;
-            padding-right: 15px;
-        }
-
-            #mega-menu > ul.menu > li .drop-menu > .one-third .cat-title {
-                color: var(--hover-color);
-                font-size: 16px;
-                font-weight: bold;
-                margin-bottom: 20px;
+    .solucion {
+        width: 140px;
+        display: grid;
+        height: 168px;
+        justify-items: center;
+        cursor: pointer;
+        position:relative;
+    }
+            .banner {
+                list-style: none;
+                padding: 0;
+                margin: 0;
             }
 
-            #mega-menu > ul.menu > li .drop-menu > .one-third ul li {
-                margin-bottom: 15px;
-                list-style: circle;
-            }
 
                 #mega-menu > ul.menu > li .drop-menu > .one-third ul li a  {
                     font-family: Lato;
@@ -412,10 +449,9 @@ span{
                     font-size: 1rem;
                     letter-spacing: 1px;
                     color: #fff;
+                    padding: 40px;
+                    border-radius: 5px;
                     
-                }
-                #mega-menu > ul.menu > li .drop-menu > .one-third ul li a:hover {
-                    color: var(--dark-blue);
                 }
 
 
@@ -445,38 +481,39 @@ span{
                     left: 0;
                 }
 
-            #mega-menu > ul.menu > li .drop-menu > .one-third ul.banner li {
-                border-radius: 5px;
-                background-color: var(--bg-color);
-                height: 110px;
-                padding: 20px 10px 15px 12px;
-                margin-bottom: 20px;
-                -webkit-transition: all 0.3s ease-in-out;
-                -moz-transition: all 0.3s ease-in-out;
-                -ms-transition: all 0.3s ease-in-out;
-                -o-transition: all 0.3s ease-in-out;
-                transition: all 0.3s ease-in-out;
-            }
+#mega-menu > ul.menu > li .drop-menu > .one-third ul.banner li {
+    width: 100%; /* O ajusta según sea necesario */
+    text-align: center;
+    margin-bottom: 20px; /* Espacio entre cada estructura */
+    border-radius: 5px;
+    height: 110px;
+    padding: 4px 1px 10px 8px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 
-                #mega-menu > ul.menu > li .drop-menu > .one-third ul.banner li:hover {
-                    background-color: var(--secon-bg-color);
-                    border: 1px solid var(--dark-blue);
-                    -webkit-transition: all 0.3s ease-in-out;
-                    -moz-transition: all 0.3s ease-in-out;
-                    -ms-transition: all 0.3s ease-in-out;
-                    -o-transition: all 0.3s ease-in-out;
-                    transition: all 0.3s ease-in-out;
-                }
+}
 
-                #mega-menu > ul.menu > li .drop-menu > .one-third ul.banner li .banner-text {
-                    float: left;
-                }
 
-                    #mega-menu > ul.menu > li .drop-menu > .one-third ul.banner li .banner-text .banner-title {
-                        font-weight: bold;
-                        font-size: 11px;
-                        color: var(--hover-color);
-                    }
+.icon-container {
+    margin-right: 10px; /* Ajusta el espacio entre la imagen y el texto según sea necesario */
+}
+
+    .icon-container img {
+        max-width: 100%; /* Ajusta el ancho máximo de la imagen según sea necesario */
+    }
+
+
+
+    #mega-menu > ul.menu > li .drop-menu > .one-third ul.banner li .banner-text .banner-title {
+        font-family: Lato;
+        color: #6f6f71;
+        font-size: 12px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
 
                     #mega-menu > ul.menu > li .drop-menu > .one-third ul.banner li .banner-text .more-link a {
                         margin-left: 10px;
@@ -487,19 +524,27 @@ span{
                         display: table-cell;
                         width: 115px;
                         padding-top: 10px;
+
                     }
 
-                #mega-menu > ul.menu > li .drop-menu > .one-third ul.banner li .banner-img {
-                    float: right;
-                    width: 90px;
-                }
+    #mega-menu > ul.menu > li .drop-menu > .one-third ul.banner li .banner-img {
+        width: 100%; /* Para asegurar que todas las imágenes tengan el mismo tamaño */
+        height: auto; /* Mantiene la proporción original de la imagen */
+        display: block;
+        float: right;
+        width: 130px;
+        position: relative;
+    }
 
 
+#mega-menu > ul.menu > li .drop-menu > .one-third .cat-title {
+    color: var(--hover-color);
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
 /*----------*/
-
-
 /*------------styles nav2 list hover*/
-
 .container {
     margin: 0 auto;
     padding: 0 50px;
@@ -901,10 +946,10 @@ section{
 
     .about::before {
         content: "";
-        background-image: url('../img/banner.jpg'); /* Ruta de la imagen */
+        background-image: url('../img/A1_Inicio/banner.jpg'); /* Ruta de la imagen */
         background-size: cover;
         background-position: center;
-        background-repeat: no-repeat;      
+        background-repeat: no-repeat;
         position: absolute;
         top: 0;
         left: 0;
