@@ -496,6 +496,10 @@ span{
 
     .icon-container img {
         max-width: 100%; /* Ajusta el ancho máximo de la imagen según sea necesario */
+        height: 80px;
+        width: 80%;
+        fill: #000; /* Color predeterminado (negro en este caso) */
+        transition: fill 0.3s; /* Agregar transición para un cambio suave */
     }
 
 
@@ -582,6 +586,9 @@ span{
         }
         .tipos:hover .icon-container i{
             color:var(--blue);
+        }
+        .tipos:hover .icon-container img {
+            fill: #fff; /* Cambiar a rojo cuando se hace hover */
         }
 
 .title-mega {
