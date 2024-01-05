@@ -227,6 +227,13 @@ megaMenus.forEach(function (menu) {
     });
 });
 
+//cyfo productos 
+
+function redirectToTabs() {
+    // Redirige al primer HTML con el fragmento de URL correspondiente
+    window.location.href = "secciones/CableadoYFO.html #tab2";
+}
+
 
 
 
