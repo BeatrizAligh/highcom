@@ -254,14 +254,12 @@ span{
 
 /*-------------MEGA MENU*/
 
-
-
 #mega-menu {
     position: relative;
-    top: 70px;
     display: inline-table;
     height: 55px;
     width: 250px;
+    top:70px;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
@@ -617,6 +615,8 @@ span{
 
 
 
+
+
 /*----------*/
 /*------------styles nav2 list hover*/
 .container {
@@ -646,14 +646,6 @@ nav {
         align-items: center;
         width: auto
     }
-
-    /*nav .header-bottom {
-        display: flex;
-        grid-gap: 36px;
-        display: flex;
-        border-bottom: 2px solid var(--hover-color);*/ /* Agrega una línea inferior */
-        /*z-index: 3;
-    }*/
 
 
 
