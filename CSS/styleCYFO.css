@@ -246,25 +246,6 @@ span {
 }
 
 
-
-#mega-menu > ul.menu {
-    position: relative;
-    z-index: 90;
-    background-color: var(--bg-color); /*COLOR PRIMER DROPDOWN*/
-    border: 1px solid var(--secon-bg-color);
-    border-radius: 8px;
-    top: -40px;
-    opacity: 0;
-    visibility: hidden;
-    height: 5a;
-    width: inherit;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-}
-
     #mega-menu > ul.menu > li > a {
         height: 50px;
         line-height: 51px;
@@ -799,18 +780,17 @@ nav {
     }
 
 .slider .box1 {
-    background-image: url("../img/bannerbox1.JPG");
+    background-image: url("../img/A3_Fibra Optica/bannerbox1.JPG");
     background-color: #008CEA;
     background-size: contain;
     background-repeat: no-repeat;
     background-position-x: right;
-    
 }
 
 
 
 .slider .box2 {
-    background-image: url("../img/bannerbox2.JPG");
+    background-image: url("../img/A3_Fibra Optica/bannerbox2.JPG");
     background-color: #0dc959;
     background-size: contain;
     background-repeat: no-repeat;
@@ -820,7 +800,7 @@ nav {
 
 
 .slider .box3 {
-    background-image: url("../img/bannerbox3.JPG");
+    background-image: url("../img/A3_Fibra Optica/bannerbox3.JPG");
     background-color: #FF2415;
     background-size: contain;
     background-repeat: no-repeat;
@@ -830,7 +810,7 @@ nav {
 
 .slider .box4 {
     background-color: #7AC1FE;
-    background-image: url("../img/bannerbox4.JPG");
+    background-image: url("../img/A3_Fibra Optica/bannerbox4.JPG");
     background-size: contain;
     background-repeat: no-repeat;
     background-position-x: right;
