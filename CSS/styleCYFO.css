@@ -1130,13 +1130,11 @@ strong {
 
 
     /*SERVICIOS----------------------------*/
-
 .section-services {
     padding-top: 15px;
     padding-bottom: 15px;
     background-color: #24252a;
     color: #fff;
-    
 }
 
 .services-section2 {
@@ -1148,31 +1146,25 @@ strong {
 
 .section-header {
     margin-bottom: 30px;
-    text-align:center;
+    text-align: center;
 }
 
 .container-services {
     display: flex;
-    padding-top:20px;
-    
+    padding-top: 20px;
 }
 
 .service-card {
-    
     border-radius: 10px;
     overflow: hidden;
     margin-bottom: 20px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
     margin-right: 20px;
-    width:700px;
+    width: 700px;
 }
+
     .service-card:last-child {
         margin-right: 0; /* Elimina el espacio a la derecha de la última tarjeta */
-    }
-
-    .service-card img {
-        width: 100%;
-        height: auto;
     }
 
 .card-content {
@@ -1180,21 +1172,47 @@ strong {
 }
 
     .card-content h3 {
-        text-align:justify;
+        text-align: justify;
         color: var(--blue);
-        font-family:Lato;
+        font-family: Lato;
         font-size: 1.3rem;
-        font-weight:800;
+        font-weight: 800;
         margin: 20px;
     }
 
-    .card-content h {
+    .card-content p {
         font-family: Lato;
         color: #6f6f71;
         font-size: 16px;
         margin-bottom: 15px;
         text-align: justify;
     }
+
+.carousel {
+    width: 100%;
+    max-height: 300px; /* Ajusta la altura según sea necesario */
+    overflow: hidden;
+}
+
+.carousel-item {
+    width: auto;
+    display: none;
+    height: auto;
+}
+
+    .carousel-item img {
+        width: 620px;
+        height: auto; /* Cambiado a height: 100% */
+        object-fit: cover; /* Ajusta la imagen para cubrir el contenedor sin distorsiones */
+    }
+
+
+
+
+
+
+
+
 
 
 

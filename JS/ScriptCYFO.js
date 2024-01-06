@@ -347,3 +347,12 @@ megaMenus.forEach(function (menu) {
         }
     });
 });
+
+
+$(document).ready(function () {
+    $(".carousel").slick({
+        dots: true, // Muestra los puntos de navegación
+        autoplay: true,
+        autoplaySpeed: 4000 // Velocidad del carrusel en milisegundos
+    });
+});
