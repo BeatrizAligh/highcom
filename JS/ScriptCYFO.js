@@ -253,7 +253,7 @@ for (let i = 0; i < tabPanes.length; i++) {
 
 //modal imagen*------------------------------
 
-const images = ["imagen1", "imagen2", "imagen3", "imagen4", "imagen5", "imagen6"];
+const images = ["imagen1", "imagen2", "imagen3", "imagen4"];
 let currentIndex = 0;
 
 function openModal(imageId) {
