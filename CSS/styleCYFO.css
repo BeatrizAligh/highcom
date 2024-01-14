@@ -1784,7 +1784,17 @@ aside {
 
     /*fin botones siguiente---------*/
 
+.text-pig {
+    position: absolute;
+    top: 260px;
+    width: 620px;
+}
 
+#botones {
+    position: absolute;
+    top: 480px;
+    left: 150px;
+}
 
 
 .imagen-tap {
@@ -1856,6 +1866,73 @@ aside {
     cursor: pointer
 }
 
+.imagen-tap4 {
+    align-items: flex-start;
+    position: absolute;
+    top: 220px;
+    left: 680px;
+    display: flex;
+    justify-content: space-between;
+    width: 505px;
+}
+
+
+.imagen6 {
+    background: #fff;
+    top: 50px;
+    width: 505px;
+    height: 260px;
+    cursor: pointer
+}
+
+
+
+.imagen-tap5 {
+    align-items: flex-start;
+    position: absolute;
+    top: 486px;
+    left: 680px;
+    display: flex;
+    justify-content: space-between;
+    width: 505px;
+}
+
+.imagen7 {
+    background: #fff;
+    top: 50px;
+    width: 505px;
+    height: 200px;
+    cursor: pointer
+}
+
+
+.imagen8 {
+    background: #fff;
+    width: 505px;
+    height: 570px;
+    cursor: pointer
+}
+
+.imagen9 {
+    background: #fff;
+    width: 505px;
+    height: 272px;
+    cursor: pointer
+}
+
+.imagen10 {
+    background: #fff;
+    width: 267px;
+    height: 270px;
+    cursor: pointer
+}
+
+.imagen11 {
+    background: #fff;
+    width: 233px;
+    height: 270px;
+    cursor: pointer
+}
 
 
 
@@ -1881,23 +1958,6 @@ aside {
     display: flex;
     justify-content: space-between;
     width: 500px;
-}
-
-.imagen6 {
-    background: #fff;
-    top: 50px;
-    width: 165px;
-    height: 155px;
-    cursor: pointer
-}
-
-
-.imagen7 {
-    background: #fff;
-    top: 50px;
-    width: 150px;
-    height: 150px;
-    cursor: pointer
 }
 
 
