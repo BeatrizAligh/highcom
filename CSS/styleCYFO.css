@@ -1922,18 +1922,52 @@ aside {
 
 .imagen10 {
     background: #fff;
+    width: 505px;
+    height: 272px;
+    cursor: pointer
+}
+
+.imagen11 {
+    background: #fff;
+    width: 220px;
+    height: 135px;
+    cursor: pointer
+}
+
+.imagen12 {
+    background: #fff;
+    width: 280px;
+    height: 135px;
+    cursor: pointer
+}
+
+.imagen13 {
+    background: #fff;
     width: 267px;
     height: 270px;
     cursor: pointer
 }
 
-.imagen11 {
+.imagen14 {
     background: #fff;
     width: 233px;
     height: 270px;
     cursor: pointer
 }
 
+.imagen15 {
+    background: #fff;
+    width: 505px;
+    height: 320px;
+    cursor: pointer
+}
+
+.imagen16 {
+    background: #fff;
+    width: 505px;
+    height: 320px;
+    cursor: pointer
+}
 
 
 
