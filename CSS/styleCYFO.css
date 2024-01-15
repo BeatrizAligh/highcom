@@ -1969,6 +1969,123 @@ aside {
     cursor: pointer
 }
 
+/*ODF*/
+
+
+.imagen17 {
+    background: #fff;
+    width: 270px;
+    height: 130px;
+    cursor: pointer
+}
+
+.imagen18 {
+    background: #fff;
+    width: 230px;
+    height: 130px;
+    cursor: pointer
+}
+
+.imagen-tap6 {
+    align-items: flex-start;
+    position: absolute;
+    top: 315px;
+    left: 680px;
+    display: flex;
+    justify-content: space-between;
+    width: 505px;
+}
+
+
+.imagen19 {
+    background: #fff;
+    width: 320px;
+    height: 130px;
+    cursor: pointer
+}
+
+.imagen20 {
+    background: #fff;
+    width: 180px;
+    height: 130px;
+    cursor: pointer
+}
+
+.imagen-tap7 {
+    align-items: flex-start;
+    position: absolute;
+    top: 450px;
+    left: 680px;
+    display: flex;
+    justify-content: space-between;
+    width: 505px;
+}
+
+.imagen21 {
+    background: #fff;
+    width: 505px;
+    height: 250px;
+    cursor: pointer
+}
+
+.video-tap {
+    align-items: flex-start;
+    position: absolute;
+    top: 475px;
+    left: 150px;
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+}
+
+/*cajas terminales*/
+
+
+.imagen22 {
+    background: #fff;
+    width: 270px;
+    height: 200px;
+    cursor: pointer
+}
+
+.imagen23 {
+    background: #fff;
+    width: 230px;
+    height: 200px;
+    cursor: pointer
+}
+
+.imagen-tap8 {
+    align-items: flex-start;
+    position: absolute;
+    top: 385px;
+    left: 680px;
+    display: flex;
+    justify-content: space-between;
+    width: 505px;
+}
+
+
+.imagen24 {
+    background: #fff;
+    width: 270px;
+    height: 200px;
+    cursor: pointer
+}
+
+.imagen25 {
+    background: #fff;
+    width: 230px;
+    height: 200px;
+    cursor: pointer
+}
+
+
+
+
+
+
+
 
 
 .imagen-tap2-2 {
