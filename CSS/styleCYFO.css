@@ -2174,6 +2174,9 @@ aside {
     cursor: pointer
 }
 
+
+
+
 /*textos de muflas que se mueven a la mitad*/
 
 .mover-mitad{
@@ -2205,6 +2208,32 @@ aside {
 }
 
 
+
+/*Convertidore0*/
+
+.imagen35 {
+    background: #fff;
+    width: 465px;
+    height: 400px;
+    cursor: pointer
+}
+
+.imagen-tap13 {
+    align-items: flex-start;
+    position: absolute;
+    top: 455px;
+    left: 180px;
+    display: flex;
+    justify-content: space-between;
+    width: 505px;
+}
+
+.imagen36 {
+    background: #fff;
+    width: 380px;
+    height: 300px;
+    cursor: pointer
+}
 
 
 
