@@ -2080,15 +2080,113 @@ aside {
     cursor: pointer
 }
 
+/*muflaS*/
+
+/*MUFLAS EN FIBRA OPGW*/
+
+.imagen-tap9 {
+    align-items: flex-start;
+    position: absolute;
+    top: 505px;
+    left: 680px;
+    display: flex;
+    justify-content: space-between;
+    width: 505px;
+}
+
+.imagen26 {
+    background: #fff;
+    width: 345px;
+    height: 200px;
+    cursor: pointer
+}
+
+.imagen27 {
+    background: #fff;
+    width: 155px;
+    height: 200px;
+    cursor: pointer
+}
+
+/*MUFLAS EN MUFLAS*/
+
+.imagen28 {
+    background: #fff;
+    width: 325px;
+    height: 200px;
+    cursor: pointer
+}
+
+.imagen29 {
+    background: #fff;
+    width: 175px;
+    height: 200px;
+    cursor: pointer
+}
 
 
+.imagen-tap10 {
+    align-items: flex-start;
+    position: absolute;
+    top: 385px;
+    left: 680px;
+    display: flex;
+    justify-content: space-between;
+    width: 505px;
+}
+
+.imagen30 {
+    background: #fff;
+    width: 150px;
+    height: 200px;
+    cursor: pointer
+}
+
+.imagen31 {
+    background: #fff;
+    width: 350px;
+    height: 200px;
+    cursor: pointer
+}
 
 
+.imagen-tap11 {
+    align-items: flex-start;
+    position: absolute;
+    top: 590px;
+    left: 680px;
+    display: flex;
+    justify-content: space-between;
+    width: 505px;
+}
+
+.imagen32 {
+    background: #fff;
+    width: 345px;
+    height: 170px;
+    cursor: pointer
+}
+
+.imagen33 {
+    background: #fff;
+    width: 155px;
+    height: 170px;
+    cursor: pointer
+}
+
+/*textos de muflas que se mueven a la mitad*/
+
+.mover-mitad{
+    position:absolute;
+    top: 225px;
+    right: 20px;
+}
 
 
+/* OTDR*/
 
 
-.imagen-tap2-2 {
+.imagen-tap12 {
     align-items: flex-start;
     position: absolute;
     top: 390px;
@@ -2097,6 +2195,18 @@ aside {
     justify-content: space-between;
     width: 505px;
 }
+
+
+.imagen34 {
+    background: #fff;
+    width: 505px;
+    height: 305px;
+    cursor: pointer
+}
+
+
+
+
 
 
 
