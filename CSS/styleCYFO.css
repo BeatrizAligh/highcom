@@ -2235,20 +2235,41 @@ aside {
     cursor: pointer
 }
 
+/*Modulos tranceptores*/
 
 
 
+.imagen37 {
+    background: #fff;
+    width: 505px;
+    height: 300px;
+    cursor: pointer
+}
 
 
-.imagen-tap3-2 {
+.imagen-tap14 {
     align-items: flex-start;
     position: absolute;
-    top: 545px;
+    top: 490px;
     left: 680px;
     display: flex;
     justify-content: space-between;
-    width: 500px;
+    width: 505px;
 }
+
+.imagen38 {
+    background: #fff;
+    width: 505px;
+    height: 260px;
+    cursor: pointer
+}
+
+
+
+
+
+
+
 
 
 
@@ -2345,7 +2366,7 @@ aside {
 /*interes--------------------------*/
 .interes {
     position: relative;
-    background-image: url("../img/interes.jpg");
+    background-image: url("../img/A3_Fibra Optica/interes.jpg");
     background-size: cover; /* Ajusta según sea necesario */
     background-position: center center; /* Ajusta según sea necesario */
     height: 300px; /* Ajusta según sea necesario */

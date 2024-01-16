@@ -253,7 +253,7 @@ for (let i = 0; i < tabPanes.length; i++) {
 
 //modal imagen*------------------------------
 
-const images = ["imagen1", "imagen2", "imagen3", "imagen4", "imagen5", "imagen6", "imagen7", "imagen8", "imagen9", "imagen10", "imagen11", "imagen12", "imagen13", "imagen14", "imagen15", "imagen16", "imagen17", "imagen18", "imagen19", "imagen20", "imagen21", "imagen22", "imagen23", "imagen24", "imagen25"];
+const images = ["imagen1", "imagen2", "imagen3", "imagen4", "imagen5", "imagen6", "imagen7", "imagen8", "imagen9", "imagen10", "imagen11", "imagen12", "imagen13", "imagen14", "imagen15", "imagen16", "imagen17", "imagen18", "imagen19", "imagen20", "imagen21", "imagen22", "imagen23", "imagen24", "imagen25", "imagen26", "imagen27", "imagen28", "imagen29", "imagen30", "imagen31", "imagen32", "imagen33", "imagen34", "imagen35", "imagen36", "imagen37", "imagen38"];
 let currentIndex = 0;
 
 function openModal(imageId) {
