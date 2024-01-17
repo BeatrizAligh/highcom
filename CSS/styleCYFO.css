@@ -588,16 +588,6 @@ nav {
         width: auto
     }
 
-/*nav .header-bottom {
-        display: flex;
-        grid-gap: 36px;
-        display: flex;
-        border-bottom: 2px solid var(--hover-color);*/ /* Agrega una línea inferior */
-/*z-index: 3;
-    }*/
-
-
-
 
 
 /*NAVBAR 2-------------------------*/
@@ -1138,8 +1128,8 @@ strong {
 }
 
 .services-section2 {
-    max-width: 1300px;
-    margin: 0 auto;
+    width: 100%;
+    margin: 0 100px;
     padding: 40px 20px;
     text-align: left;
 }
@@ -1154,13 +1144,46 @@ strong {
     padding-top: 20px;
 }
 
+
+.container-todoservices {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-interes {
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    height: 60px;
+}
+
+    .title-interes span {
+        text-align: justify;
+        color: var(--blue);
+        font-family: Lato;
+        font-size: 1.3rem;
+        font-weight: 800;
+        margin: 20px;
+    }
+
+
+.videos {
+    margin-left: 50px;
+}
+
+video {
+    margin-bottom: 20px;
+}
 .service-card {
     border-radius: 10px;
     overflow: hidden;
     margin-bottom: 20px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
     margin-right: 20px;
-    width: 700px;
+    width: 470px;
 }
 
     .service-card:last-child {
@@ -1201,7 +1224,7 @@ strong {
 }
 
     .carousel-item img {
-        width: 620px;
+        width: 470px;
         height: auto; /* Cambiado a height: 100% */
         object-fit: cover; /* Ajusta la imagen para cubrir el contenedor sin distorsiones */
     }

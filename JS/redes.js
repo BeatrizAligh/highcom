@@ -247,6 +247,10 @@ for (let i = 0; i < tabPanes.length; i++) {
     });
 }
 
+
+
+
+
 //modal imagen*------------------------------
 
 const images = ["imagen1", "imagen2", "imagen3", "imagen4", "imagen5", "imagen6"];
@@ -283,3 +287,63 @@ function updateModalImage() {
     const currentImageId = images[currentIndex];
     modalImage.src = document.querySelector(`.${currentImageId}`).src;
 }
+
+
+//click menu
+
+// Selecciona todos los elementos del mega menú
+var megaMenus = document.querySelectorAll('.mega-menu');
+
+document.addEventListener('click', function (event) {
+    // Verifica si el clic ocurrió dentro de algún menú
+    var isClickInsideMenu = false;
+
+    megaMenus.forEach(function (menu) {
+        if (menu.contains(event.target)) {
+            isClickInsideMenu = true;
+        }
+    });
+
+    // Cierra todos los menús y elimina la clase activa si el clic no fue dentro de un menú
+    if (!isClickInsideMenu) {
+        megaMenus.forEach(function (menu) {
+            var subMenu = menu.querySelector('ul.menu');
+            subMenu.style.top = '-50px'; // ajusta según sea necesario
+            subMenu.style.visibility = 'hidden';
+            subMenu.style.opacity = 0;
+            menu.classList.remove('active-menu'); // Elimina la clase activa
+        });
+    }
+});
+
+// Agrega un evento de clic a cada elemento del mega menú
+megaMenus.forEach(function (menu) {
+    menu.addEventListener('click', function (event) {
+        event.stopPropagation(); // Evita que el clic se propague al documento
+
+        var subMenu = menu.querySelector('ul.menu');
+
+        // Cierra todos los menús y elimina la clase activa antes de abrir el menú clickeado
+        megaMenus.forEach(function (otherMenu) {
+            if (otherMenu !== menu) {
+                var otherSubMenu = otherMenu.querySelector('ul.menu');
+                otherSubMenu.style.top = '-50px';
+                otherSubMenu.style.visibility = 'hidden';
+                otherSubMenu.style.opacity = 0;
+                otherMenu.classList.remove('active-menu'); // Elimina la clase activa
+            }
+        });
+
+        if (subMenu.style.visibility === 'visible') {
+            subMenu.style.top = '-50px'; // ajusta según sea necesario
+            subMenu.style.visibility = 'hidden';
+            subMenu.style.opacity = 0;
+            menu.classList.remove('active-menu'); // Elimina la clase activa
+        } else {
+            subMenu.style.top = '-1px'; // ajusta según sea necesario
+            subMenu.style.visibility = 'visible';
+            subMenu.style.opacity = 1;
+            menu.classList.add('active-menu'); // Agrega la clase activa
+        }
+    });
+});

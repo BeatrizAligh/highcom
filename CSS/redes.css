@@ -194,13 +194,12 @@ span {
 /*-------------MEGA MENU*/
 
 
-
 #mega-menu {
     position: relative;
-    top: 62px;
     display: inline-table;
     height: 55px;
     width: 250px;
+    top: 70px;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
@@ -210,10 +209,8 @@ span {
 }
 
     #mega-menu > .btn-mega {
-        color: #fff;
         font-size: 1rem;
-        font-weight: 500;
-        padding: 18px 15px;
+        padding: 9px 15px;
         transition: all .3s ease;
         width: max-content;
         height: 65px;
@@ -221,227 +218,333 @@ span {
         position: relative;
         z-index: 98;
         cursor: pointer;
-        animation: slideAnimation 1s ease forwards;
-        animation-delay: calc(.3s * var(--i));
-    }
-
-    #mega-menu:hover ul.menu {
-        top: -1px;
-        visibility: visible;
-        opacity: 1;
-        -webkit-transition: all 0.3s ease-in-out;
-        -moz-transition: all 0.3s ease-in-out;
-        -ms-transition: all 0.3s ease-in-out;
-        -o-transition: all 0.3s ease-in-out;
-        transition: all 0.3s ease-in-out;
     }
 
 
+.active-menu {
+    color: var(--dark-blue);
+    font-weight: 700;
+}
 
-    #mega-menu > ul.menu {
+#mega-menu > ul.menu {
+    position: relative;
+    z-index: 90;
+    background-color: var(--bg-color); /*COLOR PRIMER DROPDOWN*/
+    border: 1px solid var(--secon-bg-color);
+    border-radius: 8px;
+    top: -40px;
+    opacity: 0;
+    visibility: hidden;
+    height: 5a;
+    width: inherit;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+
+    #mega-menu > ul.menu > li > a {
+        height: 50px;
+        line-height: 51px;
+        padding: 0 24px;
+        border-bottom: 1px solid #000; /*LINEAS INFERIORES*/
+        display: block;
         position: relative;
-        z-index: 90;
-        background-color: var(--bg-color); /*COLOR PRIMER DROPDOWN*/
-        border: 1px solid var(--secon-bg-color);
-        border-radius: 8px;
-        top: -40px;
-        opacity: 0;
-        visibility: hidden;
-        height: 5a;
-        width: inherit;
-        -webkit-transition: all 0.3s ease-in-out;
-        -moz-transition: all 0.3s ease-in-out;
-        -ms-transition: all 0.3s ease-in-out;
-        -o-transition: all 0.3s ease-in-out;
-        transition: all 0.3s ease-in-out;
+        text-decoration: none;
     }
 
-        #mega-menu > ul.menu > li > a {
-            height: 50px;
-            line-height: 51px;
-            padding: 0 24px;
-            border-bottom: 1px solid #000; /*LINEAS INFERIORES*/
-            display: block;
-            position: relative;
-        }
-
-        #mega-menu > ul.menu > li:last-child > a {
-            border-bottom: none;
-        }
-
-        #mega-menu > ul.menu > li:hover > a .menu-title {
-            color: var(--dark-blue); /*HOVER PALABRA DROPDOWN UNO*/
-        }
-
-        #mega-menu > ul.menu > li > a.dropdown:after {
-            content: '\f105';
-            position: absolute;
-            font-family: 'fontawesome';
-            right: 29px;
-            font-size: 14px;
-            color: var(--text-color);
-        }
-
-        #mega-menu > ul.menu > li > a .menu-img {
-            margin-right: 18px;
-            min-width: 30px;
-            text-align: center;
-        }
-
-        #mega-menu > ul.menu > li > a .menu-title {
-            font-size: 0.9rem;
-            font-weight: 500;
-            color: var(--text-color);
-        }
-
-    #mega-menu.style1 > ul.menu {
-        transform: translateY(0%);
-        opacity: 1;
-        top: -1px;
-        visibility: visible;
-        border-width: 1px;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
+    #mega-menu > ul.menu > li:last-child > a {
+        border-bottom: none;
+        text-decoration: none;
     }
 
-    #mega-menu > ul.menu > li:hover > .drop-menu {
-        opacity: 1;
-        visibility: visible;
-        transform: translateX(0%);
+    #mega-menu > ul.menu > li:hover > a .menu-title {
+        color: var(--dark-blue); /*HOVER PALABRA DROPDOWN UNO*/
+        text-decoration: none;
     }
 
-    #mega-menu > ul.menu > li .drop-menu {
-        transform: translateX(-10%);
-        opacity: 0;
-        visibility: hidden;
-        padding: 27px 7px 27px 0;
+    #mega-menu > ul.menu > li > a.dropdown:after {
+        content: '\f105';
         position: absolute;
-        top: -1px;
-        left: 270px;
-        width: 875px;
+        font-family: 'fontawesome';
+        right: 29px;
+        font-size: 14px;
+        color: var(--text-color);
+    }
+
+    #mega-menu > ul.menu > li > a .menu-img {
+        margin-right: 18px;
+        min-width: 30px;
+        text-align: center;
+    }
+
+    #mega-menu > ul.menu > li > a .menu-title {
+        font-size: 0.9rem;
+        font-weight: 500;
+        color: var(--text-color);
+        text-transform: none;
+    }
+
+#mega-menu.style1 > ul.menu {
+    transform: translateY(0%);
+    opacity: 1;
+    top: -1px;
+    visibility: visible;
+    border-width: 1px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#mega-menu > ul.menu > li:hover > .drop-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0%);
+}
+
+#mega-menu > ul.menu > li .drop-menu {
+    transform: translateX(-10%);
+    display: flex;
+    justify-content: space-between;
+    opacity: 0;
+    visibility: hidden;
+    padding: 38px 29px 58px 29px;
+    position: absolute;
+    top: -1px;
+    left: 270px;
+    width: 1100px;
+    max-height: 490px;
+    overflow-y: auto;
+    border-radius: 10px;
+    z-index: -1;
+    background-color: var(--secon-bg-color); /*COLOR SEGUNDO DROPDOWN*/
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.one-third {
+    position: relative;
+    top: 65px;
+    width: 48%;
+}
+
+.img-up {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    height: 100px; /* Ajusta la altura según sea necesario */
+}
+
+    .img-up img {
+        width: 100%;
+        height: auto;
+        display: block;
         border-radius: 10px;
-        z-index: -1;
-        /*height: 516px;*/ /*aparece dependiendo el contenido*/
-        background-color: var(--secon-bg-color); /*COLOR SEGUNDO DROPDOWN*/
-        -webkit-transition: all 0.3s ease-in-out;
-        -moz-transition: all 0.3s ease-in-out;
-        -ms-transition: all 0.3s ease-in-out;
-        -o-transition: all 0.3s ease-in-out;
-        transition: all 0.3s ease-in-out;
+    }
+
+    .img-up h2.title {
+        position: absolute;
+        top: 70%; /* Coloca el título en el centro vertical */
+        left: 50%; /* Coloca el título en el centro horizontal */
+        transform: translate(-50%, -50%); /* Centra el título exactamente en el centro */
+        color: #fff; /* Cambia el color del título según sea necesario */
     }
 
 
 
-        #mega-menu > ul.menu > li .drop-menu > .one-third {
-            float: left;
-            padding-left: 42px;
-            padding-right: 15px;
-        }
 
-            #mega-menu > ul.menu > li .drop-menu > .one-third .cat-title {
-                color: var(--hover-color);
-                font-size: 16px;
-                font-weight: bold;
-                margin-bottom: 20px;
-            }
+.solucion {
+    width: 140px;
+    display: grid;
+    height: 168px;
+    justify-items: center;
+    position: relative;
+}
 
-            #mega-menu > ul.menu > li .drop-menu > .one-third ul li {
-                margin-bottom: 15px;
-                list-style: circle;
-            }
-
-                #mega-menu > ul.menu > li .drop-menu > .one-third ul li a {
-                    font-family: Lato;
-                    font-weight: 300;
-                    font-size: 1rem;
-                    letter-spacing: 1px;
-                    color: #fff;
-                }
-
-                    #mega-menu > ul.menu > li .drop-menu > .one-third ul li a:hover {
-                        color: var(--dark-blue);
-                    }
+.banner {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 
 
-            #mega-menu > ul.menu > li .drop-menu > .one-third .show a {
-                font-family: Lato;
-                font-weight: 300;
-                font-size: .6rem;
-                color: #fff;
-                position: relative;
-            }
+#mega-menu > ul.menu > li .drop-menu > .one-third ul li a {
+    font-family: Lato;
+    text-align: left;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    text-decoration: none;
+}
 
-                #mega-menu > ul.menu > li .drop-menu > .one-third .show a:before {
-                    content: '';
-                    position: absolute;
-                    width: 0;
-                    height: 2px;
-                    bottom: -4px;
-                    right: 0;
-                    background: var(--secon-bg-color);
-                    -webkit-transition: width .2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
-                    -o-transition: width .2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
-                    transition: width .2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
-                }
 
-                #mega-menu > ul.menu > li .drop-menu > .one-third .show a:hover:before {
-                    width: 100%;
-                    left: 0;
-                }
+#mega-menu > ul.menu > li .drop-menu > .one-third .show a {
+    font-family: Lato;
+    font-weight: 300;
+    font-size: .6rem;
+    color: #fff;
+    position: relative;
+    text-decoration: none;
+}
 
-            #mega-menu > ul.menu > li .drop-menu > .one-third ul.banner li {
-                border-radius: 5px;
-                background-color: var(--bg-color);
-                height: 110px;
-                padding: 20px 10px 15px 12px;
-                margin-bottom: 20px;
-                -webkit-transition: all 0.3s ease-in-out;
-                -moz-transition: all 0.3s ease-in-out;
-                -ms-transition: all 0.3s ease-in-out;
-                -o-transition: all 0.3s ease-in-out;
-                transition: all 0.3s ease-in-out;
-            }
+    #mega-menu > ul.menu > li .drop-menu > .one-third .show a:before {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: -4px;
+        right: 0;
+        background: var(--secon-bg-color);
+        -webkit-transition: width .2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
+        -o-transition: width .2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
+        transition: width .2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
+        text-decoration: none;
+    }
 
-                #mega-menu > ul.menu > li .drop-menu > .one-third ul.banner li:hover {
-                    background-color: var(--secon-bg-color);
-                    border: 1px solid var(--dark-blue);
-                    -webkit-transition: all 0.3s ease-in-out;
-                    -moz-transition: all 0.3s ease-in-out;
-                    -ms-transition: all 0.3s ease-in-out;
-                    -o-transition: all 0.3s ease-in-out;
-                    transition: all 0.3s ease-in-out;
-                }
+    #mega-menu > ul.menu > li .drop-menu > .one-third .show a:hover:before {
+        width: 100%;
+        left: 0;
+    }
 
-                #mega-menu > ul.menu > li .drop-menu > .one-third ul.banner li .banner-text {
-                    float: left;
-                }
+#mega-menu > ul.menu > li .drop-menu > .one-third ul.banner li {
+    width: 100%; /* O ajusta según sea necesario */
+    justify-content: center;
+    text-align: center;
+    margin-top: 45px;
+    margin-bottom: 45px; /* Espacio entre cada estructura */
+    border-radius: 5px;
+    height: auto;
+    padding: 4px 1px 10px 8px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
 
-                    #mega-menu > ul.menu > li .drop-menu > .one-third ul.banner li .banner-text .banner-title {
-                        font-weight: bold;
-                        font-size: 11px;
-                        color: var(--hover-color);
-                    }
 
-                    #mega-menu > ul.menu > li .drop-menu > .one-third ul.banner li .banner-text .more-link a {
-                        margin-left: 10px;
-                        font-family: Lato;
-                        font-weight: 300;
-                        font-size: .6rem;
-                        color: #fff;
-                        display: table-cell;
-                        width: 115px;
-                        padding-top: 10px;
-                    }
+.icon-container {
+    margin-right: 10px; /* Ajusta el espacio entre la imagen y el texto según sea necesario */
+}
 
-                #mega-menu > ul.menu > li .drop-menu > .one-third ul.banner li .banner-img {
-                    float: right;
-                    width: 90px;
-                }
+    .icon-container img {
+        max-width: 100%; /* Ajusta el ancho máximo de la imagen según sea necesario */
+        height: 80px;
+        width: 80%;
+        fill: #000; /* Color predeterminado (negro en este caso) */
+        transition: fill 0.3s; /* Agregar transición para un cambio suave */
+    }
 
+
+
+#mega-menu > ul.menu > li .drop-menu > .one-third ul.banner li .banner-text .banner-title {
+    font-family: Lato;
+    color: #6f6f71;
+    font-size: 12px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#mega-menu > ul.menu > li .drop-menu > .one-third ul.banner li .banner-text .more-link a {
+    margin-left: 10px;
+    font-family: Lato;
+    font-weight: 300;
+    font-size: .6rem;
+    color: #fff;
+    display: table-cell;
+    width: 115px;
+    padding-top: 10px;
+}
+
+#mega-menu > ul.menu > li .drop-menu > .one-third ul.banner li .banner-img {
+    width: 100%; /* Para asegurar que todas las imágenes tengan el mismo tamaño */
+    height: auto; /* Mantiene la proporción original de la imagen */
+    display: block;
+    float: right;
+    width: 130px;
+    position: relative;
+}
+
+
+#mega-menu > ul.menu > li .drop-menu > .one-third .cat-title {
+    color: var(--hover-color);
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+
+/*tipos*/
+
+.tipos {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+
+.icon-container {
+    margin-right: 10px;
+}
+
+    .icon-container i {
+        font-size: 45px; /* Ajusta el tamaño del icono según sea necesario */
+        color: #9f9f9f;
+    }
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 15px;
+    height: 100px;
+    width: 420px;
+    justify-content: center;
+}
+
+.tipos:hover {
+    background: var(--bg-color);
+}
+
+    .tipos:hover .title-mega {
+        color: var(--blue) /* Cambia el color del título al hacer hover */
+    }
+
+    .tipos:hover .description-mega {
+        color: #fff /* Cambia el color de la descripción al hacer hover */
+    }
+
+    .tipos:hover .icon-container i {
+        color: var(--blue);
+    }
+
+    .tipos:hover .icon-container img {
+        fill: #fff; /* Cambiar a rojo cuando se hace hover */
+    }
+
+.title-mega {
+    font-weight: 900;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.description-mega {
+    font-weight: 500;
+    color: #9f9f9f;
+}
 
 
 /*----------*/
-
+/*------------styles nav2 list hover*/
 .container {
     margin: 0 auto;
     padding: 0 50px;
@@ -450,8 +553,6 @@ span {
 
 nav {
     display: flex;
-    justify-content: space-between; /* Centrado horizontal */
-    left: 100px;
     align-items: center; /* Centrado vertical */
     padding: 5px; /* Añade relleno según sea necesario */
     color: #fdfdfd;
@@ -460,6 +561,10 @@ nav {
     letter-spacing: 2px;
     height: 60px;
     position: relative;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    right: 155px;
 }
 
     nav > .container {
@@ -467,59 +572,6 @@ nav {
         align-items: center;
         width: auto
     }
-
-
-
-
-/*NAVBAR 2-------------------------*/
-
-
-.navlist a {
-    display: inline-block;
-    color: #fff;
-    font-size: 1.2rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    padding: 10px 20px;
-    animation: slideAnimation 1s ease forwards;
-    animation-delay: calc(.3s * var(--i));
-
-    background-image: linear-gradient(to right, #54b3d6, #54b3d6 50%, #fff 50%);
-    background-size: 200% 100%;
-    background-position: -100%;
-    display: inline-block;
-    padding: 5px 0;
-    position: relative;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: all 0.3s ease-in-out;
-}
-    .navlist a:hover {
-        background-position: 0;
-    }
-
-    .navlist a:before {
-        content: "";
-        background: #54b3d6;
-        display: block;
-        position: absolute;
-        bottom: -3px;
-        left: 0;
-        width: 0;
-        height: 3px;
-        transition: all 0.3s ease-in-out;
-    }
-    .navlist a:hover::before {
-        width: 100%;
-    }
-
-
-
-
-
-
-
-
 
 
 
@@ -2248,7 +2300,7 @@ aside {
 /*interes--------------------------*/
 .interes {
     position: relative;
-    background-image: url("../img/interes.jpg");
+    background-image: url("../img/A3_Fibra Optica/interes.jpg");
     background-size: cover; /* Ajusta según sea necesario */
     background-position: center center; /* Ajusta según sea necesario */
     height: 300px; /* Ajusta según sea necesario */
