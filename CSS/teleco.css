@@ -1106,7 +1106,6 @@ strong {
 
 .services-section2 {
     width: 100%;
-    margin: 0 100px;
     padding: 40px 20px;
     text-align: left;
 }
@@ -1116,17 +1115,42 @@ strong {
     text-align: center;
 }
 
-.container-services {
-    display: flex;
+
+    
+
+.container-services
+{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 1px;
+    grid-column-gap: 1px;
+    justify-content: start;
+    align-items: center;
     padding-top: 20px;
+    padding-left:20px;
 }
 
+.row.justify-content-center.text-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h.textos-servicios {
+    width: 1079px;
+    padding-bottom: 17px;
+    display: block;
+    font-size: 20px;
+    font-family: 'Lato';
+    color: #6f6f71;
+}
 
 .container-todoservices {
     position: relative;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: start;
     justify-content: center;
 }
 
@@ -1161,7 +1185,8 @@ video {
     margin-bottom: 20px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
     margin-right: 20px;
-    width: 470px;
+    width: 335px;
+    height: 450px;
 }
 
     .service-card:last-child {
@@ -1173,12 +1198,11 @@ video {
 }
 
     .card-content h3 {
-        text-align: justify;
+        text-align: left;
         color: var(--success);
         font-family: Lato;
         font-size: 1.3rem;
         font-weight: 800;
-        margin: 20px;
     }
 
     .card-content p {
@@ -1448,7 +1472,7 @@ video {
         .tabs .tab-header > div {
             height: 50px;
             line-height: 50px;
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 600;
             color: #888;
             cursor: pointer;
