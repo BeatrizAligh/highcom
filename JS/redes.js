@@ -1,4 +1,4 @@
-const languages = document.getElementById("language");
+ï»¿const languages = document.getElementById("language");
 const textsToChange = document.querySelectorAll("[data-section]");
 
 const changeLanguage = async language => {
@@ -221,7 +221,7 @@ document.addEventListener('DOMContentLoaded', function () {
         autoplay: {
             delay: 2000, // Cambia de slide cada 5 segundos
         },
-        // Agrega más opciones según sea necesario
+        // Agrega mÃ¡s opciones segÃºn sea necesario
     });
 });
 
@@ -261,7 +261,7 @@ function openModal(imageId) {
     const modalImage = document.getElementById('modalImage');
     modal.style.display = 'block';
 
-    // Encuentra el índice de la imagen actual
+    // Encuentra el Ã­ndice de la imagen actual
     currentIndex = images.indexOf(imageId);
 
     // Actualiza la fuente de la imagen en el modal
@@ -291,11 +291,11 @@ function updateModalImage() {
 
 //click menu
 
-// Selecciona todos los elementos del mega menú
+// Selecciona todos los elementos del mega menÃº
 var megaMenus = document.querySelectorAll('.mega-menu');
 
 document.addEventListener('click', function (event) {
-    // Verifica si el clic ocurrió dentro de algún menú
+    // Verifica si el clic ocurriÃ³ dentro de algÃºn menÃº
     var isClickInsideMenu = false;
 
     megaMenus.forEach(function (menu) {
@@ -304,11 +304,11 @@ document.addEventListener('click', function (event) {
         }
     });
 
-    // Cierra todos los menús y elimina la clase activa si el clic no fue dentro de un menú
+    // Cierra todos los menÃºs y elimina la clase activa si el clic no fue dentro de un menÃº
     if (!isClickInsideMenu) {
         megaMenus.forEach(function (menu) {
             var subMenu = menu.querySelector('ul.menu');
-            subMenu.style.top = '-50px'; // ajusta según sea necesario
+            subMenu.style.top = '-50px'; // ajusta segÃºn sea necesario
             subMenu.style.visibility = 'hidden';
             subMenu.style.opacity = 0;
             menu.classList.remove('active-menu'); // Elimina la clase activa
@@ -316,14 +316,14 @@ document.addEventListener('click', function (event) {
     }
 });
 
-// Agrega un evento de clic a cada elemento del mega menú
+// Agrega un evento de clic a cada elemento del mega menÃº
 megaMenus.forEach(function (menu) {
     menu.addEventListener('click', function (event) {
         event.stopPropagation(); // Evita que el clic se propague al documento
 
         var subMenu = menu.querySelector('ul.menu');
 
-        // Cierra todos los menús y elimina la clase activa antes de abrir el menú clickeado
+        // Cierra todos los menÃºs y elimina la clase activa antes de abrir el menÃº clickeado
         megaMenus.forEach(function (otherMenu) {
             if (otherMenu !== menu) {
                 var otherSubMenu = otherMenu.querySelector('ul.menu');
@@ -335,15 +335,23 @@ megaMenus.forEach(function (menu) {
         });
 
         if (subMenu.style.visibility === 'visible') {
-            subMenu.style.top = '-50px'; // ajusta según sea necesario
+            subMenu.style.top = '-50px'; // ajusta segÃºn sea necesario
             subMenu.style.visibility = 'hidden';
             subMenu.style.opacity = 0;
             menu.classList.remove('active-menu'); // Elimina la clase activa
         } else {
-            subMenu.style.top = '-1px'; // ajusta según sea necesario
+            subMenu.style.top = '-1px'; // ajusta segÃºn sea necesario
             subMenu.style.visibility = 'visible';
             subMenu.style.opacity = 1;
             menu.classList.add('active-menu'); // Agrega la clase activa
         }
+    });
+});
+
+$(document).ready(function () {
+    $(".carousel").slick({
+        dots: true, // Muestra los puntos de navegaciï¿½n
+        autoplay: true,
+        autoplaySpeed: 4000 // Velocidad del carrusel en milisegundos
     });
 });
