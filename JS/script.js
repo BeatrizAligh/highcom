@@ -168,34 +168,26 @@ $(".option").click(function () {
 });
 
 
-//click menu
-
 // Selecciona todos los elementos del mega menú
 var megaMenus = document.querySelectorAll('.mega-menu');
 
+
+
+/// Cierra el menú si se hace clic fuera de él
 document.addEventListener('click', function (event) {
-    // Verifica si el clic ocurrió dentro de algún menú
-    var isClickInsideMenu = false;
-
-    megaMenus.forEach(function (menu) {
-        if (menu.contains(event.target)) {
-            isClickInsideMenu = true;
-        }
-    });
-
-    // Cierra todos los menús y elimina la clase activa si el clic no fue dentro de un menú
-    if (!isClickInsideMenu) {
+    if (!event.target.closest('.mega-menu')) {
+        // Oculta todos los menús y elimina la clase activa
         megaMenus.forEach(function (menu) {
             var subMenu = menu.querySelector('ul.menu');
-            subMenu.style.top = '-50px'; // ajusta según sea necesario
+            subMenu.style.top = '-50px';
             subMenu.style.visibility = 'hidden';
             subMenu.style.opacity = 0;
-            menu.classList.remove('active-menu'); // Elimina la clase activa
+            menu.classList.remove('active-menu');
         });
     }
 });
 
-// Agrega un evento de clic a cada elemento del mega menú
+// Agrega un evento de clic a cada elemento del menú
 megaMenus.forEach(function (menu) {
     menu.addEventListener('click', function (event) {
         event.stopPropagation(); // Evita que el clic se propague al documento
@@ -226,6 +218,22 @@ megaMenus.forEach(function (menu) {
         }
     });
 });
+
+$(document).ready(function () {
+    // Agrega un evento de clic a cada elemento del menú li
+    $("#mega-menu > ul.menu > li").on("click", function (event) {
+        event.stopPropagation(); // Evita que el clic se propague al documento
+
+        // Elimina la clase 'active' de todos los elementos del menú li
+        $("#mega-menu > ul.menu > li").removeClass("active");
+
+        // Añade la clase 'active' solo al elemento que se hizo clic
+        $(this).addClass("active");
+    });
+});
+
+
+
 
 //cyfo productos 
 
