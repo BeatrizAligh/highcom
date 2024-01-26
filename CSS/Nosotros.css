@@ -521,6 +521,14 @@ h2 {
     margin-bottom: 35px;
 }
 
+.title_header {
+    align-items: center;
+    display: inline-flex;
+    flex-direction: column;
+    position:relative;
+    top:12px;
+}
+
 .title {
     position: relative;
     margin-bottom: 40px;
@@ -657,7 +665,7 @@ h2 {
 
     .card-content h {
         font-family: Lato;
-        color: #6f6f71;
+        color: #fff;
         font-size: 16px;
         margin-bottom: 15px;
         text-align: justify;
