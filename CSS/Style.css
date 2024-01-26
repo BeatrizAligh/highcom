@@ -2095,7 +2095,7 @@ section{
 
 
 @media (max-width:1540px){
-    .todo {
+    .todo_services {
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -2171,7 +2171,7 @@ section{
 
 
 @media(max-width: 830px){
-    .todo {
+    .todo_services {
         grid-template-columns: repeat(1, 1fr);
     }
 
