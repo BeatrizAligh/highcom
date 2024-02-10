@@ -1121,7 +1121,7 @@ strong {
 .container-services
 {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 1px;
     grid-column-gap: 1px;
     justify-content: start;
@@ -1142,8 +1142,9 @@ h.textos-servicios {
     padding-bottom: 17px;
     display: block;
     font-size: 20px;
+    font-weight:300;
     font-family: 'Lato';
-    color: #6f6f71;
+    color: #fff;
 }
 
 .container-todoservices {
@@ -1742,9 +1743,9 @@ aside {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 550px;
+    margin-top: 450px;
     width: 470px;
-    margin-left: 690px;
+    margin-left: 100px;
 }
     .btn-tab {
         padding: 10px 20px;
