@@ -289,34 +289,41 @@ function updateModalImage() {
 }
 
 
-//click menu
-
 // Selecciona todos los elementos del mega menú
 var megaMenus = document.querySelectorAll('.mega-menu');
 
+
+
+/// Cierra el menú si se hace clic fuera de él
 document.addEventListener('click', function (event) {
-    // Verifica si el clic ocurrió dentro de algún menú
-    var isClickInsideMenu = false;
-
-    megaMenus.forEach(function (menu) {
-        if (menu.contains(event.target)) {
-            isClickInsideMenu = true;
-        }
-    });
-
-    // Cierra todos los menús y elimina la clase activa si el clic no fue dentro de un menú
-    if (!isClickInsideMenu) {
+    if (!event.target.closest('.mega-menu')) {
+        // Oculta todos los menús y elimina la clase activa
         megaMenus.forEach(function (menu) {
             var subMenu = menu.querySelector('ul.menu');
-            subMenu.style.top = '-50px'; // ajusta según sea necesario
+            subMenu.style.top = '-50px';
             subMenu.style.visibility = 'hidden';
             subMenu.style.opacity = 0;
-            menu.classList.remove('active-menu'); // Elimina la clase activa
+            menu.classList.remove('active-menu');
         });
     }
 });
 
-// Agrega un evento de clic a cada elemento del mega menú
+
+document.addEventListener('click', function (event) {
+    if (!event.target.closest('.mega-menu')) {
+        // Oculta solo el menú específico y elimina la clase activa
+        var specificMenu = document.querySelector('.mega-menu');
+        if (specificMenu) {
+            var subMenu = specificMenu.querySelector('ul.menu');
+            subMenu.style.top = '-50px';
+            subMenu.style.visibility = 'hidden';
+            subMenu.style.opacity = 0;
+            specificMenu.classList.remove('active-menu');
+        }
+    }
+});
+
+// Agrega un evento de clic a cada elemento del menú
 megaMenus.forEach(function (menu) {
     menu.addEventListener('click', function (event) {
         event.stopPropagation(); // Evita que el clic se propague al documento
@@ -324,15 +331,7 @@ megaMenus.forEach(function (menu) {
         var subMenu = menu.querySelector('ul.menu');
 
         // Cierra todos los menús y elimina la clase activa antes de abrir el menú clickeado
-        megaMenus.forEach(function (otherMenu) {
-            if (otherMenu !== menu) {
-                var otherSubMenu = otherMenu.querySelector('ul.menu');
-                otherSubMenu.style.top = '-50px';
-                otherSubMenu.style.visibility = 'hidden';
-                otherSubMenu.style.opacity = 0;
-                otherMenu.classList.remove('active-menu'); // Elimina la clase activa
-            }
-        });
+
 
         if (subMenu.style.visibility === 'visible') {
             subMenu.style.top = '-50px'; // ajusta según sea necesario
@@ -345,6 +344,19 @@ megaMenus.forEach(function (menu) {
             subMenu.style.opacity = 1;
             menu.classList.add('active-menu'); // Agrega la clase activa
         }
+    });
+});
+
+$(document).ready(function () {
+    // Agrega un evento de clic a cada elemento del menú li
+    $("#mega-menu > ul.menu > li").on("click", function (event) {
+        event.stopPropagation(); // Evita que el clic se propague al documento
+
+        // Elimina la clase 'active' de todos los elementos del menú li
+        $("#mega-menu > ul.menu > li").removeClass("active");
+
+        // Añade la clase 'active' solo al elemento que se hizo clic
+        $(this).addClass("active");
     });
 });
 
