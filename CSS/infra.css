@@ -1953,7 +1953,6 @@ video {
     transform: translate(-50%, -50%);
     background-color: var(--secon-bg-color);
     border-radius: 20px;
-    border: 2px solid #fff;
     z-index: 2;
 }
 
@@ -2031,6 +2030,39 @@ video {
         color: #fff;
     }
 
+
+.servd_acce_info2 .servd_acce_video {
+    position: absolute;
+    width: 248px;
+    height: 324px;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    z-index: 3;
+    overflow: hidden;
+}
+
+
+.servd_acce_info2 .servd_acce_img {
+    position: absolute;
+    width: 367px;
+    height: 282px;
+    top: 27%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    z-index: 3;
+    overflow: hidden;
+    border: 2px solid #fff
+}
+
+.servd_acce_img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: inherit;
+}
 
 
 
