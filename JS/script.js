@@ -12,7 +12,7 @@ const changeLanguage = async language => {
         textToChange.textContent = texts[section][value];
     }
 
-    // Reiniciar la animación de cambio de textos después de actualizar el texto
+    // Reiniciar la animaciï¿½n de cambio de textos despuï¿½s de actualizar el texto
     setTimeout(restartTextChangeAnimation, 0);
 };
 
@@ -38,7 +38,7 @@ words[currentWordIndex].style.opacity = "1";
 
 let textChangeInterval = setInterval(changeText, 3000);
 
-// Reiniciar la animación de cambio de textos
+// Reiniciar la animaciï¿½n de cambio de textos
 function restartTextChangeAnimation() {
     clearInterval(textChangeInterval);
     currentWordIndex = 0;
@@ -168,15 +168,15 @@ $(".option").click(function () {
 });
 
 
-// Selecciona todos los elementos del mega menú
+// Selecciona todos los elementos del mega menï¿½
 var megaMenus = document.querySelectorAll('.mega-menu');
 
 
 
-/// Cierra el menú si se hace clic fuera de él
+/// Cierra el menï¿½ si se hace clic fuera de ï¿½l
 document.addEventListener('click', function (event) {
     if (!event.target.closest('.mega-menu')) {
-        // Oculta todos los menús y elimina la clase activa
+        // Oculta todos los menï¿½s y elimina la clase activa
         megaMenus.forEach(function (menu) {
             var subMenu = menu.querySelector('ul.menu');
             subMenu.style.top = '-50px';
@@ -187,14 +187,14 @@ document.addEventListener('click', function (event) {
     }
 });
 
-// Agrega un evento de clic a cada elemento del menú
+// Agrega un evento de clic a cada elemento del menï¿½
 megaMenus.forEach(function (menu) {
     menu.addEventListener('click', function (event) {
         event.stopPropagation(); // Evita que el clic se propague al documento
 
         var subMenu = menu.querySelector('ul.menu');
 
-        // Cierra todos los menús y elimina la clase activa antes de abrir el menú clickeado
+        // Cierra todos los menï¿½s y elimina la clase activa antes de abrir el menï¿½ clickeado
         megaMenus.forEach(function (otherMenu) {
             if (otherMenu !== menu) {
                 var otherSubMenu = otherMenu.querySelector('ul.menu');
@@ -206,12 +206,12 @@ megaMenus.forEach(function (menu) {
         });
 
         if (subMenu.style.visibility === 'visible') {
-            subMenu.style.top = '-50px'; // ajusta según sea necesario
+            subMenu.style.top = '-50px'; // ajusta segï¿½n sea necesario
             subMenu.style.visibility = 'hidden';
             subMenu.style.opacity = 0;
             menu.classList.remove('active-menu'); // Elimina la clase activa
         } else {
-            subMenu.style.top = '-1px'; // ajusta según sea necesario
+            subMenu.style.top = '-1px'; // ajusta segï¿½n sea necesario
             subMenu.style.visibility = 'visible';
             subMenu.style.opacity = 1;
             menu.classList.add('active-menu'); // Agrega la clase activa
@@ -220,14 +220,14 @@ megaMenus.forEach(function (menu) {
 });
 
 $(document).ready(function () {
-    // Agrega un evento de clic a cada elemento del menú li
+    // Agrega un evento de clic a cada elemento del menï¿½ li
     $("#mega-menu > ul.menu > li").on("click", function (event) {
         event.stopPropagation(); // Evita que el clic se propague al documento
 
-        // Elimina la clase 'active' de todos los elementos del menú li
+        // Elimina la clase 'active' de todos los elementos del menï¿½ li
         $("#mega-menu > ul.menu > li").removeClass("active");
 
-        // Añade la clase 'active' solo al elemento que se hizo clic
+        // Aï¿½ade la clase 'active' solo al elemento que se hizo clic
         $(this).addClass("active");
     });
 });

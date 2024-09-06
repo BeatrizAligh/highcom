@@ -802,12 +802,11 @@ nav {
     }
 
 .slider .box1 {
-    background-image: url("../img/bannerbox1.JPG");
+    background-image: url("../img/A4_Teleco/bannerbox1.JPG");
     background-color: #008CEA;
     background-size: contain;
     background-repeat: no-repeat;
     background-position-x: right;
-    
 }
 
 
@@ -823,7 +822,7 @@ nav {
 
 
 .slider .box3 {
-    background-image: url("../img/bannerbox3.JPG");
+    background-image: url("../img/A3_Fibra Optica/bannerbox2.JPG");
     background-color: #FF2415;
     background-size: contain;
     background-repeat: no-repeat;
