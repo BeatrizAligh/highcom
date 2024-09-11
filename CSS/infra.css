@@ -625,7 +625,7 @@ nav {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-evenly;
-    right: 155px;
+    /*right: 155px;*/
 }
 
     nav > .container {
@@ -802,7 +802,7 @@ nav {
     }
 
 .slider .box1 {
-    background-image: url("../img/bannerbox1.JPG");
+    background-image: url("../img/A5_Infra/bannerbox1.jpg");
     background-color: #008CEA;
     background-size: contain;
     background-repeat: no-repeat;
@@ -813,7 +813,7 @@ nav {
 
 
 .slider .box2 {
-    background-image: url("../img/bannerbox2.JPG");
+    background-image: url("../img/A5_Infra/bannerbox2.JPG");
     background-color: #0dc959;
     background-size: contain;
     background-repeat: no-repeat;
@@ -823,7 +823,7 @@ nav {
 
 
 .slider .box3 {
-    background-image: url("../img/bannerbox3.JPG");
+    background-image: url("../img/A5_Infra/bannerbox3.png");
     background-color: #FF2415;
     background-size: contain;
     background-repeat: no-repeat;
@@ -833,7 +833,7 @@ nav {
 
 .slider .box4 {
     background-color: #7AC1FE;
-    background-image: url("../img/bannerbox4.JPG");
+    background-image: url("../img/A5_Infra/bannerbox4.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position-x: right;

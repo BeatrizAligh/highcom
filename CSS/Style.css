@@ -695,7 +695,7 @@ nav {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-evenly;
-    right: 155px;
+    /*right: 155px;*/
 }
 
     nav > .container {
@@ -1689,9 +1689,7 @@ section{
     justify-content: left;
     align-items: center;
     overflow: hidden;
-    height: 100vh;
     transition: 0.25s;
-    padding-top: 50px;
     background: var(--secon-bg-color);
 }
 
@@ -1767,28 +1765,21 @@ section{
 }
 
     .experience .options .option:nth-child(1) {
-        --defaultBackground: #ed5565;
-    }
-
-    .experience .options .option:nth-child(2) {
-        --defaultBackground: #fc6e51;
-    }
-
-    .experience .options .option:nth-child(3) {
-        --defaultBackground: #ffce54;
-    }
-
-    .experience .options .option:nth-child(4) {
-        --defaultBackground: #2ecc71;
-    }
-
-    .experience .options .option:nth-child(5) {
         --defaultBackground: #5d9cec;
     }
 
-    .experience .options .option:nth-child(6) {
-        --defaultBackground: #ac92ec;
+    .experience .options .option:nth-child(2) {
+        --defaultBackground: #ff431e;
     }
+
+    .experience .options .option:nth-child(3) {
+        --defaultBackground: #2ecc71;
+    }
+
+    .experience .options .option:nth-child(4) {
+        --defaultBackground: #5d9cec;
+    }
+
 
     .experience .options .option.active {
         flex-grow: 10000;

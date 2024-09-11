@@ -625,7 +625,7 @@ nav {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-evenly;
-    right: 155px;
+    /*right: 155px;*/
 }
 
     nav > .container {
@@ -812,7 +812,7 @@ nav {
 
 
 .slider .box2 {
-    background-image: url("../img/bannerbox2.JPG");
+    background-image: url("../img/A4_Teleco/bannerbox2.jpg");
     background-color: #0dc959;
     background-size: contain;
     background-repeat: no-repeat;
@@ -832,7 +832,7 @@ nav {
 
 .slider .box4 {
     background-color: #7AC1FE;
-    background-image: url("../img/bannerbox4.JPG");
+    background-image: url("../img/A4_Teleco/bannerbox4.JPG");
     background-size: contain;
     background-repeat: no-repeat;
     background-position-x: right;
@@ -2657,7 +2657,7 @@ footer {
 
 /*productos infra*/
 
-img {
+.carousel-item img {
     max-width: 100%;
     filter: drop-shadow(1px 1px 3px #a6a6a6);
 }

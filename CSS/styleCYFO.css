@@ -624,7 +624,7 @@ nav {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-evenly;
-    right: 155px;
+    /*right: 155px;*/
 }
 
     nav > .container {
@@ -1876,14 +1876,13 @@ aside {
 }
 
 .imagen1 {
-    background: #fff;
+
     width: 220px;
     height: 135px;
     cursor: pointer
 }
 
 .imagen2 {
-    background: #fff;
     width: 280px;
     height: 135px;
     cursor: pointer
@@ -1901,7 +1900,6 @@ aside {
 }
 
 .imagen3 {
-    background: #fff;
     top: 50px;
     width: 300px;
     height: 140px;
@@ -1909,7 +1907,6 @@ aside {
 }
 
 .imagen4 {
-    background: #fff;
     top: 50px;
     width: 200px;
     height: 140px;
@@ -1927,7 +1924,6 @@ aside {
 }
 
 .imagen5 {
-    background: #fff;
     top: 50px;
     width: 507px;
     height: 170px;
@@ -1946,7 +1942,6 @@ aside {
 
 
 .imagen6 {
-    background: #fff;
     top: 50px;
     width: 505px;
     height: 260px;
@@ -1966,7 +1961,6 @@ aside {
 }
 
 .imagen7 {
-    background: #fff;
     top: 50px;
     width: 505px;
     height: 200px;
@@ -1975,65 +1969,61 @@ aside {
 
 
 .imagen8 {
-    background: #fff;
     width: 505px;
-    height: 570px;
+    height: 400px;
     cursor: pointer
 }
 
 .imagen9 {
-    background: #fff;
+
     width: 505px;
     height: 272px;
     cursor: pointer
 }
 
 .imagen10 {
-    background: #fff;
+
     width: 505px;
     height: 272px;
     cursor: pointer
 }
 
 .imagen11 {
-    background: #fff;
+
     width: 220px;
     height: 135px;
     cursor: pointer
 }
 
 .imagen12 {
-    background: #fff;
+
     width: 280px;
     height: 135px;
     cursor: pointer
 }
 
 .imagen13 {
-    background: #fff;
     width: 267px;
     height: 270px;
     cursor: pointer
 }
 
 .imagen14 {
-    background: #fff;
+
     width: 233px;
     height: 270px;
     cursor: pointer
 }
 
 .imagen15 {
-    background: #fff;
     width: 505px;
     height: 320px;
     cursor: pointer
 }
 
 .imagen16 {
-    background: #fff;
-    width: 505px;
-    height: 320px;
+    width: 400px;
+    height: 270px;
     cursor: pointer
 }
 
@@ -2041,16 +2031,14 @@ aside {
 
 
 .imagen17 {
-    background: #fff;
-    width: 270px;
-    height: 130px;
+    width: 400px;
+    height: 270px;
     cursor: pointer
 }
 
 .imagen18 {
-    background: #fff;
-    width: 230px;
-    height: 130px;
+    width: 400px;
+    height: 270px;
     cursor: pointer
 }
 
@@ -2066,23 +2054,21 @@ aside {
 
 
 .imagen19 {
-    background: #fff;
-    width: 320px;
-    height: 130px;
+    width: 400px;
+    height: 270px;
     cursor: pointer
 }
 
 .imagen20 {
-    background: #fff;
-    width: 180px;
-    height: 130px;
+    width: 250px;
+    height: 160px;
     cursor: pointer
 }
 
 .imagen-tap7 {
     align-items: flex-start;
     position: absolute;
-    top: 450px;
+    top: 520px;
     left: 680px;
     display: flex;
     justify-content: space-between;
@@ -2090,9 +2076,8 @@ aside {
 }
 
 .imagen21 {
-    background: #fff;
-    width: 505px;
-    height: 250px;
+    width: 270px;
+    height: 160px;
     cursor: pointer
 }
 
@@ -2110,14 +2095,12 @@ aside {
 
 
 .imagen22 {
-    background: #fff;
     width: 270px;
     height: 200px;
     cursor: pointer
 }
 
 .imagen23 {
-    background: #fff;
     width: 230px;
     height: 200px;
     cursor: pointer
@@ -2126,7 +2109,7 @@ aside {
 .imagen-tap8 {
     align-items: flex-start;
     position: absolute;
-    top: 385px;
+    top: 451px;
     left: 680px;
     display: flex;
     justify-content: space-between;
@@ -2135,14 +2118,12 @@ aside {
 
 
 .imagen24 {
-    background: #fff;
     width: 270px;
     height: 200px;
     cursor: pointer
 }
 
 .imagen25 {
-    background: #fff;
     width: 230px;
     height: 200px;
     cursor: pointer
@@ -2163,30 +2144,35 @@ aside {
 }
 
 .imagen26 {
-    background: #fff;
-    width: 345px;
-    height: 200px;
+    width: 510px;
+    height: 300px;
     cursor: pointer
 }
 
 .imagen27 {
-    background: #fff;
-    width: 155px;
-    height: 200px;
+    width: 510px;
+    height: 370px;
     cursor: pointer
 }
 
 /*MUFLAS EN MUFLAS*/
 
 .imagen28 {
-    background: #fff;
-    width: 325px;
-    height: 200px;
+    width: 500px;
+    height: 300px;
     cursor: pointer
+}
+.imagen-tap80 {
+    align-items: flex-start;
+    position: absolute;
+    top: 260px;
+    left: 680px;
+    display: flex;
+    justify-content: space-between;
+    width: 505px;
 }
 
 .imagen29 {
-    background: #fff;
     width: 175px;
     height: 200px;
     cursor: pointer
@@ -2204,14 +2190,12 @@ aside {
 }
 
 .imagen30 {
-    background: #fff;
     width: 150px;
     height: 200px;
     cursor: pointer
 }
 
 .imagen31 {
-    background: #fff;
     width: 350px;
     height: 200px;
     cursor: pointer
@@ -2229,14 +2213,12 @@ aside {
 }
 
 .imagen32 {
-    background: #fff;
     width: 345px;
     height: 170px;
     cursor: pointer
 }
 
 .imagen33 {
-    background: #fff;
     width: 155px;
     height: 170px;
     cursor: pointer
@@ -2269,7 +2251,6 @@ aside {
 
 
 .imagen34 {
-    background: #fff;
     width: 505px;
     height: 305px;
     cursor: pointer
@@ -2280,7 +2261,6 @@ aside {
 /*Convertidore0*/
 
 .imagen35 {
-    background: #fff;
     width: 465px;
     height: 400px;
     cursor: pointer
@@ -2297,7 +2277,6 @@ aside {
 }
 
 .imagen36 {
-    background: #fff;
     width: 380px;
     height: 300px;
     cursor: pointer
@@ -2308,7 +2287,6 @@ aside {
 
 
 .imagen37 {
-    background: #fff;
     width: 505px;
     height: 300px;
     cursor: pointer
@@ -2326,7 +2304,6 @@ aside {
 }
 
 .imagen38 {
-    background: #fff;
     width: 505px;
     height: 260px;
     cursor: pointer
