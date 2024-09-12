@@ -2359,14 +2359,13 @@ footer {
   height: 500px;
   width: 100%;
   display: flex;    
-  justify-content: end;
+  justify-content: center;
 }
 
 .carousel1 {
   position: relative;
   width: 100%;
   max-width: 750px;
-  right: 200px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -2530,5 +2529,109 @@ footer {
 }
 
   
+/*-----*/
+
+.colunm{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex: direction: row;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.figure_rom{
+  list-style-type: none;
+  margin: 40px;
+  position: relative;
+}
+.imagea{
+  width: 200px;
+  height: 200px;
+  transform: rotate(45deg);
+  position: relative;
+  overflow: hidden;
+  transition: 0.8s;
+}
+figure{
+  overflow: hidden;
+}
+
+
+.image-romb{
+  transform: rotate(-45deg);
+  margin-top: -110px;
+  margin-left: -110px;
+  height: 165%;
+  transition: 0.8s;
+}
+
+.imagea:hover {
+    transform: rotate(0deg) scale(1.5);; /* Rotar el contenedor a 0 grados */
+    z-index: 1000;
+  }
+  
+  .imagea:hover .image-romb {
+    transform:  rotate(0deg) scale(1) ; /* Rotar la imagen a 0 grados y hacer zoom */
+  }
+  .overlay-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), transparent); /* Gradiente de negro a transparente */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.8s, bottom 0.8s; /* Suave transición para el texto */
+  }
+  
+  .imagea:hover .overlay-text {
+    opacity: 1;
+    bottom: 0; /* Muestra el texto al hacer hover */
+  }
+  
+  .imagea::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Fondo negro con opacidad */
+    opacity: 0;
+    transition: opacity 0.8s; /* Transición suave */
+    z-index: -1; /* Asegura que el fondo esté detrás del texto */
+  }
+  
+  .imagea:hover::before {
+    opacity: 1; /* Muestra el fondo negro al hacer hover */
+  }
+
+
+.first{
+  margin-top: 500px;
+  margin-top: 20px;
+  width: 98%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.second{
+  max-width: 100%; 
+  margin-top: -145px;
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.third{
+  max-width: 40%; 
+  margin-top: -145px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
   
