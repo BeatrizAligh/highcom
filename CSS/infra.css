@@ -839,6 +839,44 @@ nav {
     background-position-x: right;
 }
 
+.slider .box5 {
+    background-image: url("../img/A6_Tableros/Bannerbox1.png");
+    background-color: #008CEA;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    
+}
+
+
+
+.slider .box6 {
+    background-image: url("../img/A6_Tableros/Bannerbox2.jpg");
+    background-color: #0dc959;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
+
+
+
+.slider .box7 {
+    background-image: url("../img/A6_Tableros/bannerbox3.jpg");
+    background-color: #FF2415;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
+
+
+.slider .box8 {
+    background-color: #7AC1FE;
+    background-image: url("../img/A6_Tableros/bannerbox4.JPG");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
+
 
 
 
@@ -2318,7 +2356,7 @@ footer {
 /*--------------tableros*/
 
 .wrapper1 {
-  height: 600px;
+  height: 500px;
   width: 100%;
   display: flex;    
   justify-content: end;
