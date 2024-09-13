@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
+<head id="google_translate_element">
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
@@ -13,14 +13,14 @@
     <!-- Facebook Meta Tags -->
     <meta property="og:url" content="https://highcomcalasas.netlify.app">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Cableado y Fibra Óptica">
+    <meta property="og:title" content="Infraestuctura y Metalmecánica">
     <meta property="og:description" content="HIGHCOM ® inicia operaciones en la ciudad de Bogotá en el mes de Septiembre del 2009 con el objeto de brindar soluciones de comunicaciones para clientes del sector gubernamental y para algunas multinacionales que operan en el sector industrial Colombiano">
     <meta property="og:image" content="http://www.highcom.co/images/HIGHCOM.jpg"> <!--cambiar imagen -->
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta property="twitter:domain" content="highcomcalasas.netlify.app">
     <meta property="twitter:url" content="https://highcomcalasas.netlify.app">
-    <meta name="twitter:title" content="Cableado y Fibra Óptica">
+    <meta name="twitter:title" content="Infraestuctura y Metalmecánica">
     <meta name="twitter:description" content="HIGHCOM ® inicia operaciones en la ciudad de Bogotá en el mes de Septiembre del 2009 con el objeto de brindar soluciones de comunicaciones para clientes del sector gubernamental y para algunas multinacionales que operan en el sector industrial Colombiano">
     <meta name="twitter:image" content="http://www.highcom.co/images/HIGHCOM.jpg"> <!--cambiar imagen -->
     <!-- ESTILOS -->
@@ -36,7 +36,7 @@
     <link href="../CSS/infra.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
 </head>
-<body>
+<body id="google_translate_element">
     <div class="loader-section">
         <span class="loader"></span>
     </div>
@@ -46,10 +46,10 @@
             <a href="../Index.html"><img src="../img/LOGO_HIGHCOM.png" alt="" /></a>
         </div>
         <div id="language" class="language">
-            <div id="language-item" class="language-item" data-language="es">
+            <div  class="language-item" id="translate-es" onclick="translateToSpanish()" data-language="es">
                 <img src="../img/bandera_es.png" alt="" />
             </div>
-            <div id="language-item" class="language-item" data-language="en">
+            <div  class="language-item" id="translate-en" onclick="translateToEnglish()" data-language="en">
                 <img src="../img/bandera_en.png" alt="" />
             </div>
         </div>
@@ -950,5 +950,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="../JS/mixitup.min.js"></script>
     <script src="../JS/infra.js"></script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: 'es'}, 'google_translate_element');
+        }
+      </script>
+      
+      <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
 </body>
 </html>

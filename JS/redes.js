@@ -1,23 +1,4 @@
-﻿const languages = document.getElementById("language");
-const textsToChange = document.querySelectorAll("[data-section]");
-
-const changeLanguage = async language => {
-    const requestJson = await fetch(`../languages/${language}.json`);
-    const texts = await requestJson.json();
-
-    for (const textToChange of textsToChange) {
-        const section = textToChange.dataset.section;
-        const value = textToChange.dataset.value;
-
-        textToChange.textContent = texts[section][value];
-    }
-
-};
-
-languages.addEventListener("click", (e) => {
-    changeLanguage(e.target.parentElement.dataset.language);
-});
-
+﻿
 //homecarrousel
 
 // Slider(all Slides in a container)
@@ -287,6 +268,22 @@ function updateModalImage() {
     const currentImageId = images[currentIndex];
     modalImage.src = document.querySelector(`.${currentImageId}`).src;
 }
+
+function translateToEnglish() {
+    var selectField = document.querySelector('.goog-te-combo');
+    if (selectField) {
+      selectField.value = 'en';  // 'en' es el código del idioma para inglés
+      selectField.dispatchEvent(new Event('change')); // Disparar el cambio de idioma
+    }
+  }
+
+  function translateToSpanish() {
+    var selectField = document.querySelector('.goog-te-combo');
+    if (selectField) {
+      selectField.value = 'es';  // 'es' es el código del idioma para español
+      selectField.dispatchEvent(new Event('change')); // Disparar el cambio de idioma
+    }
+  }
 
 
 // Selecciona todos los elementos del mega menú

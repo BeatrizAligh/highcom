@@ -48,10 +48,10 @@
         </div>
 
         <div id="language" class="language">
-            <div id="language-item" class="language-item" data-language="es">
+            <div  class="language-item" id="translate-es" onclick="translateToSpanish()" data-language="es">
                 <img src="../img/bandera_es.png" alt="" />
             </div>
-            <div id="language-item" class="language-item" data-language="en">
+            <div class="language-item" id="translate-en" onclick="translateToEnglish()" data-language="en">
                 <img src="../img/bandera_en.png" alt="" />
             </div>
         </div>
@@ -302,5 +302,13 @@
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="../JS/mixitup.min.js"></script>
     <script src="../JS/nosotros.js"></script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: 'es'}, 'google_translate_element');
+        }
+      </script>
+      
+      <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 </body>
 </html>
