@@ -1618,7 +1618,7 @@ video {
     left: 680px;
     display: flex;
     justify-content: space-between;
-    width: 50px;
+    width: 500px;
     flex-direction: column;
 }
 
@@ -2162,8 +2162,8 @@ aside {
 
 .imagen1 {
     background: #fff;
-    width: 165px;
-    height: 155px;
+    width: 100%;
+    height: 100%;
     cursor: pointer
 }
 
@@ -2237,14 +2237,14 @@ aside {
 
 .imagen2 {
     background: #fff;
-    width: 330px;
-    height: 155px;
+    width: 51%;
+    height: 300px;
     cursor: pointer
 }
 .imagen-tap2 {
     align-items: flex-start;
     position: absolute;
-    top: 340px;
+    top: 465px;
     left: 680px;
     display: flex;
     justify-content: space-between;
@@ -2271,20 +2271,39 @@ aside {
 
 .imagen4 {
     background: #fff;
-    top: 50px;
-    width: 255px;
-    height: 150px;
-    cursor: pointer
+    top: 154px;
+    left: 260px;
+    width: 241px;
+    height: 146px;
+    cursor: pointer;
+    position: inherit;
+
 }
 
+.imagena {
+    background: #fff;
+    width: 100%;
+    position: inherit;
+    top: 97px;
+    cursor: pointer;
+    height: 215px;
+}
+.imagenb{
+    background: #fff;
+    width: 80%;
+    position: inherit;
+    cursor: pointer;
+    height: 580px;
+}
+
+
 .imagen-tap3 {
-    align-items: flex-start;
     position: absolute;
-    top: 495px;
-    left: 680px;
+    top: 180px;
+    left: 100px;
     display: flex;
     justify-content: space-between;
-    width: 500px;
+    width: 500PX;
 }
 .imagen-tap3-2 {
     align-items: flex-start;
@@ -2296,28 +2315,6 @@ aside {
     width: 500px;
 }
 
-.imagen6 {
-    background: #fff;
-    top: 50px;
-    width: 165px;
-    height: 155px;
-    cursor: pointer
-}
-
-.imagen5 {
-    background: #fff;
-    top: 50px;
-    width: 330px;
-    height: 155px;
-    cursor: pointer
-}
-.imagen7 {
-    background: #fff;
-    top: 50px;
-    width: 150px;
-    height: 150px;
-    cursor: pointer
-}
 
 
 /* FIN NO COPIAR---------------------*/
